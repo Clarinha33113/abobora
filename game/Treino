@@ -1,0 +1,33 @@
+define mi = Character("Minato")
+
+label start:
+# a cena start, e onde se inicia o jogo 
+ scene baclk
+ with dissolve 
+ 
+"Outra uma noite, com mais melancolia no ar, eu sinto o vento no meu rosto, o calor da cama, porém isso é tão facilmente esquecido, quando aquele sonho começa, o mesmo sonho que me lembra porque eu estou aqui, por que as coisas são o que são.!"
+     
+"Minato acorda de uma noite difícil, ele pensa:"
+
+
+Minato "Aquele sonho de novo, por que aquele sonho, por que eu não consigo me livrar dele, já faz 10 anos, com esse mesmo maldito sonho."
+
+"Esse corretor longo e escuro, logo será esquecido, como tudo o que venho antes, pois na luz a minha manhã de mais um dia começa."
+
+#Ele na cozinha
+
+"o que será hoje, creio que uma boa panqueca pode melhorar as coisas, esse cheiro sempre me ajuda nas manhãs, e com um achocolatado pode se tornar melhor, hoje teremos mais uma aula de matemática e vou precisar de energia para aguentar aquela aula, porque não temos aula de história no lugar de matemática, uma pena a vida ser assim, tão monótona."
+
+#Ao sair de casa
+
+"essa luz na pele é tão boa, é como um abraço, essa estrada me lembra do que me lembro do velho mundo, tantas ruinas que um dia foram o local de trabalho de tantos, ou a casa de alguém, especialmente aquele lugar."
+
+Mianto "difícil imaginar as coisas voltarem a ser como era antes, eu queria poder estar aqui para ver antes"
+
+#Ele na frente da escola
+
+"Certas coisas nunca mudam, como a escola, ela é interessante do seu próprio modo, o calor do sol é ainda melhor em um lugar onde o potencial pode despertar."
+
+#Depois da carta e ser teletransportado
+
+Minato "O que esta acontecendo?"
