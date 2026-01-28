@@ -17,13 +17,28 @@ label start:
 
     "Quando aquele sonho começa, o mesmo sonho que me lembra porque eu estou aqui, porque as coisas são o que são..."
 
-    "Aquele sonho de novo... Por que aquele sonho?"
+    scene bg quarto_escuro
+    show minato quando_acorda
 
-    "Por que eu não consigo me livrar dele? Já faz 10 anos com esse mesmo maldito sonho."
+    with fade
 
-    "Esse corredor longo e escuro... Logo será esquecido, como tudo o que veio antes. Pois na luz a minha manhã de mais um dia começa."
+    me "Aquele sonho de novo... Por que aquele sonho?"
+
+    me "Por que eu não consigo me livrar dele? Já faz 10 anos com esse mesmo maldito sonho."
+
+    scene black
+    with dissolve
+
+    hide minato quando_acorda
+
+    me "Esse corredor longo e escuro... Logo será esquecido, como tudo o que veio antes. Pois na luz a minha manhã de mais um dia começa."
 
     # Ele na cozinha
+
+    scene bg cozinha
+    with dissolve
+
+    show minato normal
 
     me "O que será hoje? Creio que uma boa panqueca pode melhorar as coisas. Esse cheiro sempre me ajuda nas manhãs, e com um achocolatado pode se tornar melhor."
 
@@ -31,13 +46,19 @@ label start:
 
     # Ele fora de casa
 
+    scene bg cidade_manha
+    with dissolve
+
+    hide minato normal
+
     "Essa luz na pele é tão boa, é como um abraço. Essa estrada me lembra do velho mundo, tantas ruinas que um dia foram o local de trabalho de tantos, ou a casa de alguém, especialmente aquele lugar."
 
     # Ele em frente a um predio em ruinas
 
     "Difícil imaginar as coisas voltarem a ser como eram antes, eu queria poder estar aqui para ver antes."
 
-    # Ele em frente a escola
+    scene bg armarios_escola
+    with dissolve
 
     "Certas coisas nunca mudam, como a escola. Ela é interessante do seu próprio modo, o calor do sol é ainda melhor em um lugar onde o potencial pode despertar."
 

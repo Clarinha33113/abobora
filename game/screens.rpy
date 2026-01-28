@@ -218,7 +218,7 @@ style choice_button_text is button_text
 
 style choice_vbox:
     xalign 0.5
-    ypos 405
+    ypos 270
     yanchor 0.5
 
     spacing gui.choice_spacing
@@ -384,17 +384,17 @@ style main_menu_title is main_menu_text
 style main_menu_version is main_menu_text
 
 style main_menu_frame:
-    xsize 420
+    xsize 280
     yfill True
 
     background "gui/overlay/main_menu.png"
 
 style main_menu_vbox:
     xalign 1.0
-    xoffset -30
-    xmaximum 1200
+    xoffset -20
+    xmaximum 800
     yalign 1.0
-    yoffset -30
+    yoffset -20
 
 style main_menu_text:
     properties gui.text_properties("main_menu", accent=True)
@@ -501,42 +501,42 @@ style return_button is navigation_button
 style return_button_text is navigation_button_text
 
 style game_menu_outer_frame:
-    bottom_padding 45
-    top_padding 180
+    bottom_padding 30
+    top_padding 120
 
     background "gui/overlay/game_menu.png"
 
 style game_menu_navigation_frame:
-    xsize 420
+    xsize 280
     yfill True
 
 style game_menu_content_frame:
-    left_margin 60
-    right_margin 30
-    top_margin 15
+    left_margin 40
+    right_margin 20
+    top_margin 10
 
 style game_menu_viewport:
-    xsize 1380
+    xsize 920
 
 style game_menu_vscrollbar:
     unscrollable gui.unscrollable
 
 style game_menu_side:
-    spacing 15
+    spacing 10
 
 style game_menu_label:
-    xpos 75
-    ysize 180
+    xpos 50
+    ysize 120
 
 style game_menu_label_text:
-    size 75
+    size 50
     color gui.accent_color
     yalign 0.5
 
 style return_button:
     xpos gui.navigation_xpos
     yalign 1.0
-    yoffset -45
+    yoffset -30
 
 
 ## Sobre a tela ################################################################
@@ -702,8 +702,8 @@ style slot_time_text is slot_button_text
 style slot_name_text is slot_button_text
 
 style page_label:
-    xpadding 75
-    ypadding 5
+    xpadding 50
+    ypadding 3
     xalign 0.5
 
 style page_label_text:
@@ -841,13 +841,13 @@ style mute_all_button_text is check_button_text
 
 style pref_label:
     top_margin gui.pref_spacing
-    bottom_margin 3
+    bottom_margin 2
 
 style pref_label_text:
     yalign 1.0
 
 style pref_vbox:
-    xsize 338
+    xsize 225
 
 style radio_vbox:
     spacing gui.pref_button_spacing
@@ -870,18 +870,18 @@ style check_button_text:
     properties gui.text_properties("check_button")
 
 style slider_slider:
-    xsize 525
+    xsize 350
 
 style slider_button:
     properties gui.button_properties("slider_button")
     yalign 0.5
-    left_margin 15
+    left_margin 10
 
 style slider_button_text:
     properties gui.text_properties("slider_button")
 
 style slider_vbox:
-    xsize 675
+    xsize 450
 
 
 ## Tela de histórico ###########################################################
@@ -991,7 +991,7 @@ screen help():
         style_prefix "help"
 
         vbox:
-            spacing 23
+            spacing 15
 
             hbox:
 
@@ -1120,14 +1120,14 @@ style help_text is gui_text
 
 style help_button:
     properties gui.button_properties("help_button")
-    xmargin 12
+    xmargin 8
 
 style help_button_text:
     properties gui.text_properties("help_button")
 
 style help_label:
-    xsize 375
-    right_padding 30
+    xsize 250
+    right_padding 20
 
 style help_label_text:
     size gui.text_size
@@ -1165,7 +1165,7 @@ screen confirm(message, yes_action, no_action):
         vbox:
             xalign .5
             yalign .5
-            spacing 45
+            spacing 30
 
             label _(message):
                 style "confirm_prompt"
@@ -1173,7 +1173,7 @@ screen confirm(message, yes_action, no_action):
 
             hbox:
                 xalign 0.5
-                spacing 150
+                spacing 100
 
                 textbutton _("Sim") action yes_action
                 textbutton _("Não") action no_action
@@ -1219,7 +1219,7 @@ screen skip_indicator():
     frame:
 
         hbox:
-            spacing 9
+            spacing 6
 
             text _("Pular")
 
@@ -1518,7 +1518,7 @@ define bubble.expand_area = {
 
 style pref_vbox:
     variant "medium"
-    xsize 675
+    xsize 450
 
 ## Como o mouse pode não estar presente, substituímos o menu rápido por uma
 ## versão que usa menos botões e maiores, que são mais fáceis de tocar.
@@ -1565,7 +1565,7 @@ style game_menu_outer_frame:
 
 style game_menu_navigation_frame:
     variant "small"
-    xsize 510
+    xsize 340
 
 style game_menu_content_frame:
     variant "small"
@@ -1573,11 +1573,11 @@ style game_menu_content_frame:
 
 style game_menu_viewport:
     variant "small"
-    xsize 1305
+    xsize 870
 
 style pref_vbox:
     variant "small"
-    xsize 600
+    xsize 400
 
 style bar:
     variant "small"
@@ -1621,4 +1621,4 @@ style slider_vbox:
 
 style slider_slider:
     variant "small"
-    xsize 900
+    xsize 600

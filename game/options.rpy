@@ -30,7 +30,6 @@ define config.version = "1.0"
 ## triplas e deixe uma linha em branco entre os parágrafos.
 
 define gui.about = _p("""
-    Jogo feito pela turma SWTV da Unilehu, 2026.
 """)
 
 
@@ -38,7 +37,7 @@ define gui.about = _p("""
 ## construída. Ele deve ser somente ASCII e não deve conter espaços, dois pontos
 ## ou ponto e vírgula.
 
-define build.name = "abobora"
+define build.name = "tribunal_mortal"
 
 
 ## Sons e música ###############################################################
@@ -49,7 +48,7 @@ define build.name = "abobora"
 
 define config.has_sound = True
 define config.has_music = True
-define config.has_voice = False
+define config.has_voice = True
 
 
 ## Para permitir que o usuário reproduza um som de teste no canal de som ou
@@ -146,7 +145,7 @@ default preferences.afm_time = 15
 ## Isso geralmente não deve ser alterado e, se for, deve ser sempre uma string
 ## literal, não uma expressão.
 
-define config.save_directory = "abobora-1769532425"
+define config.save_directory = "tribunal_mortal-1769623354"
 
 
 ## Ícone #######################################################################
