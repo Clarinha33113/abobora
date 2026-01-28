@@ -1,26 +1,48 @@
-﻿define minato = Character("Minato") # , color='#fafafa')
+﻿define minato = Character("Minato")
 
 label start:
     scene black
     with dissolve
 
-    "Minato acorda de uma noite difícil, ele pensa:"
+    "Outra noite, com mais melancolia no ar."
 
-    minato "Aquele sonho de novo... Por que aquele sonho?"
+    "Eu sinto o vento no meu rosto, o calor da cama, porém isso é tão facilmente esquecido..."
 
-    "Assim ele se levanta e vai para a cozinha comer o café da manhã, assim se arruma e se despede dos avós, e vai para o colégio, Minato observa a paisagem local, e se pergunta..."
+    "Quando aquele sonho começa, o mesmo sonho que me lembra porque eu estou aqui, porque as coisas são o que são..."
 
-    # carregar predio em ruinas aqui
-    minato "Difícil imaginar as coisas voltarem a ser como era antes, eu queria poder estar aqui para ver antes."
+    "Aquele sonho de novo... Por que aquele sonho?"
 
-    "Ele continua o caminho até chegar no colégio. O lugar não está no melhor estado mas ainda era uma escola."
+    "Por que eu não consigo me livrar dele? Já faz 10 anos com esse mesmo maldito sonho."
 
-    # carregar entrada da escola aqui
+    "Esse corredor longo e escuro... Logo será esquecido, como tudo o que veio antes. Pois na luz a minha manhã de mais um dia começa."
 
-    "Ele vai direto para o armário."
-    "Ao abri-lo para guardar os sapatos, ele encontrou uma carta peculiar, o símbolo era desconhecido para ele, apesar disso Minato abre a carta e lê:"
+    # Ele na cozinha
+
+    minato "O que será hoje? Creio que uma boa panqueca pode melhorar as coisas. Esse cheiro sempre me ajuda nas manhãs, e com um achocolatado pode se tornar melhor."
+
+    minato "Hoje teremos mais uma aula de matemática e vou precisar de energia para aguentar aquela aula, porque não temos aula de história no lugar de matemática, uma pena a vida ser assim, tão monótona."
+
+    # Ele fora de casa
+
+    "Essa luz na pele é tão boa, é como um abraço. Essa estrada me lembra do velho mundo, tantas ruinas que um dia foram o local de trabalho de tantos, ou a casa de alguém, especialmente aquele lugar."
+
+    # Ele em frente a um predio em ruinas
+
+    "Difícil imaginar as coisas voltarem a ser como eram antes, eu queria poder estar aqui para ver antes."
+
+    # Ele em frente a escola
+
+    "Certas coisas nunca mudam, como a escola. Ela é interessante do seu próprio modo, o calor do sol é ainda melhor em um lugar onde o potencial pode despertar."
+
+    # Ele em frente ao seu armario
+
+    minato "O que é isso dentro do meu armário?"
+
+    "Minato encontrou uma carta peculiar, o símbolo era desconhecido para ele, apesar disso ele abre a carta e lê:"
 
     "{i}Prezado Minato Yuki{/i}"
+
+    # Talvez mostrar uma imagem com as passagens na tela também?
 
     "Minato vê três passagens para um belo campo florido com um rio, um lugar que lembrava tranquilidade para ele."
 
@@ -37,6 +59,9 @@ label start:
     scene black
     with dissolve
 
-    # risadas aqui
+    # sla mano risada lore
+    "Hahahahahahaha"
+
+    minato "O que está acontecendo?"
 
     return
