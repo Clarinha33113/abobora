@@ -1,4 +1,4 @@
-# abobora
+# Tribunal Mortal
 
-Projeto Visual Novel da SWTV.
+Projeto visual novel paródia da SWTV. (WIP)
 
