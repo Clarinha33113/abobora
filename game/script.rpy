@@ -1,8 +1,15 @@
-﻿define minato = Character("Minato")
+﻿define me = Character("[my_name]")
 
 label start:
     scene black
     with dissolve
+
+    python:
+        DEFAULT = 'Minato Yuki'
+        my_name = renpy.input('Qual seu nome?', default=DEFAULT, length=32).strip()
+
+        if not my_name:
+            my_name = DEFAULT
 
     "Outra noite, com mais melancolia no ar."
 
@@ -18,9 +25,9 @@ label start:
 
     # Ele na cozinha
 
-    minato "O que será hoje? Creio que uma boa panqueca pode melhorar as coisas. Esse cheiro sempre me ajuda nas manhãs, e com um achocolatado pode se tornar melhor."
+    me "O que será hoje? Creio que uma boa panqueca pode melhorar as coisas. Esse cheiro sempre me ajuda nas manhãs, e com um achocolatado pode se tornar melhor."
 
-    minato "Hoje teremos mais uma aula de matemática e vou precisar de energia para aguentar aquela aula, porque não temos aula de história no lugar de matemática, uma pena a vida ser assim, tão monótona."
+    me "Hoje teremos mais uma aula de matemática e vou precisar de energia para aguentar aquela aula, porque não temos aula de história no lugar de matemática, uma pena a vida ser assim, tão monótona."
 
     # Ele fora de casa
 
@@ -36,21 +43,21 @@ label start:
 
     # Ele em frente ao seu armario
 
-    minato "O que é isso dentro do meu armário?"
+    me "O que é isso dentro do meu armário?"
 
-    "Minato encontrou uma carta peculiar, o símbolo era desconhecido para ele, apesar disso ele abre a carta e lê:"
+    "[my_name] encontrou uma carta peculiar, o símbolo era desconhecido para ele, apesar disso ele abre a carta e lê:"
 
-    "{i}Prezado Minato Yuki{/i}"
+    "{i}Prezado(a) [my_name]{/i}"
 
     # Talvez mostrar uma imagem com as passagens na tela também?
 
-    "Minato vê três passagens para um belo campo florido com um rio, um lugar que lembrava tranquilidade para ele."
+    "[my_name] vê três passagens para um belo campo florido com um rio, um lugar que lembrava tranquilidade para ele."
 
     "{i}Gostaríamos de parabenizá-lo por ter sido selecionado para uma viajem com tudo pago para um lugar especial, para você e sua família descansarem, basta apenas assinar essa carta e poderá usar essas passagens.{/i}"
 
-    minato "Isso é estranho, as passagens são verdadeiras, e as férias de verão estão logo ai, o vovô e a vovó vão gostar, e isso deve ser daquele sorteio nacional."
+    me "Isso é estranho, as passagens são verdadeiras, e as férias de verão estão logo ai, o vovô e a vovó vão gostar, e isso deve ser daquele sorteio nacional."
 
-    "Ao olhar Minato percebe que a assinatura pede um título ao invés do nome, então ele pensa e escreve:"
+    "Ao olhar [my_name] percebe que a assinatura pede um título ao invés do nome, então ele pensa e escreve:"
 
     "{b}O Espectador{/b}"
 
@@ -62,6 +69,6 @@ label start:
     # sla mano risada lore
     "Hahahahahahaha"
 
-    minato "O que está acontecendo?"
+    me "O que está acontecendo?"
 
     return
