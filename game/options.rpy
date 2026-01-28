@@ -12,7 +12,7 @@
 ##
 ## O _() ao redor da string a marca como elegível para tradução.
 
-define config.name = _("abobora")
+define config.name = _("Tribunal Mortal")
 
 
 ## Determina se o título fornecido acima será mostrado na tela do menu
@@ -30,6 +30,7 @@ define config.version = "1.0"
 ## triplas e deixe uma linha em branco entre os parágrafos.
 
 define gui.about = _p("""
+    Jogo feito pela turma SWTV da Unilehu, 2026.
 """)
 
 
@@ -48,7 +49,7 @@ define build.name = "abobora"
 
 define config.has_sound = True
 define config.has_music = True
-define config.has_voice = True
+define config.has_voice = False
 
 
 ## Para permitir que o usuário reproduza um som de teste no canal de som ou
