@@ -17,9 +17,11 @@
 /files.txt
 /image_cache.txt
 /log.txt
-/game/log.txt
 /save_dump.txt
 /traceback.txt
+/game/errors.txt
+/game/traceback.txt
+/game/log.txt
 
 # Launcher-generated files.
 /dialogue.tab
