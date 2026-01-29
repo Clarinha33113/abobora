@@ -12,7 +12,7 @@ define diana = Character("Diana")
 
 label start:
     python:
-        DEFAULT = 'Minato Yuki'
+        DEFAULT = 'Minato'
         my_name = renpy.input('Qual seu nome?', default=DEFAULT, length=32).strip()
 
         if not my_name:
