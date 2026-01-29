@@ -25,6 +25,9 @@ label dia1_start:
 
     me "Um tribunal, eu realmente estou vendo isso. Claramente eu não fui o único a ser sequestrado, só espero que possamos sair sem nenhum jogo doentio."
 
+    show vince normal
+    hide vince normal
+
     "Logo ao centro um ser semelhante a um gato de pelúcia estranho aparece."
 
     vince "Nossos convidados de honra, sejam bem vindos a torre branca dos desejos, meu nome é Vince e serei o apresentador deste tribunal."
