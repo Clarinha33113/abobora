@@ -79,7 +79,9 @@ label dia1_start:
 
     scene bg tudo_vermelho_lmao with dissolve
 
-    vince "{b}Um de vocês precisa se tornar o assassino perfeito.{/b}"
+    show text "{b}Um de vocês precisa se tornar o assassino perfeito.{/b}" with Pause(4)
+
+    # vince "{b}Um de vocês precisa se tornar o assassino perfeito.{/b}"
 
     scene bg tribunal with dissolve
 
