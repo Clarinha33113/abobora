@@ -136,4 +136,34 @@ label dia1_start:
     show diana normal
     diana "E eu sou A Desenhista."
 
+    hide diana normal
+
+    menu:
+        me "pai ta cansado pa onde q eu vo (texto placeholder)"
+
+        "centro":
+            jump dia1_cena1_centro
+        "direita":
+            jump dia1_cena1_direita
+        "esquerda":
+            jump dia1_cena1_esquerda
+        "quarto":
+            jump dia1_cena1_quarto
+
+    return
+
+label dia1_cena1_centro:
+    # cena antes do return
+    return
+
+label dia1_cena1_direita:
+    # cena antes do return
+    return
+
+label dia1_cena1_esquerda:
+    # cena antes do return
+    return
+
+label dia1_cena1_quarto:
+    # cena antes do return
     return
