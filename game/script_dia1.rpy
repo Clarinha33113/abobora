@@ -112,7 +112,7 @@ label dia1_start:
 
     hide clint normal
     show thiago normal
-    thiago "E Eu sou O {b}[thiago]{/b}!"
+    thiago "E Eu sou {b}O [thiago]{/b}!"
 
     hide thiago normal
     show minato normal
@@ -142,8 +142,11 @@ label dia1_start:
 
     # XXX: precisa de uma transição melhor aqui
 
+    jump dia1_cena1_escolhas
+
+label dia1_cena1_escolhas:
     menu:
-        me "pai ta cansado pa onde q eu vo (texto placeholder)"
+        me "Para onde vou?"
 
         "centro":
             jump dia1_cena1_centro
@@ -157,7 +160,14 @@ label dia1_start:
     return
 
 label dia1_cena1_centro:
-    "[my_name] chega em uma sala de recreação onde aqui estão [thiago], [sofia], [clint] e [diana]"
+    menu:
+        "[my_name] chega em uma sala de recreação onde aqui estão [thiago], [sofia], [clint] e [diana]"
+
+        "Falar com um deles":
+            pass
+        "Voltar":
+            jump dia1_cena1_escolhas
+
     # Falar com um deles ou voltar 
 
     thiago "Ola meu caro [minato]"
@@ -222,6 +232,10 @@ label dia1_cena1_centro:
 
     "Ao tentar me aproximar da [diana] ela se encolheu no canto, coitada dela deve estar em choque maior que qualquer um"
 
+    menu:
+        "Voltar":
+            jump dia1_cena1_escolhas
+
     return
 
 
@@ -268,16 +282,27 @@ label dia1_cena1_direita:
 
     "Ela é uma pessoa amável, só espero que esse lugar não a maltrate"
 
+    menu:
+        "Voltar":
+            jump dia1_cena1_escolhas
+
     return
 
 label dia1_cena1_esquerda:
-    # cena antes do return
-
     # "Ao entrar, há duas escolhas:biblioteca ou quadra"
 
-    "[felix] está na biblioteca."
+    menu:
+        "Posso ir há biblioteca ou a quadra."
 
-    "[joana] e [mitchell], na quadra."
+        "Biblioteca":
+            jump dia1_cena1_biblioteca
+        "Quadra":
+            jump dia1_cena1_quadra
+        "Voltar":
+            jump dia1_cena1_escolhas
+
+label dia1_cena1_biblioteca:
+    "[felix] está na biblioteca."
 
     felix "Oi Amigo precisa de ajuda?" 
 
@@ -301,9 +326,18 @@ label dia1_cena1_esquerda:
 
     me "Obrigado por compartilhar a sua opinião" 
 
-    Felix "Não a de que, sempre que precisar de ajuda é só pedir"
+    felix "Não a de que, sempre que precisar de ajuda é só pedir"
 
     "Ele parece ser legal, apesar disso espero que aquele gato bizarro nos deixe sair"   
+
+    menu:
+        "Voltar":
+            jump dia1_cena1_esquerda
+
+
+# XXX: Mitchel ta na quadra ou no quarto?
+label dia1_cena1_quadra:
+    "[joana] e [mitchell] estão na quadra."
 
     joana "Como vai [minato], quer treinar comigo?" 
 
@@ -325,14 +359,9 @@ label dia1_cena1_esquerda:
 
     joana "De nada"
 
-    "Ela é bem diferente dos outros, parece ser a única que permaneceu calma, e quem sabe as razões dela"
+    "Ela é bem diferente dos outros, parece ser a única que permaneceu calma, e quem sabe as razões dela..."
 
-    "Ele está dançando passos bem familiares por algum motivo"
-
-    return
-
-label dia1_cena1_quarto:
-    # cena antes do return
+    "[mitchell] está dançando passos bem familiares por algum motivo"
 
     mitchell "O que você deseja colega"
 
@@ -348,13 +377,26 @@ label dia1_cena1_quarto:
 
     mitchell "Claro só lembre de dançar mais para alegrar a vida"
 
-    "Esse cara é um tanto peculiar, é difícil saber se ele é confiável ou não"
+    "Esse cara é um tanto peculiar, é difícil saber se ele é confiável ou não."
 
-    # "Voltar para o quarto"
+    
+    menu:
+        "Voltar":
+            jump dia1_cena1_esquerda
+
+    menu:
+        "Voltar":
+            jump dia1_cena1_esquerda
+
+label dia1_cena1_quarto:
 
     # "O jogador volta para o quarto e tem duas opções voltar ou ir dormir"
 
-    # "Dormir o dia encerra"
+    menu:
+        "Dormir":
+            pass
+        "Voltar":
+            jump dia1_cena1_escolhas
 
     me "Meu pior momento chegou"
 
@@ -373,3 +415,4 @@ label dia1_cena1_quarto:
     "Mas eu já não tenho mais energia para pensar nisso"
 
     return
+
