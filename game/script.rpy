@@ -1,14 +1,15 @@
 ﻿define me = Character("[my_name]")
+define minato = Character("Espectador")
 define vince = Character("Vince")
-define clint = Character("O Pistoleiro Pessoal")
-define aisha = Character("A Governante")
-define sofia = Character("A Contadora")
+define clint = Character("Pistoleiro")
+define aisha = Character("Governante")
+define sofia = Character("Contadora")
 define thiago = Character("Magnífico Esperto")
-define mitchell = Character("O Dançarino")
-define nina = Character("A Confeiteira")
-define felix = Character("O Apostador")
-define joana = Character("A Atleta")
-define diana = Character("A Desenhista")
+define mitchell = Character("Dançarino")
+define nina = Character("Confeiteira")
+define felix = Character("Apostador")
+define joana = Character("Atleta")
+define diana = Character("Desenhista")
 
 label start:
     python:

@@ -26,12 +26,12 @@ label dia1_start:
     me "Um tribunal, eu realmente estou vendo isso. Claramente eu não fui o único a ser sequestrado, só espero que possamos sair sem nenhum jogo doentio."
 
     show vince normal
-    hide vince normal
 
     "Logo ao centro um ser semelhante a um gato de pelúcia estranho aparece."
 
     vince "Nossos convidados de honra, sejam bem vindos a torre branca dos desejos, meu nome é Vince e serei o apresentador deste tribunal."
 
+    hide vince normal
     show clint normal
 
     clint "Um tribunal? Estamos sendo julgados por algo? Ou isso é só algum jogo esquisito?"
@@ -49,6 +49,8 @@ label dia1_start:
     hide aisha normal
 
     "Assim todos pegam as cartas e começam a ler."
+
+    # XXX: Mostrar imagem da carta aqui
 
     me "Parece que coisas foram adicionadas a carta, ou sempre estiveram lá?"
 
@@ -93,50 +95,52 @@ label dia1_start:
 
     hide vince normal
     show aisha normal
-    aisha "Olá a todos eu sou A Governante."
+    aisha "Olá a todos eu sou {b}A [aisha]{/b}."
 
     me "Ela falou esse título com uma pausa, soa que não era isso que ela ia falar."
 
     hide aisha normal
     show sofia normal
 
-    sofia "E eu sou A Contadora."
+    sofia "E eu sou {b}A [sofia]{/b}."
 
     me "Essa garota fez a mesma pausa, será que somos incapazes de falar nossos nomes?"
 
     hide sofia normal
     show clint normal
-    clint "Eu Me chamo O Pistoleiro Pessoal."
+    clint "Eu Me chamo {b}O [clint]{/b}, pessoal."
 
     hide clint normal
     show thiago normal
-    thiago "E Eu sou o Magnífico Esperto!"
+    thiago "E Eu sou O {b}[thiago]{/b}!"
 
     hide thiago normal
     show minato normal
-    me "Eu me chamo O Espectador."
+    me "Eu me chamo {b}O [minato]{/b}."
 
     hide minato normal
     show mitchell normal
-    mitchell "Sou O Dançarino."
+    mitchell "Sou {b}O [mitchell]{/b}."
 
     hide mitchell normal
     show nina normal
-    nina "Olá A todos, sou A Confeiteira."
+    nina "Olá A todos, sou {b}A [nina]{/b}."
 
     hide nina normal
     show felix normal
-    felix "Eu sou O Apostador."
+    felix "Eu sou {b}O [felix]{/b}."
 
     hide felix normal
     show joana normal
-    joana "É bom conhecê-los, eu sou A Atleta."
+    joana "É bom conhecê-los, eu sou {b}A [joana]{/b}."
 
     hide joana normal
     show diana normal
-    diana "E eu sou A Desenhista."
+    diana "E eu sou {b}A [diana]{/b}."
 
     hide diana normal
+
+    # XXX: precisa de uma transição melhor aqui
 
     menu:
         me "pai ta cansado pa onde q eu vo (texto placeholder)"
@@ -153,39 +157,38 @@ label dia1_start:
     return
 
 label dia1_cena1_centro:
-    # cena antes do return
-    "O Minato chega em uma sala de recreaçao onde aqui estao Thiago,Sofia,Clint e Diana"
-    #Falar com um deles ou voltar 
+    "[my_name] chega em uma sala de recreação onde aqui estão [thiago], [sofia], [clint] e [diana]"
+    # Falar com um deles ou voltar 
 
-    thiago "Ola meu caro Espectador"
+    thiago "Ola meu caro [minato]"
 
-    minato "Oi,o que esta fazendo?"
+    me "Oi, o que esta fazendo?"
 
     thiago "Apenas observando esse belo quadro, eu nunca vi nada parecido, é tão intrigante e sofisticado ao mesmo tempo"
 
-    minato "Sim ele é, me diga o que achou do tal Vince?"
+    me "Sim ele é, me diga o que achou do tal [vince]?"
 
     thiago "Sinceramente ele é meio bizarro, e peculiar demais, mas para um anfitrião ele até tem um bom jeito de apresentar as coisas, porém eu não confiaria a minha vida a ele"
 
-    minato "E o que acha desse lugar?"
+    me "E o que acha desse lugar?"
 
     thiago "Com certeza muito desconfortável, esse branco todo ao redor dá dor de cabeça, os móveis são até bons e charmosos ao seu próprio modo, porém se dependesse de mim eu não ficaria nesse lugar,"
 
-    minato "Obrigado por compartilhar sua opinião, Thiago: Ah não a de que, fique atento Espectador."
+    me "Obrigado por compartilhar sua opinião, Thiago: Ah não a de que, fique atento [minato]."
 
     "Ele parece um cara legal, mas eu tô com uma sensação estranha relacionada a ele."
 
     sofia "O que tá olhando?"
 
-    minato "Nada, eu só queria perguntar sua opinião sobre o Vince"
+    me "Nada, eu só queria perguntar sua opinião sobre o [vince]"
 
-    sofia "Aquele Gato estúpido, ele é insolente e pretencioso, ele acha que vai ficar barato nos sequestrar, além do mais a ideia de matar para ganhar um desejo não me atrai muito,"
+    sofia "Aquele gato estúpido, ele é insolente e pretencioso, ele acha que vai ficar barato nos sequestrar, além do mais a ideia de matar para ganhar um desejo não me atrai muito."
 
-    minato "E quanto a esse lugar"
+    me "E quanto a esse lugar"
 
     sofia "Esse lugar é horrível e deprimente, só alguém com mal gosto iria gostar dessa espelunca, não tem cores e tudo é tão artificial"
 
-    mianto "Obrigado por compartilhar sua opinião"
+    me "Obrigado por compartilhar sua opinião"
 
     sofia "Tanto faz só saia da minha frente se não for pedir muito."
 
@@ -193,57 +196,53 @@ label dia1_cena1_centro:
 
     clint "Como vai amigo?"
 
-    minto "Bem, eu queria te perguntar se não é muito incômodo Sr. Pistoleiro, o que acha daquele Vince?"
+    me "Bem, eu queria te perguntar se não é muito incômodo Sr. [clint], o que acha daquele [vince]?"
 
     clint "Um sujeito estranhamente assustador para um gato de pelúcia, o maldito roubou o meu revólver"
 
-    minato "Talvez para você não ter vantagem sobre os outros"
+    me "Talvez para você não ter vantagem sobre os outros"
 
     clint "É bem provável, ca entre nós esse gato vai provavelmente tentar matar todos nós, igual alguns aqui"
 
-    minato "Tem certeza?"
+    me "Tem certeza?"
 
     clint "total é só olhar para todo mundo, alguns aqui estão cogitando esse desejo, não confiaria tão facilmente em qualquer um"
 
-    minato "E o que acha desse lugar?"
+    me "E o que acha desse lugar?"
     
     clint "Lugarzinho desconfortante, mas creio que posso tentar me acostumar de um certo modo"
 
-    minato "Obrigado por compartilhar sua opinião"
+    me "Obrigado por compartilhar sua opinião"
 
     clint "Não a de que."
 
-    "Esse Pistoleiro, parece ser um cara legal, e ele tem um ponto válido"
+    "Esse [clint], parece ser um cara legal, e ele tem um ponto válido"
 
-    "Se o jogador tentar se aproximar da Diana essa descrição aparece
+    # "Se o jogador tentar se aproximar da [diana] essa descrição aparece"
 
-    Descrição: Ao tentar me aproximar da Desenhista ele se encolheu no canto, coitada dela deve estar em choque maior que qualquer um"
+    "Ao tentar me aproximar da [diana] ela se encolheu no canto, coitada dela deve estar em choque maior que qualquer um"
 
     return
 
 
 label dia1_cena1_direita:
-    # cena antes do return
+    # "O jogador verá uma cozinha chique e uns pufs ao lado, aqui tem a Aisha e a Nina"
 
-    "O jogador verá uma cozinha chique e uns pufs ao lado, aqui tem a Aisha e a Nina"
+    "[aisha] Não fala nada e olha julgando."
 
-    aisha "Não fala nada e olhar julgando"
+    me "Me desculpa por encomodar [aisha], eu queria te perguntar o que você acha do [vince]?"
 
-    minato "Me desculpa por encomodar  Governante, eu queria te perguntar o que você acha do Vince?"
+    aisha "Aquele desprezível e arrogante gato, ele realmente teve a coragem de falar na nossa cara, que aqueles termos sempre estiveram lá, e trás essa ideia repugnante de assassino perfeito, isso é horrível, se depender de mim todos aqui saíram" 
 
-    aisha "Aquele Desprezível e arrogante Gato, ele realmente teve a coragem de falar na nossa cara, que aqueles termos sempre estiveram lá, e trás essa ideia repugnante de Assassino perfeito, isso é horrível, de depender de mim todos aqui saíram" 
-
-    minato "E o que você acha desse lugar?" 
+    me "E o que você acha desse lugar?" 
 
     aisha "Desagradável"
 
     aisha "Todo esse branco e essa luz me incomodam"
 
-    aisha "Mas poderia ser pior"
+    aisha "Mas poderia ser pior, não vou reclamar tanto." 
 
-    aisha"Não vou reclamar tanto." 
-
-    minato "Muito obrigado por compartilhar sua opinião" 
+    me "Muito obrigado por compartilhar sua opinião" 
 
     aisha "Claro"
 
@@ -251,19 +250,19 @@ label dia1_cena1_direita:
 
     nina "Olá, posso te ajudar com algo?" 
 
-    minato "Ah sim, eu queria saber o que você acha daquele Vince?" 
+    me "Ah sim, eu queria saber o que você acha daquele [vince]?" 
 
     nina "Ele é assustador, eu não quero participar desse jogo de assassinato" 
 
-    minato "Eu também não quero" 
+    me "Eu também não quero" 
 
     nina "Tomara que as pessoas sejam sensatas pelo menos" 
 
-    minato "Confeiteira o que você acha desse lugar?" 
+    me "Confeiteira o que você acha desse lugar?" 
 
     nina "Poderia ser pior, mas pelo menos temos uma cozinha, eu talvez possa fazer algo depois para todo mundo" 
 
-    minato "Isso seria bom, de todo modo obrigado por compartilhar sua opinião"  
+    me "Isso seria bom, de todo modo obrigado por compartilhar sua opinião"  
 
     nina "Me procure se precisar de ajuda"
 
@@ -274,15 +273,15 @@ label dia1_cena1_direita:
 label dia1_cena1_esquerda:
     # cena antes do return
 
-    "Ao entrar, há duas escolhas:biblioteca ou quadra"
+    # "Ao entrar, há duas escolhas:biblioteca ou quadra"
 
-    "Felix está na biblioteca."
+    "[felix] está na biblioteca."
 
-    "Joana e Mitchell, na quadra"
+    "[joana] e [mitchell], na quadra."
 
     felix "Oi Amigo precisa de ajuda?" 
 
-    minato "Não exatamente, eu queria perguntar sua opinião sobre o Vince?" 
+    me "Não exatamente, eu queria perguntar sua opinião sobre o [vince]?" 
 
     felix "Aquele gato é estranho" 
 
@@ -292,23 +291,23 @@ label dia1_cena1_esquerda:
 
     felix "Se houver saída"
 
-    minato "E quanto a esse lugar?"  
+    me "E quanto a esse lugar?"  
 
     felix "Eu acho esse lugar um tanto assustador, uma pena não ter nenhum piano" 
 
-    minato "Um piano?" 
+    me "Um piano?" 
 
     felix "Sim ai eu poderia tentar aliviar o clima todo" 
 
-    minato "Obrigado por compartilhar a sua opinião" 
+    me "Obrigado por compartilhar a sua opinião" 
 
     Felix "Não a de que, sempre que precisar de ajuda é só pedir"
 
     "Ele parece ser legal, apesar disso espero que aquele gato bizarro nos deixe sair"   
 
-    joana "Como vai Espectador, quer treinar comigo?" 
+    joana "Como vai [minato], quer treinar comigo?" 
 
-    minato "Eu tô bem e não obrigado, eu queria te perguntar o que você acha do Vince?" 
+    me "Eu tô bem e não obrigado, eu queria te perguntar o que você acha do [vince]?" 
 
     joana "Ele é estranho e assustador"
 
@@ -316,15 +315,15 @@ label dia1_cena1_esquerda:
 
     joana "Não vai nos deixar ir facilmente"
 
-    joana "Talvez exista outra saída" 
+    joana "Talvez exista outra saída"
 
-    minato "O que você achou desse lugar?" 
+    me "O que você achou desse lugar?"
 
-    joana "Interessante e único, admito que estou curiosa quanto a esse lugar" 
+    joana "Interessante e único, admito que estou curiosa quanto a esse lugar"
 
-    minato "Obrigado por compartilhar sua opinião" 
+    me "Obrigado por compartilhar sua opinião"
 
-    joana "De nada"   
+    joana "De nada"
 
     "Ela é bem diferente dos outros, parece ser a única que permaneceu calma, e quem sabe as razões dela"
 
@@ -335,29 +334,29 @@ label dia1_cena1_esquerda:
 label dia1_cena1_quarto:
     # cena antes do return
 
-    mitchell "O que você deseja colega" 
+    mitchell "O que você deseja colega"
 
-    minato "Eu só queria saber sua opinião quanto ao Vince?" 
+    me "Eu só queria saber sua opinião quanto ao [vince]?"
 
-    mitchell "Aquele Vince é peculiar, tem cara de pilantra que só quer ver um banho de sangue" 
+    mitchell "Aquele [vince] é peculiar, tem cara de pilantra que só quer ver um banho de sangue"
 
-    minato "E esse lugar?" 
+    me "E esse lugar?" 
 
-    mitchell "Esse lugarzinho sem graça, para uma torre sem vida, esse lugar tem cara de que pode se tornar interessante" 
+    mitchell "Esse lugarzinho sem graça, para uma torre sem vida, esse lugar tem cara de que pode se tornar interessante"
 
-    minato "Obrigado pela sua opinião" 
+    me "Obrigado pela sua opinião"
 
-    mitchell "Claro só lembre de dançar mais para alegrar a vida" 
+    mitchell "Claro só lembre de dançar mais para alegrar a vida"
 
     "Esse cara é um tanto peculiar, é difícil saber se ele é confiável ou não"
 
-    "Voltar para o quarto"
+    # "Voltar para o quarto"
 
-    "O jogador volta para o quarto e tem duas opções voltar ou ir dormir"
+    # "O jogador volta para o quarto e tem duas opções voltar ou ir dormir"
 
-    "Dormir o dia encerra"
+    # "Dormir o dia encerra"
 
-    "Meu pior momento chegou"
+    me "Meu pior momento chegou"
 
     "Quando fecho as pálpebras, vejo diferente"
 
