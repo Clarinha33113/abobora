@@ -182,7 +182,7 @@ label dia1_cena1_centro:
 
     thiago "Mas, para um anfitrião, até tem um bom jeito de apresentar as coisas"
 
-    thiago "Ainda assim, eu não confiaria a minha vida a ele”
+    thiago "Ainda assim, eu não confiaria a minha vida a ele"
 
     me "E o que acha desse lugar?"
 
@@ -192,7 +192,7 @@ label dia1_cena1_centro:
 
     thiago "Os móveis até são bons, charmosos ao seu próprio modo…"
 
-    mas, se dependesse de mim, eu não ficaria nesse lugar.”
+    "mas, se dependesse de mim, eu não ficaria nesse lugar."
 
     me "Obrigado por compartilhar sua opinião, Thiago: Ah não a de que, fique atento [minato]."
 
@@ -208,15 +208,15 @@ label dia1_cena1_centro:
 
     sofia "Acha mesmo que vai ficar barato nos sequestrar"
 
-    sofia "Além do mais, matar para ganhar um desejo não me atrai nem um pouco.”
+    sofia "Além do mais, matar para ganhar um desejo não me atrai nem um pouco."
     
     me "E quanto a esse lugar"
 
-    sofia "“Esse lugar é horrível… e deprimente"
+    sofia "Esse lugar é horrível… e deprimente"
 
     sofia "Só alguém com mau gosto gostaria dessa espelunca"
 
-    sofia "Não há cores — tudo é tão artificial.”
+    sofia "Não há cores — tudo é tão artificial."
     
     me "Obrigado por compartilhar sua opinião"
 
@@ -240,7 +240,7 @@ label dia1_cena1_centro:
 
     clint "Alguns aqui já estão cogitando esse desejo"
 
-    clint "Eu não confiaria tão facilmente em qualquer um.”
+    clint "Eu não confiaria tão facilmente em qualquer um."
 
     me "E o que acha desse lugar?"
     
@@ -254,9 +254,9 @@ label dia1_cena1_centro:
 
     # "Se o jogador tentar se aproximar da [diana] essa descrição aparece"
 
-    "“Quando tentei me aproximar da [Diana],ela se encolheu no canto"
+    "Quando tentei me aproximar da [diana], ela se encolheu no canto"
 
-    "Coitada… deve estar em choque,mais do que qualquer um aqui.”
+    "Coitada… deve estar em choque, mais do que qualquer um aqui."
 
     menu:
         "Voltar":
