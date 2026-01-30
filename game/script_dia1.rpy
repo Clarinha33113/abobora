@@ -144,7 +144,10 @@ label dia1_start:
 
     jump dia1_cena1_escolhas
 
+
 label dia1_cena1_escolhas:
+    scene bg tribunal with dissolve
+
     menu:
         me "Para onde vou?"
 
@@ -159,7 +162,9 @@ label dia1_cena1_escolhas:
 
     return
 
+
 label dia1_cena1_centro:
+    scene bg sala_recreacao with dissolve
     menu:
         "[my_name] chega em uma sala de recreação onde aqui estão [thiago], [sofia], [clint] e [diana]"
 
@@ -168,8 +173,7 @@ label dia1_cena1_centro:
         "Voltar":
             jump dia1_cena1_escolhas
 
-    # Falar com um deles ou voltar 
-
+    show thiago normal
     thiago "Ola meu caro [minato]"
 
     me "Oi, o que esta fazendo?"
@@ -194,10 +198,14 @@ label dia1_cena1_centro:
 
     "mas, se dependesse de mim, eu não ficaria nesse lugar."
 
-    me "Obrigado por compartilhar sua opinião, Thiago: Ah não a de que, fique atento [minato]."
+    me "Obrigado por compartilhar sua opinião."
+
+    thiago "Ah não a de que, fique atento [minato]."
+    hide thiago normal
 
     "Ele parece um cara legal, mas eu tô com uma sensação estranha relacionada a ele."
 
+    show sofia normal
     sofia "O que tá olhando?"
 
     me "Nada, eu só queria perguntar sua opinião sobre o [vince]"
@@ -222,8 +230,11 @@ label dia1_cena1_centro:
 
     sofia "Tanto faz só saia da minha frente se não for pedir muito."
 
+    hide sofia normal
+
     "Já vejo que ela será bem desagradável e difícil de lidar, tomara que eu não tenha que enfrentar ela."
 
+    show clint normal
     clint "Como vai amigo?"
 
     me "Bem, eu queria te perguntar se não é muito incômodo Sr. [clint], o que acha daquele [vince]?"
@@ -249,11 +260,11 @@ label dia1_cena1_centro:
     me "Obrigado por compartilhar sua opinião"
 
     clint "Não a de que."
+    hide clint normal
 
     "Esse [clint], parece ser um cara legal, e ele tem um ponto válido"
 
-    # "Se o jogador tentar se aproximar da [diana] essa descrição aparece"
-
+    show diana assustada
     "Quando tentei me aproximar da [diana], ela se encolheu no canto"
 
     "Coitada… deve estar em choque, mais do que qualquer um aqui."
@@ -266,8 +277,9 @@ label dia1_cena1_centro:
 
 
 label dia1_cena1_direita:
-    # "O jogador verá uma cozinha chique e uns pufs ao lado, aqui tem a Aisha e a Nina"
+    scene bg cozinha_torre with dissolve
 
+    show aisha normal
     "[aisha] Não fala nada e olha julgando."
 
     me "Me desculpa por encomodar [aisha], eu queria te perguntar o que você acha do [vince]?"
@@ -292,7 +304,11 @@ label dia1_cena1_direita:
 
     aisha "Claro"
 
+    hide aisha normal
+
     "Ela é bem intimidadora, eu nem sei se devo confiar nela ou não"
+
+    show nina normal
 
     nina "Olá, posso te ajudar com algo?" 
 
@@ -306,15 +322,17 @@ label dia1_cena1_direita:
 
     me "Confeiteira o que você acha desse lugar?" 
 
-    nina "“Poderia ser pior.Pelo menos temos uma cozinha"
+    nina "Poderia ser pior.Pelo menos temos uma cozinha"
     
-    nina"Talvez eu possa fazer algo depois"
+    nina "Talvez eu possa fazer algo depois"
     
-    nina"para todo mundo." 
+    nina "para todo mundo." 
 
     me "Isso seria bom, de todo modo obrigado por compartilhar sua opinião"  
 
     nina "Me procure se precisar de ajuda"
+
+    hide nina normal
 
     "Ela é uma pessoa amável, só espero que esse lugar não a maltrate"
 
@@ -322,11 +340,8 @@ label dia1_cena1_direita:
         "Voltar":
             jump dia1_cena1_escolhas
 
-    return
 
 label dia1_cena1_esquerda:
-    # "Ao entrar, há duas escolhas:biblioteca ou quadra"
-
     menu:
         "Posso ir há biblioteca ou a quadra."
 
@@ -337,8 +352,13 @@ label dia1_cena1_esquerda:
         "Voltar":
             jump dia1_cena1_escolhas
 
+
 label dia1_cena1_biblioteca:
+    scene bg biblioteca with dissolve
+
     "[felix] está na biblioteca."
+
+    show felix normal
 
     felix "Oi Amigo precisa de ajuda?" 
 
@@ -364,7 +384,9 @@ label dia1_cena1_biblioteca:
 
     felix "Não a de que, sempre que precisar de ajuda é só pedir"
 
-    "Ele parece ser legal, apesar disso espero que aquele gato bizarro nos deixe sair"   
+    "Ele parece ser legal, apesar disso espero que aquele gato bizarro nos deixe sair"
+
+    hide felix normal
 
     menu:
         "Voltar":
@@ -373,8 +395,10 @@ label dia1_cena1_biblioteca:
 
 # XXX: Mitchel ta na quadra ou no quarto?
 label dia1_cena1_quadra:
+    scene bg quadra with dissolve
     "[joana] e [mitchell] estão na quadra."
 
+    show joana normal
     joana "Como vai [minato], quer treinar comigo?" 
 
     me "Eu tô bem e não obrigado, eu queria te perguntar o que você acha do [vince]?" 
@@ -395,9 +419,13 @@ label dia1_cena1_quadra:
 
     joana "De nada"
 
+    hide joana normal
+
     "Ela é bem diferente dos outros, parece ser a única que permaneceu calma, e quem sabe as razões dela..."
 
     "[mitchell] está dançando passos bem familiares por algum motivo"
+
+    show mitchell normal
 
     mitchell "O que você deseja colega"
 
@@ -413,21 +441,17 @@ label dia1_cena1_quadra:
 
     mitchell "Claro só lembre de dançar mais para alegrar a vida"
 
-    "Esse cara é um tanto peculiar, é difícil saber se ele é confiável ou não."
+    hide mitchell normal
 
+    "Esse cara é um tanto peculiar, é difícil saber se ele é confiável ou não."
     
     menu:
         "Voltar":
             jump dia1_cena1_esquerda
 
-    menu:
-        "Voltar":
-            jump dia1_cena1_esquerda
 
 label dia1_cena1_quarto:
-
-    # "O jogador volta para o quarto e tem duas opções voltar ou ir dormir"
-
+    scene bg quarto
     menu:
         "Dormir":
             pass
