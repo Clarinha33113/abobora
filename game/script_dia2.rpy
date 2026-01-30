@@ -5,13 +5,13 @@ label dia2_start:
 
     me "Essa noite foi diferente.Não tive aquele sonho.Em vez disso, vi uma garota assustada"
     
-    me"À sua frente, havia uma figura…parecia ter controle sobre ela,fazendo-a tirar a própria vida"
+    me "À sua frente, havia uma figura…parecia ter controle sobre ela,fazendo-a tirar a própria vida"
 
     scene bg cozinha_torre with dissolve
 
     "[my_name] acorda com um grito, e logo ele segue outros até a cozinha."
 
-    "[my name]onde ao entrar uma música sinistra começa a tocar e vemos todos assustados"
+    # ao entrar uma música sinistra começa a tocar e vemos todos assustados
 
     me "A [diana], ela, ela tá morta com uma faca no peito, uma expressão de agonia em sua face"
     me "eu não sei o que dizer, tem tanto sangue que eu-"
@@ -71,41 +71,38 @@ label dia2_start:
 
     vince "Agora vocês estão dispensados."
 
-    # XXX: escolhas denovo
-    "Logo ele desaparece e o jogador pode fazer as mesmas escolhas"
+    jump dia2_cena1_escolhas
 
-label dia2_cena2escolhas:
+label dia2_cena1_escolhas:
     scene bg tribunal with dissolve
 
     menu:
         me "Para onde vou?"
 
         "Direto":
-            jump dia2_cena2_direita
+            jump dia2_cena1_direita
         "Centro":
-            jump dia2_cena2_centro
+            jump dia2_cena1_centro
         "Esquerda":
-            jump dia2_cena2_esquerda
+            jump dia2_cena1_esquerda
         "Quarto":
-            jump dia2_cena2_quarto
+            jump dia2_cena1_quarto
 
     return
 
-label dia1_cena1_direita:
+label dia2_cena1_direita:
     scene bg cozinha_torre with dissolve
 
     menu:
         "[clint], [felix] e [aisha] estão na cozinha."
 
-        "Falar com elas":
+        "Falar com eles":
             pass
         "Voltar":
-            jump dia2_cena2_escolha
-
-     
+            jump dia2_cena1_escolhas
 
     felix "Pobrezinha, ela provavelmente não aguentou a pressão"
-    feliz "mas por que ela faria isso, porque ela não esperou?"
+    felix "mas por que ela faria isso, porque ela não esperou?"
 
     me "Ela parecia estar bem desesperada ontem, mas e se ela foi assassinada?"
 
@@ -122,7 +119,7 @@ label dia1_cena1_direita:
     me "Que seria?"
 
     clint "Ela foi perfurada 17 vezes, mas todos de um modo totalmente desesperado e amador"
-    clin "O que indica que ou o assassino é muito desleixado ou ela se matou"
+    clint "O que indica que ou o assassino é muito desleixado ou ela se matou"
 
     me "Pelo que o Vince disse é mais provável que ela tenha sido assassinada"
 
@@ -132,7 +129,7 @@ label dia1_cena1_direita:
     aisha "Uma pena que as coisas chegaram a esse ponto, ela foi indiscutivelmente assassinada"
     aisha "Mas a morte dela me indicou algumas pontas soltas"    
 
-    aisha"Primeiro que ela provavelmente foi forçada a fazer esse ato"
+    aisha "Primeiro que ela provavelmente foi forçada a fazer esse ato"
     aisha "E considerando as pequenas manchas no chão tinha mais alguém"
     aisha "Um detalhe pequeno que o Clint falhou em notar"
 
@@ -144,13 +141,13 @@ label dia1_cena1_direita:
 
     aisha "É simples, diferente de qualquer um aqui eu notei o formato da sola"
 
-     menu:
+    menu:
         "Voltar":
-            jump dia2_cena2_escolhas
+            jump dia2_cena1_escolhas
 
     return
 
-label dia1_cena1_centro:
+label dia2_cena1_centro:
     scene bg sala_recreacao with dissolve
     menu:
         "[my_name] chega em uma sala de recreação onde aqui estão [joana], [nina] e [mitchell]"
@@ -158,7 +155,7 @@ label dia1_cena1_centro:
         "Falar com um deles":
             pass
         "Voltar":
-            jump dia2_cena2_escolhas
+            jump dia2_cena1_escolhas
 
 
     "Nina tá bem abalada, e a Joana felizmente está consolando ela"
@@ -189,59 +186,58 @@ label dia1_cena1_centro:
 
     menu:
         "Voltar":
-            jump dia2_cena2_escolhas
+            jump dia2_cena1_escolhas
 
     return
 
-label dia1_cena1_esquerda:
+label dia2_cena1_esquerda:
     menu:
         "Posso ir há biblioteca ou a quadra."
 
         "Biblioteca":
-            jump dia1_cena1_biblioteca
+            jump dia2_cena1_biblioteca
         "Quadra":
-            jump dia1_cena1_quadra
+            jump dia2_cena1_quadra
         "Voltar":
-            jump dia1_cena1_escolhas
+            jump dia2_cena1_escolhas
 
 
-label dia1_cena1_biblioteca:
+label dia2_cena1_biblioteca:
     scene bg biblioteca with dissolve
 
     "[sofia] e [thiago] estao na biblioteca."
 
-
-    sofía "Livros estúpidos, livros inúteis"
+    sofia "Livros estúpidos, livros inúteis"
 
     "A Contadora está lendo e jogando vários livros no chão ao ponto de formar uma pilha" 
     "eu consigo ver que são vários livros de investigação ou detetives"  
 
     me "Contadora, você não descobriu nada pelo que posso ver"
 
-    sofía "E o que isso deveria significar!"
+    sofia "E o que isso deveria significar!"
 
     me "É que você tá jogando vários livros no chão"
 
-    sofía "Ah sim, é que esses livros são todos inúteis"
+    sofia "Ah sim, é que esses livros são todos inúteis"
 
     me "Por que?"
 
-    sofía "Porque são todos livros infantis" 
+    sofia "Porque são todos livros infantis" 
     sofia "E romances policiais tão exagerados que é óbvio que nada disso funciona na realidade"
 
-    sofía "O que não serve de nada em um lugar onde temos que investigar assassinos"
+    sofia "O que não serve de nada em um lugar onde temos que investigar assassinos"
 
     me "Você tem uma ideia sobre o assassino?"
 
-    sofía "Mas é claro, esse assassino é tão ignorante ao acreditar que eu não saberia o quão óbvio"
+    sofia "Mas é claro, esse assassino é tão ignorante ao acreditar que eu não saberia o quão óbvio"
     sofia "E o crime dele"
 
-    sofía "O assassino claramente forçou ela a se matar"
+    sofia "O assassino claramente forçou ela a se matar"
     sofia "Colocando contra a parede onde ela não tinha escolha"
 
     me "Você definitivamente está bem determinada a encontrar ele, mais que todo mundo"
 
-    sofía "Pode apostar que eu estou, nenhum assassino estúpido vai me enganar"
+    sofia "Pode apostar que eu estou, nenhum assassino estúpido vai me enganar"
 
     thiago "Como vai meu caro companheiro Espectador!"
 
@@ -260,16 +256,16 @@ label dia1_cena1_biblioteca:
 
     menu:
         "Voltar":
-            jump dia2_cena2_escolhas
+            jump dia2_cena1_escolhas
 
     return
 
-label dia2_cena2_quarto:
+label dia2_cena1_quarto:
     scene bg quarto
     menu:
         "Dormir":
             pass
         "Voltar":
-            jump dia2_cena2_escolhas
+            jump dia2_cena1_escolhas
     
     return
