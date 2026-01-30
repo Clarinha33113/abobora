@@ -281,6 +281,14 @@ label dia1_cena1_centro:
 label dia1_cena1_direita:
     scene bg cozinha_torre with dissolve
 
+    menu:
+        "[aisha] e [nina] estão na cozinha."
+
+        "Falar com elas":
+            pass
+        "Voltar":
+            jump dia1_cena1_escolhas
+
     show aisha normal
     "[aisha] Não fala nada e olha julgando."
 
