@@ -483,5 +483,4 @@ label dia1_cena1_quarto:
 
     "Mas eu já não tenho mais energia para pensar nisso"
 
-    return
-
+    jump dia2_start
