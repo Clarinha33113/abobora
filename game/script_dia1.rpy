@@ -151,13 +151,13 @@ label dia1_cena1_escolhas:
     menu:
         me "Para onde vou?"
 
-        "centro":
+        "Centro":
             jump dia1_cena1_centro
-        "direita":
+        "Direita":
             jump dia1_cena1_direita
-        "esquerda":
+        "Esquerda":
             jump dia1_cena1_esquerda
-        "quarto":
+        "Quarto":
             jump dia1_cena1_quarto
 
     return
@@ -393,7 +393,6 @@ label dia1_cena1_biblioteca:
             jump dia1_cena1_esquerda
 
 
-# XXX: Mitchel ta na quadra ou no quarto?
 label dia1_cena1_quadra:
     scene bg quadra with dissolve
     "[joana] e [mitchell] estão na quadra."
