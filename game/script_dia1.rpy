@@ -83,11 +83,13 @@ label dia1_start:
     hide vince normal
 
     scene bg tudo_vermelho_lmao with dissolve
+    show vince emo_idk
 
     show text "{b}Um de vocês precisa se tornar o assassino perfeito.{/b}" with Pause(4)
 
     # vince "{b}Um de vocês precisa se tornar o assassino perfeito.{/b}"
 
+    hide vince emo_sla
     scene bg tribunal with dissolve
 
     show vince normal
