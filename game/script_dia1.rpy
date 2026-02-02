@@ -116,7 +116,7 @@ label dia1_start:
 
     hide clint normal
     show thiago normal
-    thiago "E Eu sou {b}O [thiago]{/b}!"
+    thiago "E Eu sou {b}O Magnífico [thiago]{/b}!"
 
     hide thiago normal
     show minato normal
@@ -186,7 +186,7 @@ label dia1_cena1_centro:
 
     me "Sim ele é, me diga o que achou do tal [vince]?"
 
-    thiago "“Sinceramente, ele é meio bizarro… e peculiar demais"
+    thiago "Sinceramente, ele é meio bizarro… e peculiar demais"
 
     thiago "Mas, para um anfitrião, até tem um bom jeito de apresentar as coisas"
 
@@ -198,9 +198,7 @@ label dia1_cena1_centro:
 
     thiago "Todo esse branco ao redor dá dor de cabeça"
 
-    thiago "Os móveis até são bons, charmosos ao seu próprio modo…"
-
-    "mas, se dependesse de mim, eu não ficaria nesse lugar."
+    thiago "Os móveis até são bons, charmosos ao seu próprio modo... Mas, se dependesse de mim, eu não ficaria nesse lugar."
 
     me "Obrigado por compartilhar sua opinião."
 
@@ -209,7 +207,7 @@ label dia1_cena1_centro:
 
     "Ele parece um cara legal, mas eu tô com uma sensação estranha relacionada a ele."
 
-    show sofia normal
+    show sofia irritada
     sofia "O que tá olhando?"
 
     me "Nada, eu só queria perguntar sua opinião sobre o [vince]"
@@ -228,13 +226,13 @@ label dia1_cena1_centro:
 
     sofia "Só alguém com mau gosto gostaria dessa espelunca"
 
-    sofia "Não há cores — tudo é tão artificial."
+    sofia "Não há cores. Tudo é tão artificial."
     
     me "Obrigado por compartilhar sua opinião"
 
     sofia "Tanto faz só saia da minha frente se não for pedir muito."
 
-    hide sofia normal
+    hide sofia irritada
 
     "Já vejo que ela será bem desagradável e difícil de lidar, tomara que eu não tenha que enfrentar ela."
 
