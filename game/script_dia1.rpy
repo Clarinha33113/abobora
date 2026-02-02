@@ -279,7 +279,7 @@ label dia1_diana:
 
 
 label dia1_cozinha:
-    scene bg cozinha_torre with dissolve
+    scene bg cozinha with dissolve
 
     if first_time_cozinha:
         "[aisha] e [nina] estão na cozinha."

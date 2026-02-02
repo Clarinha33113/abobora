@@ -22,9 +22,7 @@ label prologo_start:
 
     me "Esse corredor longo e escuro... Logo será esquecido, como tudo o que veio antes. Pois na luz a minha manhã de mais um dia começa."
 
-    # Ele na cozinha
-
-    scene bg cozinha with dissolve
+    scene bg cozinha_prologo with dissolve
 
     show minato normal
 
