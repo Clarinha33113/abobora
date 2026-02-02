@@ -1,4 +1,6 @@
+
 label dia1_start:
+    $ dia = 1
     scene black with dissolve
     show text "Dia 1" with Pause(2)
     scene black with dissolve
@@ -144,39 +146,32 @@ label dia1_start:
 
     hide diana normal
 
-    # XXX: precisa de uma transição melhor aqui
-
-    jump dia1_cena1_escolhas
-
-
-label dia1_cena1_escolhas:
-    scene bg tribunal with dissolve
-
-    menu:
-        me "Para onde vou?"
-
-        "Centro":
-            jump dia1_cena1_centro
-        "Direita":
-            jump dia1_cena1_direita
-        "Esquerda":
-            jump dia1_cena1_esquerda
-        "Quarto":
-            jump dia1_cena1_quarto
-
-    return
+    show vince normal
+    vince "Bom, bom. Estão dispensados por agora." # pulled that outta my ass
+    jump escolhas_tribunal
 
 
-label dia1_cena1_centro:
+label dia1_sala_recreacao:
     scene bg sala_recreacao with dissolve
+    if first_time_sala_recreacao:
+        "[my_name] chega em uma sala de recreação onde estão [thiago], [sofia], [clint] e [diana]"
+        $ first_time_sala_recreacao = False
+
     menu:
-        "[my_name] chega em uma sala de recreação onde aqui estão [thiago], [sofia], [clint] e [diana]"
+        "Falar com alguém?"
 
-        "Falar com um deles":
-            pass
+        "[thiago]":
+            jump dia1_thiago
+        "[sofia]":
+            jump dia1_sofia
+        "[clint]":
+            jump dia1_clint
+        "[diana]":
+            jump dia1_diana
         "Voltar":
-            jump dia1_cena1_escolhas
+            jump escolhas_tribunal
 
+label dia1_thiago:
     show thiago normal
     thiago "Ola meu caro [minato]"
 
@@ -207,6 +202,9 @@ label dia1_cena1_centro:
 
     "Ele parece um cara legal, mas eu tô com uma sensação estranha relacionada a ele."
 
+    jump dia1_sala_recreacao
+
+label dia1_sofia:
     show sofia irritada
     sofia "O que tá olhando?"
 
@@ -236,6 +234,9 @@ label dia1_cena1_centro:
 
     "Já vejo que ela será bem desagradável e difícil de lidar, tomara que eu não tenha que enfrentar ela."
 
+    jump dia1_sala_recreacao
+
+label dia1_clint:
     show clint normal
     clint "Como vai amigo?"
 
@@ -264,31 +265,37 @@ label dia1_cena1_centro:
     clint "Não a de que."
     hide clint normal
 
-    "Esse [clint], parece ser um cara legal, e ele tem um ponto válido"
+    "Esse [clint], parece ser um cara legal, e ele tem um ponto válido."
 
+    jump dia1_sala_recreacao
+
+label dia1_diana:
     show diana assustada
     "Quando tentei me aproximar da [diana], ela se encolheu no canto"
 
     "Coitada… deve estar em choque, mais do que qualquer um aqui."
 
-    menu:
-        "Voltar":
-            jump dia1_cena1_escolhas
-
-    return
+    jump dia1_sala_recreacao
 
 
-label dia1_cena1_direita:
+label dia1_cozinha:
     scene bg cozinha_torre with dissolve
 
-    menu:
+    if first_time_cozinha:
         "[aisha] e [nina] estão na cozinha."
+        $ first_time_cozinha = False
 
-        "Falar com elas":
-            pass
+    menu:
+        "Com quem falar?"
+
+        "[aisha]":
+            jump dia1_aisha
+        "[nina]":
+            jump dia1_nina
         "Voltar":
-            jump dia1_cena1_escolhas
+            jump escolhas_tribunal
 
+label dia1_aisha:
     show aisha normal
     "[aisha] Não fala nada e olha julgando."
 
@@ -318,6 +325,9 @@ label dia1_cena1_direita:
 
     "Ela é bem intimidadora, eu nem sei se devo confiar nela ou não"
 
+    jump dia1_cozinha
+
+label dia1_nina:
     show nina normal
 
     nina "Olá, posso te ajudar com algo?" 
@@ -346,41 +356,31 @@ label dia1_cena1_direita:
 
     "Ela é uma pessoa amável, só espero que esse lugar não a maltrate"
 
-    menu:
-        "Voltar":
-            jump dia1_cena1_escolhas
+    jump dia1_cozinha
 
 
-label dia1_cena1_esquerda:
-    menu:
-        "Posso ir há biblioteca ou a quadra."
-
-        "Biblioteca":
-            jump dia1_cena1_biblioteca
-        "Quadra":
-            jump dia1_cena1_quadra
-        "Voltar":
-            jump dia1_cena1_escolhas
-
-
-label dia1_cena1_biblioteca:
+label dia1_biblioteca:
     scene bg biblioteca with dissolve
+    menu:
+        "[felix] está na biblioteca."
 
-    "[felix] está na biblioteca."
+        "Falar com ele":
+            jump dia1_felix
+        "Voltar":
+            jump escolhas_corredor
 
+label dia1_felix:
     show felix normal
 
-    felix "Oi Amigo precisa de ajuda?" 
+    felix "Oi amigo precisa de ajuda?"
 
-    me "Não exatamente, eu queria perguntar sua opinião sobre o [vince]?" 
+    me "Não exatamente, eu queria perguntar sua opinião sobre o [vince]?"
 
-    felix "Aquele gato é estranho" 
+    felix "Aquele gato é estranho"
 
     felix "Bizarro demais"
 
-    felix "Ele não vai nos deixar ir"
-
-    felix "Se houver saída"
+    felix "Ele não vai nos deixar ir se houver saída"
 
     me "E quanto a esse lugar?"  
 
@@ -394,19 +394,30 @@ label dia1_cena1_biblioteca:
 
     felix "Não a de que, sempre que precisar de ajuda é só pedir"
 
-    "Ele parece ser legal, apesar disso espero que aquele gato bizarro nos deixe sair"
-
     hide felix normal
 
-    menu:
-        "Voltar":
-            jump dia1_cena1_esquerda
+    "Ele parece ser legal, apesar disso espero que aquele gato bizarro nos deixe sair"
+
+    jump escolhas_corredor
 
 
-label dia1_cena1_quadra:
+label dia1_quadra:
     scene bg quadra with dissolve
-    "[joana] e [mitchell] estão na quadra."
+    if first_time_quadra:
+        "[joana] e [mitchell] estão na quadra."
+        $ first_time_quadra = False
 
+    menu:
+        "Com quem falar?"
+
+        "[joana]":
+            jump dia1_joana
+        "[mitchell]":
+            jump dia1_mitchell
+        "Voltar":
+            jump escolhas_corredor
+
+label dia1_joana:
     show joana normal
     joana "Como vai [minato], quer treinar comigo?" 
 
@@ -432,6 +443,9 @@ label dia1_cena1_quadra:
 
     "Ela é bem diferente dos outros, parece ser a única que permaneceu calma, e quem sabe as razões dela..."
 
+    jump dia1_quadra
+
+label dia1_mitchell:
     "[mitchell] está dançando passos bem familiares por algum motivo"
 
     show mitchell normal
@@ -453,19 +467,17 @@ label dia1_cena1_quadra:
     hide mitchell normal
 
     "Esse cara é um tanto peculiar, é difícil saber se ele é confiável ou não."
-    
-    menu:
-        "Voltar":
-            jump dia1_cena1_esquerda
+
+    jump dia1_quadra
 
 
-label dia1_cena1_quarto:
-    scene bg quarto
+label dia1_quarto:
+    scene bg quarto with dissolve
     menu:
         "Dormir":
             pass
         "Voltar":
-            jump dia1_cena1_escolhas
+            jump escolhas_tribunal
 
     me "Meu pior momento chegou"
 

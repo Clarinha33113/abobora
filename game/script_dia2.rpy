@@ -1,11 +1,14 @@
 label dia2_start:
+    $ first_time_sala_recreacao = first_time_cozinha = True
+    $ first_time_quadra = first_time_biblioteca = True
+    $ dia = 2
     scene black with dissolve
     show text "Dia 2" with Pause(2)
     scene black with dissolve
 
-    me "Essa noite foi diferente.Não tive aquele sonho.Em vez disso, vi uma garota assustada"
-    
-    me "À sua frente, havia uma figura…parecia ter controle sobre ela,fazendo-a tirar a própria vida"
+    me "Essa noite foi diferente. Não tive aquele sonho.Em vez disso, vi uma garota assustada"
+
+    me "À sua frente, havia uma figura... parecia ter controle sobre ela, fazendo-a tirar a própria vida"
 
     scene bg cozinha_torre with dissolve
 
@@ -52,13 +55,11 @@ label dia2_start:
     show vince normal
 
     vince "Regras são regras."
-    vince "Agora vocês têm a manhã para descobrir quem é o assassino"
-    vince "e se conseguirem vocês avançam para o próximo nível."
+    vince "Agora vocês têm a manhã para descobrir quem é o assassino, e se conseguirem vocês avançam para o próximo nível."
 
     vince "Mas se falharem escolhendo a pessoa errada..."
 
     hide vince normal
-
     scene bg tudo_vermelho_lmao with dissolve
     show vince emo_idk
 
@@ -71,36 +72,28 @@ label dia2_start:
 
     vince "Agora vocês estão dispensados."
 
-    jump dia2_cena1_escolhas
+    jump escolhas_tribunal
 
-label dia2_cena1_escolhas:
-    scene bg tribunal with dissolve
 
-    menu:
-        me "Para onde vou?"
-
-        "Direta":
-            jump dia2_cena1_direita
-        "Centro":
-            jump dia2_cena1_centro
-        "Esquerda":
-            jump dia2_cena1_esquerda
-        "Quarto":
-            jump dia2_cena1_quarto
-
-    return
-
-label dia2_cena1_direita:
+label dia2_cozinha:
     scene bg cozinha_torre with dissolve
+    if first_time_cozinha:
+        "[clint], [felix] e [aisha] estão na cozinha."
+        $ first_time_cozinha = False
 
     menu:
-        "[clint], [felix] e [aisha] estão na cozinha."
+        "Falar com um deles?"
 
-        "Falar com eles":
-            pass
+        "[clint]":
+            jump dia2_clint
+        "[felix]":
+            jump dia2_felix
+        "[aisha]":
+            jump dia2_aisha
         "Voltar":
-            jump dia2_cena1_escolhas
+            jump escolhas_tribunal
 
+label dia2_felix:
     show felix pensativo
     felix "Pobrezinha, ela provavelmente não aguentou a pressão"
     felix "mas por que ela faria isso, porque ela não esperou?"
@@ -125,7 +118,9 @@ label dia2_cena1_direita:
 
     hide felix pensativo
     # transição????
+    jump dia2_cozinha
 
+label dia2_clint:
     show clint feliz
     clint "Olá [minato], eu estava analisando o cadáver dela, e percebi um detalhe relevante"
 
@@ -149,7 +144,9 @@ label dia2_cena1_direita:
     hide clint normal
 
     # TRANSIÇÃO??????????
+    jump dia2_cozinha
 
+label dia2_aisha:
     show aisha pensativa
     aisha "Uma pena que as coisas chegaram a esse ponto, ela foi indiscutivelmente assassinada"
     aisha "Mas a morte dela me indicou algumas pontas soltas"    
@@ -175,26 +172,32 @@ label dia2_cena1_direita:
     aisha "É simples, diferente de qualquer um aqui eu notei o formato da sola"
 
     # ......
+    jump dia2_cozinha
 
-    menu:
-        "Voltar":
-            jump dia2_cena1_escolhas
 
-    return
-
-label dia2_cena1_centro:
+label dia2_sala_recreacao:
     scene bg sala_recreacao with dissolve
+    if first_time_sala_recreacao:
+        "[my_name] chega na sala de recreação onde aqui estão [joana], [nina] e [mitchell]"
+        $ first_time_sala_recreacao = False
+
     menu:
-        "[my_name] chega em uma sala de recreação onde aqui estão [joana], [nina] e [mitchell]"
+        "Falar com um deles?"
 
-        "Falar com um deles":
-            pass
+        "[joana]":
+            jump dia2_joana
+        "[nina]":
+            jump dia2_nina
+        "[mitchell]":
+            jump dia2_mitchell
         "Voltar":
-            jump dia2_cena1_escolhas
+            jump escolhas_tribunal
 
+label dia2_nina:
+    "[nina] tá bem abalada, e a [joana] felizmente está consolando ela"
+    jump dia2_sala_recreacao
 
-    # "Nina tá bem abalada, e a Joana felizmente está consolando ela"
-
+label dia2_joana:
     show joana normal
     joana "Olá [minato], veio ver a [nina]?"
 
@@ -218,9 +221,9 @@ label dia2_cena1_centro:
     joana "Por favor faça isso"
 
     hide joana normal
+    jump dia2_sala_recreacao
 
-    # transição........
-
+label dia2_mitchell:
     show mitchell normal
     mitchell "E ai [minato] tá investigando a garota morta?"
 
@@ -240,34 +243,26 @@ label dia2_cena1_centro:
     show mitchell normal
     mitchell "Mas é claro, se o assassino vir atrás de mim eu vou arrebentar a cara dele com os meus passos"
 
-    # TRANSIÇÃOOOOOOOOOOOOOOOOOO
-    menu:
-        "Voltar":
-            jump dia2_cena1_escolhas
-
-    return
-
-label dia2_cena1_esquerda:
-    menu:
-        "Posso ir há biblioteca ou a quadra."
-
-        "Biblioteca":
-            jump dia2_cena1_biblioteca
-        "Voltar":
-            jump dia2_cena1_escolhas
+    jump dia2_sala_recreacao
 
 
-label dia2_cena1_biblioteca:
+label dia2_biblioteca:
     scene bg biblioteca with dissolve
+    if first_time_biblioteca:
+        "[sofia] e [thiago] estão na biblioteca."
+        $ first_time_biblioteca = False
 
     menu:
-        "[sofia] e [thiago] estão na biblioteca."
+        "Com quem falar?"
 
-        "Falar com eles":
-            pass
+        "[sofia]":
+            jump dia2_sofia
+        "[thiago]":
+            jump dia2_thiago
         "Voltar":
-            jump dia2_cena1_esquerda
+            jump escolhas_corredor
 
+label dia2_sofia:
     show sofia irritada
     sofia "Livros estúpidos, livros inúteis"
 
@@ -320,18 +315,20 @@ label dia2_cena1_biblioteca:
     hide sofia normal
 
     # TRANSIÇÃOOOOOOOOOOOOOOOOOOAAAAAAAAAAAAAAAAAASLFAKOHIHFLKASFHJKASLHJKZNV<U(@Q)THPQOWQHFASOHFAPOHOIHOGOIWF
+    jump dia2_biblioteca
 
+label dia2_thiago:
     show thiago normal
     thiago "Como vai meu caro companheiro [minato]!"
 
     hide thiago normal
     show minato normal
-    me "Bem, o que tá fazendo só olhando as prateleiras?"
+    me "Bem, o que tá fazendo? Só olhando as prateleiras?"
 
     hide minato normal
     show thiago normal
-    thiago "Mas é claro que não" # ???????????
-    thiago "eu estava procurando alguma boa leitura que auxilie todos nós nesta investigação."
+    thiago "Mas é claro que não"
+    thiago "Eu estava procurando alguma boa leitura que auxilie todos nós nesta investigação."
 
     hide thiago normal
     show minato normal
@@ -344,25 +341,25 @@ label dia2_cena1_biblioteca:
     hide thiago normal
 
     me "Isso foi estranho"
-    # "Última opção é voltar ao quarto para esperar o horário do tribunal"
+    jump dia2_biblioteca
 
-    menu:
-        "Voltar":
-            jump dia2_cena1_escolhas
 
-    return
+label dia2_quadra:
+    scene bg quadra with dissolve
+    "Não há ninguém aqui."
+    jump escolhas_corredor
 
 
 label dia2_cena1_quarto:
-    scene bg quarto
+    scene bg quarto with dissolve
 
     me "É melhor eu descansar por enquanto, pois logo terei que garantir que o real culpado seja descoberto, ou eu e todos vamos morrer..."
     me "Pelo menos eu sei que o culpado é capaz de intimidar alguém, manipular ou controlar."
 
-    jump dia2_cena2_tribunal
+    jump dia2_tribunal
 
 
-label dia2_cena2_tribunal:
+label dia2_tribunal:
     scene black with dissolve
     show text "Tribunal" with Pause(2)
     scene black with dissolve
