@@ -156,7 +156,7 @@ label dia2_cena1_direita:
 
     aisha "Primeiro que ela provavelmente foi forçada a fazer esse ato"
     aisha "E considerando as pequenas manchas no chão tinha mais alguém"
-    aisha "Um detalhe pequeno que o Clint falhou em notar"
+    aisha "Um detalhe pequeno que o [clint] falhou em notar"
 
     hide aisha pensativa
     show minato normal
@@ -372,7 +372,7 @@ label dia2_cena2_tribunal:
 
     "Todos são teletransportado até o tribunal"
 
-    # som de alguém caindo
+    # som do minato caindo
 
     me "Eu acho que nunca vou me acostumar com essa droga de teletransporte."
 
