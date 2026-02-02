@@ -156,7 +156,7 @@ label dia2_cena1_direita:
 
     aisha "Primeiro que ela provavelmente foi forçada a fazer esse ato"
     aisha "E considerando as pequenas manchas no chão tinha mais alguém"
-    aisha "Um detalhe pequeno que o [clint] falhou em notar"
+    aisha "Um detalhe pequeno que o Clint falhou em notar"
 
     hide aisha pensativa
     show minato normal
@@ -253,8 +253,6 @@ label dia2_cena1_esquerda:
 
         "Biblioteca":
             jump dia2_cena1_biblioteca
-        "Quadra":
-            jump dia2_cena1_quadra
         "Voltar":
             jump dia2_cena1_escolhas
 
@@ -354,6 +352,7 @@ label dia2_cena1_biblioteca:
 
     return
 
+
 label dia2_cena1_quarto:
     scene bg quarto
 
@@ -370,9 +369,9 @@ label dia2_cena2_tribunal:
 
     scene bg tribunal with dissolve
 
-    "Todos são teletransportados ao tribunal"
+    "Todos são teletransportado até o tribunal"
 
-    # som do minato caindo
+    # som de alguém caindo
 
     me "Eu acho que nunca vou me acostumar com essa droga de teletransporte."
 
