@@ -54,13 +54,16 @@ label prologo_start:
 
     "[my_name] encontrou uma carta peculiar, o símbolo era desconhecido para ele, apesar disso ele abre a carta e lê:"
 
-    "{i}Prezado(a) [my_name]{/i}"
+    show carta1
+    ""
+    hide carta1
 
+    # "{i}Prezado(a) [my_name]{/i}"
+
+    # "[my_name] vê três passagens para um belo campo florido com um rio, um lugar que lembrava tranquilidade para ele."
     # Talvez mostrar uma imagem com as passagens na tela também?
 
-    "[my_name] vê três passagens para um belo campo florido com um rio, um lugar que lembrava tranquilidade para ele."
-
-    "{i}Gostaríamos de parabenizá-lo por ter sido selecionado para uma viajem com tudo pago para um lugar especial, para você e sua família descansarem, basta apenas assinar essa carta e poderá usar essas passagens.{/i}"
+    # "{i}Gostaríamos de parabenizá-lo por ter sido selecionado para uma viajem com tudo pago para um lugar especial, para você e sua família descansarem, basta apenas assinar essa carta e poderá usar essas passagens.{/i}"
 
     me "Isso é estranho, as passagens são verdadeiras, e as férias de verão estão logo ai, o vovô e a vovó vão gostar, e isso deve ser daquele sorteio nacional."
 

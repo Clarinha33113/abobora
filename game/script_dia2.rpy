@@ -205,7 +205,13 @@ label dia2_cena1_esquerda:
 label dia2_cena1_biblioteca:
     scene bg biblioteca with dissolve
 
-    "[sofia] e [thiago] estao na biblioteca."
+    menu:
+        "[sofia] e [thiago] estão na biblioteca."
+
+        "Falar com eles":
+            pass
+        "Voltar":
+            jump dia2_cena1_esquerda
 
     sofia "Livros estúpidos, livros inúteis"
 

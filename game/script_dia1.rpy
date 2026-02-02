@@ -50,12 +50,14 @@ label dia1_start:
 
     "Assim todos pegam as cartas e começam a ler."
 
-    # XXX: Mostrar imagem da carta aqui
-
     me "Parece que coisas foram adicionadas a carta, ou sempre estiveram lá?"
 
-    "{i}Gostaríamos de parabenizá-lo por ter sido selecionado para uma viajem com tudo pago para um lugar especial, o Tribunal da Torre dos Desejos.{/i}"
-    "{i}Onde nós não nos responsabilizados por qualquer morte, para você e sua consciência lutarem pelos seu desejo, basta apenas assinar essa carta e poderá participar.{/i}"
+    show carta2
+    ""
+    hide carta2
+
+    # "{i}Gostaríamos de parabenizá-lo por ter sido selecionado para uma viajem com tudo pago para um lugar especial, o Tribunal da Torre dos Desejos.{/i}"
+    # "{i}Onde nós não nos responsabilizados por qualquer morte, para você e sua consciência lutarem pelos seu desejo, basta apenas assinar essa carta e poderá participar.{/i}"
 
     show minato pensativo
     me "Claro. O sorteio grátis que parecia bom demais para ser verdade agora envolve assassinatos e desejos mágicos. Por que eu não joguei aquela carta no lixo?"
