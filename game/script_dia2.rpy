@@ -370,7 +370,7 @@ label dia2_cena2_tribunal:
 
     scene bg tribunal with dissolve
 
-    "Todos são teletransportado até o tribunal"
+    "Todos são teletransportados ao tribunal"
 
     # som do minato caindo
 
