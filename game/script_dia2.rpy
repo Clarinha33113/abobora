@@ -379,4 +379,95 @@ label dia2_cena2_tribunal:
     show vince normal
     vince "Senhoras e senhores sejam bem-vindos ao primeiro caso da 21° edição do tribunal do desejo, e eu serei o grande apresentador e juiz."
 
+    vince "Agora vocês todos deverão apresentar todas as provas coletas!"
+    vince "Que tenha justiça neste tribunal!"
+
+    hide vince normal
+
+    "Todos estão cruzando olhares, o clima está se transformando muito rápido."
+
+    show clint normal
+
+    clint "Eu tenho algumas."
+
+    clint "Eu estive analisando os cortes, e posso confirmar pela minha experiência, que ela de fato se matou."
+
+    clint "Dá pra saber disso pelos cortes totalmente amadores e desesperados, eu também descobri pela expressão dela e alguns outros detalhes, como ela morreu."
+
+    clint "Ela estava vendo ou ouvindo algo tão horrível que a forçou a cometer esse ato, deu pra saber disso pelas pegadas dela."
+
+    hide clint normal
+    show aisha normal
+
+    aisha "Eu descobri pegadas do assassino, pequenas mas ainda sim foi simples saber, que ele usava sapatos, além disso eu falei com todos aqui."
+
+    aisha "A [joana] me disse que ouviu barulhos estranhos à noite, e mais um detalhe importante."
+
+    hide aisha normal
+    show joana normal
+
+    joana "Sim eu ouvi sons estranhos, eu estava acordada para tomar um pouco de água, eu ia entrar na cozinha, mas voltei quando eu vi uma figura robusta, fazendo movimentos estranhos para uma figura magra."
+
+    joana "Provavelmente a [diana]."
+
+    hide joana normal
+    show thiago normal
+
+    thiago "Isso é meio vago, alguém descobriu mais alguma coisa?"
+
+    hide thiago normal
+
+    "Todos aqueles que não falaram fizeram gestos que indicam que eles não tem mais informações."
+
+    show sofia normal
+    sofia "Eu posso não ter descoberto mais nada, mas com minhas habilidades de dedução, posso dizer que o culpado é."
+    sofia "O [thiago]!!"
+
+    hide sofia normal
+    show thiago assustado
+    thiago "Que coisa mais absurda minha dama, você por acaso possui alguma evidência do que afirma?"
+
+    hide thiago assustado
+    show sofia normal
+    sofia "Mais é claro você usa sapatos, e tem cara de quem faria isso, eu sinto isso."
+
+    hide sofia normal
+    show thiago normal
+    thiago "Isso facilmente pode se aplicar a qualquer um, pois pelos mais da metade usa sapatos."
+    thiago "Além do mais qualquer um poderia ter pego um casaco para se ocultar."
+
+    hide thiago normal
+    show clint normal
+    clint "Infelizmente ele tem um ponto, qualquer um poderia ter feito isso."
+
+    hide clint normal
+    show felix normal
+    felix "De fato."
+
+    hide felix normal
+
+    me "As discussões estão aumentando, se continuar assim todos vamos morrer, é melhor eu fazer algo... Quem poderia ser?"
+
+    menu:
+        "Quem deseja acusar?"
+
+        "[clint]":
+            pass
+        "[aisha]":
+            pass
+        "[sofia]":
+            pass
+        "[thiago]":
+            pass
+        "[mitchell]":
+            pass
+        "[nina]":
+            pass
+        "[felix]":
+            pass
+        "[joana]":
+            pass
+        "[diana]":
+            pass
+
     return
