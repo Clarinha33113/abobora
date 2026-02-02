@@ -293,7 +293,7 @@ label dia2_cena1_biblioteca:
 
     hide sofia irritada
     show minato normal
-    me "Por que?"
+    me "Por quê?"
 
     hide minato normal
     show sofia irritada
