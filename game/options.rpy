@@ -30,6 +30,7 @@ define config.version = "1.0"
 ## triplas e deixe uma linha em branco entre os parágrafos.
 
 define gui.about = _p("""
+Demo visual novel da SWTV.
 """)
 
 
@@ -48,7 +49,7 @@ define build.name = "tribunal_mortal"
 
 define config.has_sound = True
 define config.has_music = True
-define config.has_voice = True
+define config.has_voice = False
 
 
 ## Para permitir que o usuário reproduza um som de teste no canal de som ou
