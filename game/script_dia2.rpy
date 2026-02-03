@@ -6,7 +6,7 @@ label dia2_start:
     show text "Dia 2" with Pause(2)
     scene black with dissolve
 
-    me "Essa noite foi diferente. Não tive aquele sonho.Em vez disso, vi uma garota assustada"
+    me "Essa noite foi diferente. Não tive aquele sonho. Em vez disso, vi uma garota assustada"
 
     me "À sua frente, havia uma figura... parecia ter controle sobre ela, fazendo-a tirar a própria vida"
 
@@ -225,7 +225,7 @@ label dia2_joana:
 
 label dia2_mitchell:
     show mitchell normal
-    mitchell "E ai [minato] tá investigando a garota morta?"
+    mitchell "E ai [minato], tá investigando a garota morta?"
 
     hide mitchell normal
     show minato normal
@@ -281,20 +281,20 @@ label dia2_sofia:
     me "É que você tá jogando vários livros no chão"
 
     hide minato normal
-    show sofia irritada
+    show sofia decepcionada
     sofia "Ah sim, é que esses livros são todos inúteis"
 
-    hide sofia irritada
+    hide sofia decepcionada
     show minato normal
     me "Por quê?"
 
     hide minato normal
-    show sofia irritada
+    show sofia decepcionada
     sofia "Porque são todos livros infantis e romances policiais tão exagerados que é óbvio que nada disso funciona na realidade"
 
     sofia "O que não serve de nada em um lugar onde temos que investigar assassinos"
 
-    hide sofia irritada
+    hide sofia decepcionada
     show minato normal
     me "Você tem uma ideia sobre o assassino?"
 
@@ -336,7 +336,7 @@ label dia2_thiago:
 
     hide minato normal
     show thiago normal
-    thiago "Infelizmente não, mas eu vou continuar não se preocupe meu amigo"
+    thiago "Infelizmente não, mas eu vou continuar, não se preocupe meu amigo."
 
     hide thiago normal
 
@@ -350,7 +350,7 @@ label dia2_quadra:
     jump escolhas_corredor
 
 
-label dia2_cena1_quarto:
+label dia2_quarto:
     scene bg quarto with dissolve
 
     me "É melhor eu descansar por enquanto, pois logo terei que garantir que o real culpado seja descoberto, ou eu e todos vamos morrer..."
@@ -366,14 +366,14 @@ label dia2_tribunal:
 
     scene bg tribunal with dissolve
 
-    "Todos são teletransportado até o tribunal"
+    "Todos são teletransportados ao tribunal"
 
     # som de alguém caindo
 
     me "Eu acho que nunca vou me acostumar com essa droga de teletransporte."
 
     show vince normal
-    vince "Senhoras e senhores sejam bem-vindos ao primeiro caso da 21° edição do tribunal do desejo, e eu serei o grande apresentador e juiz."
+    vince "Senhoras e senhores! Sejam bem-vindos ao primeiro caso da 21° edição do tribunal do desejo, e eu serei o grande apresentador e juiz."
 
     vince "Agora vocês todos deverão apresentar todas as provas coletas!"
     vince "Que tenha justiça neste tribunal!"
@@ -416,8 +416,8 @@ label dia2_tribunal:
     "Todos aqueles que não falaram fizeram gestos que indicam que eles não tem mais informações."
 
     show sofia normal
-    sofia "Eu posso não ter descoberto mais nada, mas com minhas habilidades de dedução, posso dizer que o culpado é."
-    sofia "O [thiago]!!"
+    sofia "Eu posso não ter descoberto mais nada, mas com minhas habilidades de dedução, posso dizer que o culpado é..."
+    sofia "{b}O [thiago]!!{/b}"
 
     hide sofia normal
     show thiago assustado
@@ -425,11 +425,11 @@ label dia2_tribunal:
 
     hide thiago assustado
     show sofia normal
-    sofia "Mais é claro você usa sapatos, e tem cara de quem faria isso, eu sinto isso."
+    sofia "Mas é claro, você usa sapatos, e tem cara de quem faria isso, eu sinto isso."
 
     hide sofia normal
     show thiago normal
-    thiago "Isso facilmente pode se aplicar a qualquer um, pois pelos mais da metade usa sapatos."
+    thiago "Isso facilmente pode se aplicar a qualquer um, pois mais da metade usa sapatos."
     thiago "Além do mais qualquer um poderia ter pego um casaco para se ocultar."
 
     hide thiago normal
@@ -462,8 +462,6 @@ label dia2_tribunal:
         "[felix]":
             pass
         "[joana]":
-            pass
-        "[diana]":
             pass
 
     return

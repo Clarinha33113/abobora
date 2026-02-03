@@ -17,7 +17,7 @@ label dia1_start:
 
     me "Mas o quê?! Por que esse lugar é tão claro?"
 
-    me "Essa sala... Ela é tão estranha, é difícil descrever a sensação de ver que não tem vida ao seu redor, tudo é tão angustiante, e parace ter apenas um caminho."
+    me "Essa sala... Ela é tão estranha, é difícil descrever a sensação de ver que não tem vida ao seu redor, tudo é tão angustiante, e parece ter apenas um caminho."
 
     hide minato assustado
 
@@ -36,7 +36,7 @@ label dia1_start:
     hide vince normal
     show clint normal
 
-    clint "Um tribunal? Estamos sendo julgados por algo? Ou isso é só algum jogo esquisito?"
+    noname "Um tribunal? Estamos sendo julgados por algo? Ou isso é só algum jogo esquisito?"
 
     hide clint normal
     show vince normal
@@ -44,7 +44,7 @@ label dia1_start:
 
     hide vince normal
     show aisha normal
-    aisha "É mesmo, pois isso soa uma ladainha, eu li muito bem a carta, e não tinha nenhum aviso sobre aparecermos nesse tribunal."
+    noname "É mesmo, pois isso soa uma ladainha, eu li muito bem a carta, e não tinha nenhum aviso sobre aparecermos nesse tribunal."
 
     vince "Tem certeza, minha jovem? Olhe direito."
 
@@ -68,20 +68,20 @@ label dia1_start:
     show aisha assustada at left
     show vince normal at right
 
-    aisha "Da para ver que você mudou o conteúdo da carta!"
+    noname "Da para ver que você mudou o conteúdo da carta!"
 
     vince "Você tem como provar esse acusação?"
 
-    aisha "Não, mas que história é essa de desejo."
+    noname "Não, mas que história é essa de desejo?"
 
     vince "Que bom que perguntou. Todos aqui querem ir embora, eu entendo, mas se um de vocês chegar até o final poderão fazer um desejo ao Obelisco."
 
     hide aisha assustada
     show thiago normal at left
 
-    thiago "Qualquer desejo?"
+    noname "Qualquer desejo?"
 
-    vince "Exato qualquer desejo, mas para isso..."
+    vince "Exato. Qualquer desejo, mas para isso..."
 
     hide thiago normal
     hide vince normal
@@ -107,18 +107,17 @@ label dia1_start:
 
     hide aisha normal
     show sofia normal
-
     sofia "E eu sou {b}A [sofia]{/b}."
 
     me "Essa garota fez a mesma pausa, será que somos incapazes de falar nossos nomes?"
 
     hide sofia normal
     show clint normal
-    clint "Eu Me chamo {b}O [clint]{/b}, pessoal."
+    clint "Eu me chamo {b}O [clint]{/b}, pessoal."
 
     hide clint normal
     show thiago normal
-    thiago "E Eu sou {b}O Magnífico [thiago]{/b}!"
+    thiago "E eu sou {b}O Magnífico [thiago]{/b}!"
 
     hide thiago normal
     show minato normal
@@ -130,7 +129,7 @@ label dia1_start:
 
     hide mitchell normal
     show nina normal
-    nina "Olá A todos, sou {b}A [nina]{/b}."
+    nina "Olá a todos, sou {b}A [nina]{/b}."
 
     hide nina normal
     show felix normal
@@ -145,7 +144,6 @@ label dia1_start:
     diana "E eu sou {b}A [diana]{/b}."
 
     hide diana normal
-
     show vince normal
     vince "Bom, bom. Estão dispensados por agora." # pulled that outta my ass
     jump escolhas_tribunal
@@ -246,11 +244,11 @@ label dia1_clint:
 
     me "Talvez para você não ter vantagem sobre os outros"
 
-    clint "É bem provável, ca entre nós esse gato vai provavelmente tentar matar todos nós, igual alguns aqui"
+    clint "É bem provável. Cá entre nós, esse gato vai provavelmente tentar matar todos nós, igual alguns aqui"
 
     me "Tem certeza?"
 
-    clint "“No total, é só olhar para todo mundo"
+    clint "No total, é só olhar para todo mundo"
 
     clint "Alguns aqui já estão cogitando esse desejo"
 
@@ -297,17 +295,17 @@ label dia1_cozinha:
 
 label dia1_aisha:
     show aisha normal
-    "[aisha] Não fala nada e olha julgando."
+    "[aisha] não fala nada e olha julgando."
 
     me "Me desculpa por encomodar [aisha], eu queria te perguntar o que você acha do [vince]?"
 
-    aisha "Aquele gato desprezível e arrogante…teve a coragem de falar isso na nossa cara"
+    aisha "Aquele gato desprezível e arrogante... Teve a coragem de falar isso na nossa cara"
     
     aisha "Disse que aqueles termos sempre estiveram lá"
     
-    aisha "e ainda trouxe essa ideia repugnante de ‘assassino perfeito’"
+    aisha "e ainda trouxe essa ideia repugnante de 'assassino perfeito'"
     
-    aisha "Isso é horrível.Se depender de mim, todos aqui saem."
+    aisha "Isso é horrível. Se depender de mim, todos aqui saem."
 
     me "E o que você acha desse lugar?" 
 
@@ -342,11 +340,9 @@ label dia1_nina:
 
     me "Confeiteira o que você acha desse lugar?" 
 
-    nina "Poderia ser pior.Pelo menos temos uma cozinha"
+    nina "Poderia ser pior. Pelo menos temos uma cozinha"
     
-    nina "Talvez eu possa fazer algo depois"
-    
-    nina "para todo mundo." 
+    nina "Talvez eu possa fazer algo depois para todo mundo." 
 
     me "Isso seria bom, de todo modo obrigado por compartilhar sua opinião"  
 
