@@ -28,8 +28,11 @@ label dia2_acusar_aisha:
         passivo_agressivo = 'Engraçado como tudo soa conveniente demais.'
     )
 
-    # XXX: O jogo precisa lembrar quantas escolhas passivas/agressivas/assertivas/passivo-agressivas o jogador fez aqui
-    # adiciono isso depois (eu juro)
+    call get_most_selected_choice
+
+    # XXX: fazer algo diferente baseado em 'most_often_choice'
+
+    aisha "você escolheu mais comunicação [most_often_choice]!"
 
     return
 

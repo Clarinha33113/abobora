@@ -40,6 +40,11 @@ define communication_style_points = {
     CS_PASSIVO_AGRESSIVO: 0,
 }
 
+# define accused_person = ''
+define current_choices = {}
+define last_picked_choice = ''
+define most_often_choice = ''
+
 define first_time_sala_recreacao = True
 define first_time_cozinha = True
 define first_time_biblioteca = True
@@ -90,7 +95,9 @@ label escolhas_corredor:
 
 
 label escolhas_quem_acusar:
-    $ dialog_count = 0
+    python:
+        current_choices = { CS_PASSIVO: 0, CS_AGRESSIVO: 0, CS_ASSERTIVO: 0, CS_PASSIVO_AGRESSIVO: 0 }
+        dialog_count = 0
     menu:
         "Quem deseja acusar?"
 
@@ -129,7 +136,21 @@ label escolhas_acusar(personagem, passivo, agressivo, assertivo, passivo_agressi
 
 
 label aumentar_ponto(tipo, quantidade = 1):
-    $ communication_style_points[tipo] += quantidade
-    $ dialog_count += 1
+    python:
+        communication_style_points[tipo] += quantidade
+        current_choices[tipo] += quantidade
+        last_picked_choice = tipo
+        dialog_count += 1
+    return
+
+label get_most_selected_choice:
+    python:
+        for key, val in current_choices.items():
+            if val > 1:
+                most_often_choice = key
+                break
+            else:
+                most_often_choice = last_picked_choice
+                break
     return
 

@@ -1,9 +1,6 @@
 
 label dia1_start:
     $ dia = 1
-    $ dialog_count = 0
-    $ first_time_sala_recreacao = first_time_cozinha = True
-    $ first_time_quadra = first_time_biblioteca = True
     scene black with dissolve
     show text "Dia 1" with Pause(2)
     scene black with dissolve
