@@ -1,14 +1,17 @@
 
 label dia2_acusar_aisha:
+    show minato normal
     me "Pessoal, não percebem que essa discussão não está indo a lugar nenhum?"
     me "O verdadeiro culpado está tão claro como esse lugar, claramente foi a [aisha]!"
 
+    hide minato normal
     show aisha assustada
 
     aisha "Sob quais provas você afirma isso, sua afirmação é um completo absurdo, facilmente poderia ser você, só querendo desviar a atenção para mim."
 
     hide aisha assustada
     show aisha normal
+
     call escolhas_acusar(personagem = 'aisha',
         passivo = 'Eu não estou, só tô seguindo um palpite.',
         agressivo = 'Besteira, você é claramente a culpada.',
@@ -20,6 +23,9 @@ label dia2_acusar_aisha:
         agressivo = 'Além da sua atitude, você exala o cheiro da culpa!',
         assertivo = 'Você afirma estar ajudando na investigação, mas o que impede você de ter adulterado as provas.',
         passivo_agressivo = 'Engraçado como tudo soa conveniente demais.')
+
+    # XXX: vai ter mais coisa aqui eu acho
+
     return
 
 
