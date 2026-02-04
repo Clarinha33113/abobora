@@ -12,19 +12,24 @@ label dia2_acusar_aisha:
     hide aisha assustada
     show aisha normal
 
-    call escolhas_acusar(personagem = 'aisha',
+    call escolhas_acusar(
+        personagem = 'aisha',
         passivo = 'Eu não estou, só tô seguindo um palpite.',
         agressivo = 'Besteira, você é claramente a culpada.',
         assertivo = 'Eu não estou tentando desviar a atenção, e eu tenho provas.',
-        passivo_agressivo = 'É mesmo, falou o poço de inocência.')
+        passivo_agressivo = 'É mesmo, falou o poço de inocência.'
+    )
 
-    call escolhas_acusar(personagem = 'aisha',
+    call escolhas_acusar(
+        personagem = 'aisha',
         passivo = 'Eu só estou apontando as inconsistências.',
         agressivo = 'Além da sua atitude, você exala o cheiro da culpa!',
         assertivo = 'Você afirma estar ajudando na investigação, mas o que impede você de ter adulterado as provas.',
-        passivo_agressivo = 'Engraçado como tudo soa conveniente demais.')
+        passivo_agressivo = 'Engraçado como tudo soa conveniente demais.'
+    )
 
-    # XXX: vai ter mais coisa aqui eu acho
+    # XXX: O jogo precisa lembrar quantas escolhas passivas/agressivas/assertivas/passivo-agressivas o jogador fez aqui
+    # adiciono isso depois (eu juro)
 
     return
 
