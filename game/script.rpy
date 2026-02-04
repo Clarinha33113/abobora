@@ -12,6 +12,16 @@ define felix    = Character("Apostador")
 define joana    = Character("Atleta")
 define diana    = Character("Desenhista")
 
+define clint_alive    = True
+define aisha_alive    = True
+define sofia_alive    = True
+define thiago_alive   = True
+define mitchell_alive = True
+define nina_alive     = True
+define felix_alive    = True
+define joana_alive    = True
+define diana_alive    = True
+
 define text_centro   = "Centro"
 define text_direita  = "Direita"
 define text_esquerda = "Esquerda"
@@ -77,6 +87,29 @@ label escolhas_corredor:
             jump expression f"dia{dia}_quadra"
         "Voltar":
             jump escolhas_tribunal
+
+
+label escolhas_quem_acusar:
+    $ dialog_count = 0
+    menu:
+        "Quem deseja acusar?"
+
+        "[clint]" if clint_alive:
+            jump expression f"dia{dia}_acusar_clint"
+        "[aisha]" if aisha_alive:
+            jump expression f"dia{dia}_acusar_aisha"
+        "[sofia]" if sofia_alive:
+            jump expression f"dia{dia}_acusar_sofia"
+        "[thiago]" if thiago_alive:
+            jump expression f"dia{dia}_acusar_thiago"
+        "[mitchell]" if mitchell_alive:
+            jump expression f"dia{dia}_acusar_mitchell"
+        "[nina]" if nina_alive:
+            jump expression f"dia{dia}_acusar_nina"
+        "[felix]" if felix_alive:
+            jump expression f"dia{dia}_acusar_felix"
+        "[joana]" if joana_alive:
+            jump expression f"dia{dia}_acusar_joana"
 
 
 label escolhas_acusar(personagem, passivo, agressivo, assertivo, passivo_agressivo):

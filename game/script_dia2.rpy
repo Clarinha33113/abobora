@@ -1,6 +1,5 @@
 label dia2_start:
     $ dia = 2
-    $ dialog_count = 0
     scene black with dissolve
     show text "Dia 2" with Pause(2)
     scene black with dissolve
@@ -442,49 +441,5 @@ label dia2_tribunal:
     hide felix normal
 
     me "As discussões estão aumentando, se continuar assim todos vamos morrer, é melhor eu fazer algo... Quem poderia ser?"
-
-    menu:
-        "Quem deseja acusar?"
-
-        "[clint]":
-            jump dia2_acusar_clint
-        "[aisha]":
-            jump dia2_acusar_aisha
-        "[sofia]":
-            jump dia2_acusar_sofia
-        "[thiago]":
-            jump dia2_acusar_thiago
-        "[mitchell]":
-            jump dia2_acusar_mitchell
-        "[nina]":
-            jump dia2_acusar_nina
-        "[felix]":
-            jump dia2_acusar_felix
-        "[joana]":
-            jump dia2_acusar_joana
-
-
-label dia2_acusar_sofia:
-    return
-
-
-label dia2_acusar_thiago:
-    return
-
-
-label dia2_acusar_mitchell:
-    return
-
-
-label dia2_acusar_nina:
-    return
-
-
-label dia2_acusar_felix:
-    return
-
-
-label dia2_acusar_joana:
-    return
-
+    jump escolhas_quem_acusar
 

@@ -48,14 +48,26 @@ label dia2_acusar_aisha_passivo_agressivo1:
     return
 
 label dia2_acusar_aisha_passivo2:
+    me "Você não demonstra se importar com ninguém aqui, a [diana] parecia o alvo fácil, e você demonstra saber como orquestrar tudo isso."
+    aisha "Você tá tentando me acusar ou sugerir que eu sou a culpada, me digam vocês todos realmente vão levar ele em consideração."
     return
 
 label dia2_acusar_aisha_agressivo2:
+    me "Você tem tentado agir como uma boa samaritana, mas no fundo só nos vê como peões em um jogo."
+    me "A [diana] era o alvo fácil no seu jogo, para uma governante você tem se esquecido que também pode ser julgada!"
+    aisha "Olhe o tom, você acha mesmo que gritar vai ajudar em algo, não só você não tem provas como sua suposição estava errada."
+    "Todos parecem ficar cada vez mais assustados."
     return
 
 label dia2_acusar_aisha_assertivo2:
+    me "No local do assassinato, você tem o álibi de alguém que gosta de agir sozinha, mas que é plenamente capaz de orquestrar tudo, e com certeza alguém super estima a própria inteligência."
+    aisha "Uma boa suposição, eu quase me senti ameaçada, pena que suas provas sejam tão reais quanto o [clint] é inteligente."
+    "Todos olham para a [aisha] com desconfiança, e o [clint] fixa o olhar nela visivelmente ofendido."
     return
 
 label dia2_acusar_aisha_passivo_agressivo2:
+    me "Mas é claro que a vossa inocente aqui, não tem nada a ver, mais estranho como suas palavras são falsas, você só queria testar o quão burros somos para tentar vencer fácil."
+    aisha "Você chega a ser desprezível com esse sarcasmo, Espectador acha mesmo que vai convencer alguém com essa falsidade?"
+    "Todos me olham, alguns com pena em seu olhar, já outros deixam claro seu desprezo."
     return
 
