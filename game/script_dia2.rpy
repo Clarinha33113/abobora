@@ -1,7 +1,6 @@
 label dia2_start:
-    $ first_time_sala_recreacao = first_time_cozinha = True
-    $ first_time_quadra = first_time_biblioteca = True
     $ dia = 2
+    $ dialog_count = 0
     scene black with dissolve
     show text "Dia 2" with Pause(2)
     scene black with dissolve
@@ -448,20 +447,44 @@ label dia2_tribunal:
         "Quem deseja acusar?"
 
         "[clint]":
-            pass
+            jump dia2_acusar_clint
         "[aisha]":
-            pass
+            jump dia2_acusar_aisha
         "[sofia]":
-            pass
+            jump dia2_acusar_sofia
         "[thiago]":
-            pass
+            jump dia2_acusar_thiago
         "[mitchell]":
-            pass
+            jump dia2_acusar_mitchell
         "[nina]":
-            pass
+            jump dia2_acusar_nina
         "[felix]":
-            pass
+            jump dia2_acusar_felix
         "[joana]":
-            pass
+            jump dia2_acusar_joana
 
+
+label dia2_acusar_sofia:
     return
+
+
+label dia2_acusar_thiago:
+    return
+
+
+label dia2_acusar_mitchell:
+    return
+
+
+label dia2_acusar_nina:
+    return
+
+
+label dia2_acusar_felix:
+    return
+
+
+label dia2_acusar_joana:
+    return
+
+
