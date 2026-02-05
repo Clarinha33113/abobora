@@ -2,7 +2,7 @@
 label dia2_acusar_thiago:
     show minato normal
     me "Pessoal, não percebem que essa discussão não está indo a lugar nenhum?"
-    me "O verdadeiro culpado está tão claro como esse lugar, claramente foi a [thiago]!"
+    me "O verdadeiro culpado está tão claro como esse lugar, claramente foi o [thiago]!"
 
     hide minato normal
     show thiago assustado

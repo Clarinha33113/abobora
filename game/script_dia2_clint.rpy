@@ -2,7 +2,7 @@
 label dia2_acusar_clint:
     show minato normal
     me "Pessoal, não percebem que essa discussão não está indo a lugar nenhum?"
-    me "O verdadeiro culpado está tão claro como esse lugar, claramente foi a [clint]!"
+    me "O verdadeiro culpado está tão claro como esse lugar, claramente foi o [clint]!"
 
     hide minato normal
     show clint normal
