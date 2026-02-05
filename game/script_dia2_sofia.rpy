@@ -52,7 +52,7 @@ label dia2_acusar_sofia_agressivo1:
     return
 
 label dia2_acusar_sofia_assertivo1:
-    me "Desde o começo você nunca escondeu o quanto você pouco se importa, além que você tomou atitudes que apenas convenientes a você."
+    me "Desde o começo você nunca escondeu o quanto você pouco se importa, além que você tomou atitudes que são apenas convenientes a você."
     sofia "A minha atitude tem sido realista a esse lugar, porque eu deveria ligar para pessoas que eu nem conheço?"
     "Todos olharam para ela poucos com raiva e outros desconfiados."
     return

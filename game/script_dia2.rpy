@@ -137,7 +137,7 @@ label dia2_clint:
 
     hide minato normal
     show clint normal
-    clint "Definitivamente é justamente por isso que eu acredito que ela foi coagida a fazer isso ou só ameaçada mesmo"
+    clint "Definitivamente. É justamente por isso que eu acredito que ela foi coagida a fazer isso ou só ameaçada mesmo"
 
     hide clint normal
 
@@ -151,7 +151,7 @@ label dia2_aisha:
 
     aisha "Primeiro que ela provavelmente foi forçada a fazer esse ato"
     aisha "E considerando as pequenas manchas no chão tinha mais alguém"
-    aisha "Um detalhe pequeno que o Clint falhou em notar"
+    aisha "Um detalhe pequeno que o [clint] falhou em notar"
 
     hide aisha pensativa
     show minato normal
@@ -163,7 +163,7 @@ label dia2_aisha:
 
     hide aisha normal
     show minato normal
-    me "E como você sabe disso se a mancha é tão pequena"
+    me "E como você sabe disso se a mancha é tão pequena?"
 
     hide minato normal
     show aisha normal
