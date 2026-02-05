@@ -20,7 +20,6 @@ define mitchell_alive = True
 define nina_alive     = True
 define felix_alive    = True
 define joana_alive    = True
-define diana_alive    = True
 
 define text_centro   = "Centro"
 define text_direita  = "Direita"
