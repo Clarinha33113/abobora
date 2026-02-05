@@ -8,7 +8,7 @@ label dia2_start:
 
     me "À sua frente, havia uma figura... parecia ter controle sobre ela, fazendo-a tirar a própria vida"
 
-    scene bg cozinha with dissolve
+    scene bg cozinha_sangue with dissolve
 
     "[my_name] acorda com um grito, e logo ele segue outros até a cozinha."
 
@@ -74,7 +74,7 @@ label dia2_start:
 
 
 label dia2_cozinha:
-    scene bg cozinha with dissolve
+    scene bg cozinha_sangue with dissolve
     if first_time_cozinha:
         "[clint], [felix] e [aisha] estão na cozinha."
         $ first_time_cozinha = False
