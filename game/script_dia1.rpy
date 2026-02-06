@@ -58,9 +58,6 @@ label dia1_start:
     ""
     hide carta2
 
-    # "{i}Gostaríamos de parabenizá-lo por ter sido selecionado para uma viajem com tudo pago para um lugar especial, o Tribunal da Torre dos Desejos.{/i}"
-    # "{i}Onde nós não nos responsabilizados por qualquer morte, para você e sua consciência lutarem pelos seu desejo, basta apenas assinar essa carta e poderá participar.{/i}"
-
     show minato pensativo
     me "Claro. O sorteio grátis que parecia bom demais para ser verdade agora envolve assassinatos e desejos mágicos. Por que eu não joguei aquela carta no lixo?"
 
@@ -90,8 +87,6 @@ label dia1_start:
     show vince emo_idk
 
     show text "{b}Um de vocês precisa se tornar o assassino perfeito.{/b}" with Pause(4)
-
-    # vince "{b}Um de vocês precisa se tornar o assassino perfeito.{/b}"
 
     hide vince emo_sla
     scene bg tribunal with dissolve

@@ -115,7 +115,6 @@ label dia2_felix:
     felix "ele foi muito indiferente a morte dela"
 
     hide felix pensativo
-    # transição????
     jump dia2_cozinha
 
 label dia2_clint:
@@ -140,8 +139,6 @@ label dia2_clint:
     clint "Definitivamente. É justamente por isso que eu acredito que ela foi coagida a fazer isso ou só ameaçada mesmo"
 
     hide clint normal
-
-    # TRANSIÇÃO??????????
     jump dia2_cozinha
 
 label dia2_aisha:
@@ -168,8 +165,6 @@ label dia2_aisha:
     hide minato normal
     show aisha normal
     aisha "É simples, diferente de qualquer um aqui eu notei o formato da sola"
-
-    # ......
     jump dia2_cozinha
 
 
@@ -311,8 +306,6 @@ label dia2_sofia:
     sofia "Pode apostar que eu estou, nenhum assassino estúpido vai me enganar"
 
     hide sofia normal
-
-    # TRANSIÇÃOOOOOOOOOOOOOOOOOOAAAAAAAAAAAAAAAAAASLFAKOHIHFLKASFHJKASLHJKZNV<U(@Q)THPQOWQHFASOHFAPOHOIHOGOIWF
     jump dia2_biblioteca
 
 label dia2_thiago:
