@@ -43,7 +43,7 @@ label dia2_acusar_joana_agressivo1:
     joana "Você não pode provar isso."
     hide joana normal
     show nina infeliz
-    nina "É Espectador, você não pode provar isso."
+    nina "É [minato], você não pode provar isso."
     hide nina infeliz
     show joana normal
     return
