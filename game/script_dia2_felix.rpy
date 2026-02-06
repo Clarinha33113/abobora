@@ -15,7 +15,7 @@ label dia2_acusar_felix:
         agressivo = '',
         assertivo = '',
         passivo_agressivo = ''
-    )
+    ) from _call_escolhas_acusar_4
 
     call escolhas_acusar(
         personagem = 'felix',
@@ -23,9 +23,9 @@ label dia2_acusar_felix:
         agressivo = '',
         assertivo = '',
         passivo_agressivo = ''
-    )
+    ) from _call_escolhas_acusar_5
 
-    call get_most_selected_choice
+    call get_most_selected_choice from _call_get_most_selected_choice_1
 
     # XXX: fazer algo diferente baseado em 'most_often_choice'
 

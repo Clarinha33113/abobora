@@ -121,16 +121,16 @@ label escolhas_quem_acusar:
 label escolhas_acusar(personagem, passivo, agressivo, assertivo, passivo_agressivo):
     menu:
         "[passivo]":
-            call aumentar_ponto(CS_PASSIVO)
+            call aumentar_ponto(CS_PASSIVO) from _call_aumentar_ponto
             jump expression f"dia{dia}_acusar_{personagem}_passivo{dialog_count}"
         "[agressivo]":
-            call aumentar_ponto(CS_AGRESSIVO)
+            call aumentar_ponto(CS_AGRESSIVO) from _call_aumentar_ponto_1
             jump expression f"dia{dia}_acusar_{personagem}_agressivo{dialog_count}"
         "[assertivo]":
-            call aumentar_ponto(CS_ASSERTIVO)
+            call aumentar_ponto(CS_ASSERTIVO) from _call_aumentar_ponto_2
             jump expression f"dia{dia}_acusar_{personagem}_assertivo{dialog_count}"
         "[passivo_agressivo]":
-            call aumentar_ponto(CS_PASSIVO_AGRESSIVO)
+            call aumentar_ponto(CS_PASSIVO_AGRESSIVO) from _call_aumentar_ponto_3
             jump expression f"dia{dia}_acusar_{personagem}_passivo_agressivo{dialog_count}"
 
 

@@ -18,7 +18,7 @@ label dia2_acusar_aisha:
         agressivo = 'Besteira, você é claramente a culpada.',
         assertivo = 'Eu não estou tentando desviar a atenção, e eu tenho provas.',
         passivo_agressivo = 'É mesmo, falou o poço de inocência.'
-    )
+    ) from _call_escolhas_acusar
 
     call escolhas_acusar(
         personagem = 'aisha',
@@ -26,9 +26,9 @@ label dia2_acusar_aisha:
         agressivo = 'Além da sua atitude, você exala o cheiro da culpa!',
         assertivo = 'Você afirma estar ajudando na investigação, mas o que impede você de ter adulterado as provas.',
         passivo_agressivo = 'Engraçado como tudo soa conveniente demais.'
-    )
+    ) from _call_escolhas_acusar_1
 
-    call get_most_selected_choice
+    call get_most_selected_choice from _call_get_most_selected_choice
 
     # XXX: fazer algo diferente baseado em 'most_often_choice'
 

@@ -18,49 +18,55 @@ label dia2_acusar_joana:
         agressivo = 'Porque você está mentindo.',
         assertivo = 'Porque você pode estar fingindo, afinal você não é burra.',
         passivo_agressivo = 'Sei lá, talvez por você parecer falsa.'
-    )
+    ) from _call_escolhas_acusar_6
 
-    call get_most_selected_choice
+    joana "Olha [minato], está claro para todos que eu não sou a culpada, por favor pare pois eu garanto que o assassino quer justamente isso."
 
-    # XXX: fazer algo diferente baseado em 'most_often_choice'
+    hide joana normal
 
-    joana "você escolheu mais comunicação [most_often_choice]!"
-
-    return
+    jump escolhas_quem_acusar
 
 
 label dia2_acusar_joana_passivo1:
     me "Só para parecer inocente, mas pode estar escondendo uma personalidade cruel."
     joana "Isso não faz sentido, eu não estou fingindo ser outra pessoa."
+    hide joana normal
+    show nina infeliz
     nina "Ela tá certa, eu acredito nela."
+    hide nina infeliz
+    show joana normal
     "Ninguém parece acreditar em mim."
-
     return
 
 label dia2_acusar_joana_agressivo1:
-   
     me "Você claramente está fingindo ser inocente, só para apunhalar todos aqui pelas costas."
     joana "Você não pode provar isso."
+    hide joana normal
+    show nina infeliz
     nina "É Espectador, você não pode provar isso."
-
+    hide nina infeliz
+    show joana normal
     return
 
 label dia2_acusar_joana_assertivo1:
     me "Você pode estar utilizando uma fachada de gentil, só para abaixarmos a guarda, para você ai atacar."
     joana "Eu não estou utilizando uma fachada, eu só quero ajudar as pessoas."
+    hide joana normal
+    show nina infeliz
     nina "É, eu confio nela."
+    hide nina infeliz
+    show joana normal
     "Alguns parecem estar em dúvida, mas eu não consegui convecer a maioria."
-
     return
 
 label dia2_acusar_joana_passivo_agressivo1:
     me "Nada impede você de matar alguém aqui, e depois bancar a legal, mas posso estar errado ou você é uma baita mentirosa."
     joana "Quanta frieza, eu estou tentando ajudar aqui, eu garanto que não matei ninguém."
+    hide joana normal
+    show nina infeliz
     nina "sim, ela é inocente eu acredito nisso."
+    hide nina infeliz
+    show joana normal
     "Todos desconfiam de mim pelo olhar deles."
-    "Independente da escolha a Joana sempre dira"
-    joana "Olha Espectador, está claro para todos que eu não sou a culpada, por favor pare pois eu garanto que o assassino quer justamente isso."
-
-    "Aí o jogador é obrigado a acusar outra pessoa"
-
     return
+

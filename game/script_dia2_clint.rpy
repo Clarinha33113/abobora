@@ -15,7 +15,7 @@ label dia2_acusar_clint:
         agressivo = 'É, eu acho',
         assertivo = 'Sim eu acho, pois existem pistas que levam até você.',
         passivo_agressivo = 'Eu não sei, é que soa suspeito um cara chamado [clint], não ameaçar alguém com sei lá, sua pistola.',
-    )
+    ) from _call_escolhas_acusar_2
 
     call escolhas_acusar(
         personagem = 'clint',
@@ -23,7 +23,7 @@ label dia2_acusar_clint:
         agressivo = 'Para trazer justiça pela sua ação, você pode não demonstrar mas creio que logo todos viram quem você é.',
         assertivo = 'Você sabe que isso te torna mais suspeito.',
         passivo_agressivo = 'Vejam todos o desespero dele.'
-    )
+    ) from _call_escolhas_acusar_3
 
     return
 
