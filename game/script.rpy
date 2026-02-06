@@ -118,7 +118,8 @@ label escolhas_quem_acusar:
             jump expression f"dia{dia}_acusar_joana"
 
 
-label escolhas_acusar(personagem, passivo, agressivo, assertivo, passivo_agressivo):
+label escolhas_acusar(personagem, passivo, agressivo, assertivo, passivo_agressivo, **kwargs):
+    $ extra = kwargs['extra'] if 'extra' in kwargs else ''
     menu:
         "[passivo]":
             call aumentar_ponto(CS_PASSIVO) from _call_aumentar_ponto
@@ -132,6 +133,9 @@ label escolhas_acusar(personagem, passivo, agressivo, assertivo, passivo_agressi
         "[passivo_agressivo]":
             call aumentar_ponto(CS_PASSIVO_AGRESSIVO) from _call_aumentar_ponto_3
             jump expression f"dia{dia}_acusar_{personagem}_passivo_agressivo{dialog_count}"
+        "[extra]" if extra:
+            call aumentar_ponto(CS_PASSIVO, 0)
+            jump expression f"dia{dia}_acusar_{personagem}_extra{dialog_count}"
 
 
 label aumentar_ponto(tipo, quantidade = 1):
