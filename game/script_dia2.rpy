@@ -439,6 +439,7 @@ label dia2_tribunal:
 label dia2_depois_de_acusar:
     # XXX: had to kill them just now mb
     $ felix_alive = nina_alive = joana_alive = True
+
     if accused_person == '[mitchell]':
         if most_often_choice == CS_ASSERTIVO:
             mitchell "oh nao fui acusado"

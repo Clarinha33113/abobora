@@ -21,7 +21,7 @@ label dia1_start:
 
     hide minato assustado
 
-    "Assim [my_name] avança abrindo a porta. Ele segue um corredor branco, e logo chega em uma sala que lembra um tribunal, lá várias pessoas estão, jovens."
+    "Assim [my_name] avança abrindo a porta. Ele segue um corredor branco, e logo chega em uma sala que lembra um tribunal."
 
     scene bg tribunal
 
@@ -437,6 +437,8 @@ label dia1_joana:
     jump dia1_quadra
 
 label dia1_mitchell:
+    play sound "smooth criminal.mp3"
+
     "[mitchell] está dançando passos bem familiares por algum motivo"
 
     show mitchell normal
@@ -458,6 +460,8 @@ label dia1_mitchell:
     hide mitchell normal
 
     "Esse cara é um tanto peculiar, é difícil saber se ele é confiável ou não."
+
+    stop sound
 
     jump dia1_quadra
 
