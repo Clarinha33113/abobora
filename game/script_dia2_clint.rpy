@@ -14,7 +14,7 @@ label dia2_acusar_clint:
         passivo = 'Eu não tenho certeza, mas tem detalhes estranhos sobre você, em especial o seu título que indica isso.',
         agressivo = 'É, eu acho',
         assertivo = 'Sim eu acho, pois existem pistas que levam até você.',
-        passivo_agressivo = 'Eu não sei, é que soa suspeito um cara chamado [clint], não ameaçar alguém com sei lá, sua pistola.',
+        passivo_agressivo = 'Eu não sei, é que soa suspeito um cara chamado Pistoleiro, não ameaçar alguém com sei lá, sua pistola.',
     ) from _call_escolhas_acusar_2
 
     call escolhas_acusar(
@@ -56,7 +56,7 @@ label dia2_acusar_clint_passivo_agressivo1:
 label dia2_acusar_clint_passivo2:
     me "Você pode estar escondendo o álibi para matar, pois eu suponho pelo seu nome que você sabe matar melhor que todos aqui."
     clint "Eu sei, mas jamais faria isso."
-    "Agora todo mundo parace totalmente perdidos"
+    "Agora todo mundo parece totalmente perdidos"
     return
 
 label dia2_acusar_clint_agressivo2:
