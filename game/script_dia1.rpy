@@ -437,6 +437,8 @@ label dia1_joana:
     jump dia1_quadra
 
 label dia1_mitchell:
+    play music "smooth criminal.mp3"
+
     "[mitchell] está dançando passos bem familiares por algum motivo"
 
     show mitchell normal
@@ -487,3 +489,4 @@ label dia1_quarto:
     "Mas eu já não tenho mais energia para pensar nisso"
 
     jump dia2_start
+
