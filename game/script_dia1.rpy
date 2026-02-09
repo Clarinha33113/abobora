@@ -23,7 +23,7 @@ label dia1_start:
 
     "Assim [my_name] avança abrindo a porta. Ele segue um corredor branco, e logo chega em uma sala que lembra um tribunal."
 
-    scene bg tribunal
+    scene bg tribunal with dissolve
 
     me "Um tribunal, eu realmente estou vendo isso. Claramente eu não fui o único a ser sequestrado, só espero que possamos sair sem nenhum jogo doentio."
 

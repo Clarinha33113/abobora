@@ -440,18 +440,86 @@ label dia2_depois_de_acusar:
     # XXX: had to kill them just now mb
     $ felix_alive = nina_alive = joana_alive = True
 
-    if accused_person == '[mitchell]':
-        if most_often_choice == CS_ASSERTIVO:
-            mitchell "oh nao fui acusado"
-        else:
-            mitchell "hehehe levei vantagem"
-    else:
-        show vince normal
-        vince "heheheeheehe vc morreu burro tonto"
-
     # XXX: muitas escolhas agressivas: votam no jogador
     #      muitas escolhas passivas: ninguém acredita no jogador
     #      passivo-agressivo: alguns votam no jogador, outros voltam a discutir
     #      assertivo: acreditam no jogador e votam no acusado
-    #      se escolher personagem errado: game over imediato
+
+    if not (accused_person == '[mitchell]' and most_often_choice == CS_ASSERTIVO):
+        # XXX: isso aqui é placeholder
+        show vince normal
+        vince "heheheeheehe vc morreu burro tonto"
+        return
+
+    show mitchell normal
+    mitchell "Hahahahahaha, é parece que não tem outro, é eu matei ela."
+
+    hide mitchell normal
+    show clint normal
+    clint "Por que? Só pelo desejo?!"
+
+    hide clint normal
+    show mitchell normal
+    mitchell "Sim foi pelo desejo, mas esse era o único meio para eu recuperar o que é meu."
+
+    hide mitchell normal
+    show felix pensativo
+    felix "E o que séria tão importante, pra você tirar uma vida inocente?"
+
+    hide felix pensativo
+    show mitchell seila
+    mitchell "Foi pra recuperar a minha carreira, a minha chance, mas como vocês iriam entender não foram vocês, que iam perder tudo pra um pilantra que se acha bom o bastante."
+
+    hide mitchell seila
+    show sofia decepcionada
+    sofia "Então no fim só foi por inveja, você é patético mesmo."
+
+    hide sofia decepcionada
+    show mitchell irritado
+    mitchell "Fácil para você falar, não era você quem perderia seu sonho, não foi você quem lutou tanto, por tantos anos por esse sonho, vamos lá o que você faria no meu lugar?"
+
+    hide mitchell irritado
+    show sofia decepcionada
+    sofia "Eu tentaria ser melhor que o meu rival, mas você só escolheu o caminho mais fácil, e ainda se considera um [mitchell]."
+
+    hide sofia decepcionada
+    show mitchell irritado
+
+    mitchell "Que se dane você, todos vocês, especialmente você, [minato]."
+
+    hide mitchell irritado
+    show minato normal
+    me "Antes de terminarmos isso, como você fez aquilo?"
+
+    hide minato normal
+    show mitchell normal
+    mitchell "Isso é fácil, eu só usei os meus poderes, a minha dança pode forçar as pessoas fazerem o que eu quero."
+
+    hide mitchell normal
+    show clint normal
+
+    clint "Poderes?!"
+
+    hide clint normal
+    show mitchell normal
+    mitchell "Sim, o que vocês não sabiam, todos ganhamos poderes quando fomos teletransportados até aqui."
+
+    "Todos estão olhando uns para os outros."
+    "Logo o [mitchell] se aproveitando da distração, breve para fazer uma dança."
+
+    # XXX: dançarino é enforcado por uma corda (mostrar uma imagem dos pésinhos dele sla)
+    hide mitchell normal
+    show vince normal
+    vince "Nada de trapacear, você já perdeu."
+
+    "O Vince pega um controle e aperta um botão vermelho."
+
+    # XXX: (am i supposed to animate ts bruv??) roteiro:
+
+    # (Agora ele é solto, e fones de ouvido são pregados nos ouvidos dele, e todo tribunal muda para uma pista de dança)
+
+    # Descrição: O Dançarino começou a dançar, e parece que o chão está ficando vermelho cada vez mais, e com a cor o calor aumenta, e logo o Dançarino começa a dançar cada vez mais rápido.
+
+    # Descrição: Logo o teto abriu e um raio caiu no Dançarino, o transformando em uma estátua de cristal.
+
 
