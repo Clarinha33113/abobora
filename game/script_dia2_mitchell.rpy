@@ -27,11 +27,8 @@ label dia2_acusar_mitchell:
 
     call get_most_selected_choice from _call_get_most_selected_choice_3
 
-    # XXX: fazer algo diferente baseado em 'most_often_choice'
-
-    mitchell "você escolheu mais comunicação [most_often_choice]!"
-
-    return
+    hide mitchell seila
+    jump dia2_depois_de_acusar
 
 
 label dia2_acusar_mitchell_passivo1:

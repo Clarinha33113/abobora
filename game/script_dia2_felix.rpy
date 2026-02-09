@@ -36,7 +36,8 @@ label dia2_acusar_felix:
     else:
         felix "Você escolheu mais comunicação [most_often_choice]!"
 
-    return
+    hide felix pensativo
+    jump dia2_depois_de_acusar
 
 
 label dia2_acusar_felix_passivo1:

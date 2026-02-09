@@ -436,3 +436,17 @@ label dia2_tribunal:
     me "As discussões estão aumentando, se continuar assim todos vamos morrer, é melhor eu fazer algo... Quem poderia ser?"
     jump escolhas_quem_acusar
 
+
+label dia2_depois_de_acusar:
+    if accused_person == '[mitchell]':
+        mitchell "oh nao fui acusado"
+    else:
+        show vince normal
+        vince "heheheeheehe vc morreu burro tonto"
+
+    # XXX: muitas escolhas agressivas: votam no jogador
+    #      muitas escolhas passivas: ninguém acredita no jogador
+    #      passivo-agressivo: alguns votam no jogador, outros voltam a discutir
+    #      assertivo: acreditam no jogador e votam no acusado
+    #      se escolher personagem errado: game over imediato
+

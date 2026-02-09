@@ -30,11 +30,8 @@ label dia2_acusar_aisha:
 
     call get_most_selected_choice from _call_get_most_selected_choice
 
-    # XXX: fazer algo diferente baseado em 'most_often_choice'
-
-    aisha "você escolheu mais comunicação [most_often_choice]!"
-
-    return
+    hide aisha normal
+    jump dia2_depois_de_acusar
 
 
 label dia2_acusar_aisha_passivo1:

@@ -23,7 +23,6 @@ label dia2_acusar_joana:
     joana "Olha [minato], está claro para todos que eu não sou a culpada, por favor pare pois eu garanto que o assassino quer justamente isso."
 
     hide joana normal
-
     jump escolhas_quem_acusar
 
 

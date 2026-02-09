@@ -29,11 +29,8 @@ label dia2_acusar_sofia:
 
     call get_most_selected_choice from _call_get_most_selected_choice_5
 
-    # XXX: fazer algo diferente baseado em 'most_often_choice'
-
-    sofia "você escolheu mais comunicação [most_often_choice]!"
-
-    return
+    hide sofia decepcionada
+    jump dia2_depois_de_acusar
 
 
 # Diálogos 1:

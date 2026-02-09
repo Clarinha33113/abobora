@@ -39,7 +39,7 @@ define communication_style_points = {
     CS_PASSIVO_AGRESSIVO: 0,
 }
 
-# define accused_person = ''
+define accused_person = ''
 define current_choices = {}
 define last_picked_choice = ''
 define most_often_choice = ''
@@ -101,20 +101,28 @@ label escolhas_quem_acusar:
         "Quem deseja acusar?"
 
         "[clint]" if clint_alive:
+            $ accused_person = '[clint]'
             jump expression f"dia{dia}_acusar_clint"
         "[aisha]" if aisha_alive:
+            $ accused_person = '[aisha]'
             jump expression f"dia{dia}_acusar_aisha"
         "[sofia]" if sofia_alive:
+            $ accused_person = '[sofia]'
             jump expression f"dia{dia}_acusar_sofia"
         "[thiago]" if thiago_alive:
+            $ accused_person = '[thiago]'
             jump expression f"dia{dia}_acusar_thiago"
         "[mitchell]" if mitchell_alive:
+            $ accused_person = '[mitchell]'
             jump expression f"dia{dia}_acusar_mitchell"
         "[nina]" if nina_alive:
+            $ accused_person = '[nina]'
             jump expression f"dia{dia}_acusar_nina"
         "[felix]" if felix_alive:
+            $ accused_person = '[felix]'
             jump expression f"dia{dia}_acusar_felix"
         "[joana]" if joana_alive:
+            $ accused_person = '[joana]'
             jump expression f"dia{dia}_acusar_joana"
 
 

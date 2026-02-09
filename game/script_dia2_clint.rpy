@@ -25,7 +25,8 @@ label dia2_acusar_clint:
         passivo_agressivo = 'Vejam todos o desespero dele.'
     ) from _call_escolhas_acusar_3
 
-    return
+    hide clint normal
+    jump dia2_depois_de_acusar
 
 #Dialogos 1:
 
