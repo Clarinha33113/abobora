@@ -430,7 +430,6 @@ label dia2_tribunal:
     hide clint normal
     show felix normal
     felix "De fato."
-
     hide felix normal
 
     me "As discussões estão aumentando, se continuar assim todos vamos morrer, é melhor eu fazer algo... Quem poderia ser?"
@@ -438,8 +437,13 @@ label dia2_tribunal:
 
 
 label dia2_depois_de_acusar:
+    # XXX: had to kill them just now mb
+    $ felix_alive = nina_alive = joana_alive = True
     if accused_person == '[mitchell]':
-        mitchell "oh nao fui acusado"
+        if most_often_choice == CS_ASSERTIVO:
+            mitchell "oh nao fui acusado"
+        else:
+            mitchell "hehehe levei vantagem"
     else:
         show vince normal
         vince "heheheeheehe vc morreu burro tonto"

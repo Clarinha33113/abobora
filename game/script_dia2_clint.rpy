@@ -9,6 +9,7 @@ label dia2_acusar_clint:
 
     clint "Como é que é, você acha que eu sou o assassino!?"
 
+    # XXX: no name substitution here what the hell
     call escolhas_acusar(
         personagem = 'clint',
         passivo = 'Eu não tenho certeza, mas tem detalhes estranhos sobre você, em especial o seu título que indica isso.',

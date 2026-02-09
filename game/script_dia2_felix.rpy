@@ -30,13 +30,12 @@ label dia2_acusar_felix:
 
     call get_most_selected_choice
 
-    # XXX: isso aqui é placeholder
-    if believe_him:
-        felix "Você acreditou em mim!"
-    else:
-        felix "Você escolheu mais comunicação [most_often_choice]!"
-
     hide felix pensativo
+    if believe_him:
+        # lil hack, fucking kill him
+        $ felix_alive = False
+        jump escolhas_quem_acusar
+
     jump dia2_depois_de_acusar
 
 
@@ -94,7 +93,7 @@ label dia2_acusar_felix_passivo_agressivo2:
 label dia2_acusar_felix_extra2:
     $ believe_him = True
     felix "Muito bom, eu fico feliz que você entendeu a verdade, e pode ficar com o meu Ás de espada, como um presente da minha aposta."
-    "O [felix] jogou o Ás de espada vermelho dele"
+    "O [felix] jogou o Ás de espada vermelho dele."
     "Na carta estava escrito: \'{i}O culpado é aquele com o chapéu e a indiferença gritante.{/i}\'"
     return
 
