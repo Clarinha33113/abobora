@@ -491,3 +491,4 @@ label dia1_quarto:
     "Mas eu já não tenho mais energia para pensar nisso"
 
     jump dia2_start
+
