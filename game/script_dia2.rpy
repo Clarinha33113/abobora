@@ -528,3 +528,33 @@ label dia2_depois_de_acusar:
 
     "Logo o teto abriu e um raio caiu no [mitchell], o transformando em uma estátua de cristal."
 
+    "Todos olham para ele em choque"
+
+    scene bg tribunal with dissolve
+    show vince normal
+
+    vince "E assim termina o primeiro julgamento, eu admito que estou impressionado, vocês conseguiram descobrir o assassino."
+
+    hide vince normal
+    show thiago normal
+    thiago "Isso é bom, mas que história é essa de poderes?"
+
+    hide thiago normal
+    show aisha normal
+    aisha "É, não acha que era algo importante de mencionar?"
+
+    hide aisha normal
+    show vince normal
+    vince "Pode até ser, mas nenhum de vocês perguntou, então eu apenas não disse."
+
+    "Rapidamente o [clint] apontou para o [vince]."
+
+    hide vince normal
+    show clint normal
+    clint "Deixa de falar besteira, você deveria ter contado isso logo de cara, tendo a gente perguntado ou não!"
+
+    hide clint normal
+    show vince normal
+    "Não adianta ficar bravo, pois agora vocês já sabem de tudo, então eu vou deixá-los descansar por hoje."
+
+    jump dia3_start
