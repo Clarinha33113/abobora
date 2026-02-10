@@ -10,6 +10,7 @@ label dia2_start:
 
     scene bg cozinha_sangue with dissolve
 
+    play sound "scream.mp3"
     "[my_name] acorda com um grito, e logo ele segue outros até a cozinha."
 
     # ao entrar uma música sinistra começa a tocar e vemos todos assustados
@@ -218,6 +219,7 @@ label dia2_joana:
 
 label dia2_mitchell:
     show mitchell normal
+    play sound "smooth criminal.mp3"
     mitchell "E ai [minato], tá investigando a garota morta?"
 
     hide mitchell normal
@@ -236,6 +238,7 @@ label dia2_mitchell:
     show mitchell normal
     mitchell "Mas é claro, se o assassino vir atrás de mim eu vou arrebentar a cara dele com os meus passos"
 
+    stop sound
     jump dia2_sala_recreacao
 
 
@@ -357,8 +360,6 @@ label dia2_tribunal:
 
     scene bg tribunal with dissolve
 
-    "Todos são teletransportados ao tribunal"
-
     # som de alguém caindo
 
     me "Eu acho que nunca vou me acostumar com essa droga de teletransporte."
@@ -446,13 +447,14 @@ label dia2_depois_de_acusar:
     #      assertivo: acreditam no jogador e votam no acusado
 
     if not (accused_person == '[mitchell]' and most_often_choice == CS_ASSERTIVO):
+        stop sound
         # XXX: isso aqui é placeholder
         show vince normal
         vince "heheheeheehe vc morreu burro tonto"
         return
 
     show mitchell normal
-    mitchell "Hahahahahaha, é parece que não tem outro, é eu matei ela."
+    mitchell "Hahahahahaha, é parece que não tem outro jeito, eu matei ela."
 
     hide mitchell normal
     show clint normal
@@ -514,12 +516,15 @@ label dia2_depois_de_acusar:
 
     "O Vince pega um controle e aperta um botão vermelho."
 
+    hide vince normal
+
     # XXX: (am i supposed to animate ts bruv??) roteiro:
 
     # (Agora ele é solto, e fones de ouvido são pregados nos ouvidos dele, e todo tribunal muda para uma pista de dança)
 
-    # Descrição: O Dançarino começou a dançar, e parece que o chão está ficando vermelho cada vez mais, e com a cor o calor aumenta, e logo o Dançarino começa a dançar cada vez mais rápido.
+    scene bg tudo_vermelho_lmao with dissolve
 
-    # Descrição: Logo o teto abriu e um raio caiu no Dançarino, o transformando em uma estátua de cristal.
+    "O [mitchell] começou a dançar, e parece que o chão está ficando vermelho cada vez mais, e com a cor o calor aumenta, e logo o [mitchell] começa a dançar cada vez mais rápido."
 
+    "Logo o teto abriu e um raio caiu no [mitchell], o transformando em uma estátua de cristal."
 

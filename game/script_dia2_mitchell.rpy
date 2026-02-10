@@ -7,6 +7,8 @@ label dia2_acusar_mitchell:
     hide minato normal
     show mitchell normal
 
+    play sound "smooth criminal.mp3"
+
     mitchell "Como é, eu sou culpado? Hahahahahaha, isso é sério?"
 
     call escolhas_acusar(
@@ -77,7 +79,7 @@ label dia2_acusar_mitchell_assertivo2:
     mitchell "Eu só estou assim porque vocês estão me olhando assim, e é sua culpa!!"
     me "Só me diz por que você escolheu ela?"
     mitchell "Eu não escolhi nada, porque não fui eu!"
-    me "Sério, é tão difícil admitir, apenas diga eu matei ela."
+    me "Sério, é tão difícil admitir, apenas diga \"eu matei ela.\""
     hide mitchell seila
     show mitchell irritado
     "Ele me olha com muita raiva, parece que consegui achar o assassino e ainda expor ele."
