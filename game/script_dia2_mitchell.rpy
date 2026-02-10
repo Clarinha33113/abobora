@@ -1,5 +1,6 @@
 
 label dia2_acusar_mitchell:
+    define got_caught = False
     show minato normal
     me "Pessoal, não percebem que essa discussão não está indo a lugar nenhum?"
     me "O verdadeiro culpado está tão claro como esse lugar, claramente foi o [mitchell]!"
@@ -30,8 +31,10 @@ label dia2_acusar_mitchell:
     call get_most_selected_choice
 
     hide mitchell normal
-    jump dia2_depois_de_acusar
-
+    if got_caught:
+        jump dia2_final
+    else:
+        jump dia2_depois_de_acusar
 
 label dia2_acusar_mitchell_passivo1:
     me "Devido a sua total indiferença a morte da [diana], além que você não quis ajudar na investigação, e os meus instintos me dizem isso."
@@ -84,6 +87,7 @@ label dia2_acusar_mitchell_assertivo2:
     show mitchell irritado
     "Ele me olha com muita raiva, parece que consegui achar o assassino e ainda expor ele."
     hide mitchell irritado
+    $ got_caught = True
     return
 
 label dia2_acusar_mitchell_passivo_agressivo2:

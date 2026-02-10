@@ -436,23 +436,20 @@ label dia2_tribunal:
     me "As discussões estão aumentando, se continuar assim todos vamos morrer, é melhor eu fazer algo... Quem poderia ser?"
     jump escolhas_quem_acusar
 
-
 label dia2_depois_de_acusar:
-    # XXX: had to kill them just now mb
-    $ felix_alive = nina_alive = joana_alive = True
+    stop sound
 
     # XXX: muitas escolhas agressivas: votam no jogador
     #      muitas escolhas passivas: ninguém acredita no jogador
     #      passivo-agressivo: alguns votam no jogador, outros voltam a discutir
     #      assertivo: acreditam no jogador e votam no acusado
 
-    if not (accused_person == '[mitchell]' and most_often_choice == CS_ASSERTIVO):
-        stop sound
-        # XXX: isso aqui é placeholder
-        show vince normal
-        vince "heheheeheehe vc morreu burro tonto"
-        return
+    # XXX: isso aqui é placeholder
+    show vince normal
+    vince "heheheeheehe vc morreu burro tonto"
+    return
 
+label dia2_final:
     show mitchell normal
     mitchell "Hahahahahaha, é parece que não tem outro jeito, eu matei ela."
 
@@ -518,17 +515,18 @@ label dia2_depois_de_acusar:
 
     hide vince normal
 
-    # XXX: (am i supposed to animate ts bruv??) roteiro:
-
+    # XXX: ?????????
     # (Agora ele é solto, e fones de ouvido são pregados nos ouvidos dele, e todo tribunal muda para uma pista de dança)
 
     scene bg tudo_vermelho_lmao with dissolve
 
-    "O [mitchell] começou a dançar, e parece que o chão está ficando vermelho cada vez mais, e com a cor o calor aumenta, e logo o [mitchell] começa a dançar cada vez mais rápido."
+    "O [mitchell] começou a dançar, e parece que o chão está ficando vermelho cada vez mais, e com a cor o calor aumenta, e logo ele começa a dançar cada vez mais rápido."
 
     "Logo o teto abriu e um raio caiu no [mitchell], o transformando em uma estátua de cristal."
 
-    "Todos olham para ele em choque"
+    "Todos olham para ele em choque."
+
+    stop sound
 
     scene bg tribunal with dissolve
     show vince normal
