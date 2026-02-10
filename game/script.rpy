@@ -92,11 +92,14 @@ label escolhas_corredor:
         "Voltar":
             jump escolhas_tribunal
 
-
-label escolhas_quem_acusar:
+label resetar_escolhas:
     python:
         current_choices = { CS_PASSIVO: 0, CS_AGRESSIVO: 0, CS_ASSERTIVO: 0, CS_PASSIVO_AGRESSIVO: 0 }
         dialog_count = 0
+    return
+
+label escolhas_quem_acusar:
+    $ dialog_count = 0
     menu:
         "Quem deseja acusar?"
 

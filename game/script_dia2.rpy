@@ -434,6 +434,7 @@ label dia2_tribunal:
     hide felix normal
 
     me "As discussões estão aumentando, se continuar assim todos vamos morrer, é melhor eu fazer algo... Quem poderia ser?"
+    call resetar_escolhas
     jump escolhas_quem_acusar
 
 label dia2_depois_de_acusar:
@@ -515,7 +516,7 @@ label dia2_final:
 
     hide vince normal
 
-    # XXX: ?????????
+    # XXX: como faço isso...????
     # (Agora ele é solto, e fones de ouvido são pregados nos ouvidos dele, e todo tribunal muda para uma pista de dança)
 
     scene bg tudo_vermelho_lmao with dissolve
@@ -555,5 +556,6 @@ label dia2_final:
     show vince normal
     "Não adianta ficar bravo, pois agora vocês já sabem de tudo, então eu vou deixá-los descansar por hoje."
 
+    me "ayaya vo a mimir"
     # XXX: go back to ur room (may it has some more dialog or sum)
     jump dia3_start
