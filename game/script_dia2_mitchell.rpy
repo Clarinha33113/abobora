@@ -68,7 +68,7 @@ label dia2_acusar_mitchell_passivo2:
 
 label dia2_acusar_mitchell_agressivo2:
     me "Não basta sua atitude, como não seria estranho um [mitchell] fazer movimentos estranhos, além de usar sapatos e um casaco!"
-    mitchell "Posso até usar, mas você fala de um jeito tão determinado a me acusar, levanta a voz como se busca-se desviar a atenção para mim."
+    mitchell "Posso até usar, mas você fala de um jeito tão determinado a me acusar, levanta a voz como se buscasse desviar a atenção para mim."
     "Todos me olham com suspeita."
     return
 
