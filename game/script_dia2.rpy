@@ -62,7 +62,8 @@ label dia2_start:
     scene bg tudo_vermelho_lmao with dissolve
     show vince emo_idk
 
-    show text "{b}Vocês todos morrem e o assassino vence.{/b}" with Pause(4)
+    show text "{b}Vocês todos morrem e o assassino vence.{/b}"
+    pause
 
     hide vince emo_idk
     scene bg tribunal with dissolve
@@ -219,7 +220,7 @@ label dia2_joana:
 
 label dia2_mitchell:
     show mitchell normal
-    play sound "smooth criminal.mp3"
+    play music "smooth criminal.mp3"
     mitchell "E ai [minato], tá investigando a garota morta?"
 
     hide mitchell normal
@@ -229,7 +230,7 @@ label dia2_mitchell:
     hide minato normal
     show mitchell normal
     mitchell "É que diferente de vocês eu não tenho medo desse assassino"
-    
+ 
     hide mitchell normal
     show minato normal
     me "Você é bem confiante"
@@ -238,7 +239,7 @@ label dia2_mitchell:
     show mitchell normal
     mitchell "Mas é claro, se o assassino vir atrás de mim eu vou arrebentar a cara dele com os meus passos"
 
-    stop sound
+    stop music
     jump dia2_sala_recreacao
 
 
@@ -389,7 +390,7 @@ label dia2_tribunal:
 
     aisha "Eu descobri pegadas do assassino, pequenas mas ainda sim foi simples saber, que ele usava sapatos, além disso eu falei com todos aqui."
 
-    aisha "A [joana] me disse que ouviu barulhos estranhos à noite, e mais um detalhe importante."
+    aisha "E mais um detalhe importante, a [joana] me disse que ouviu barulhos estranhos à noite."
 
     hide aisha normal
     show joana normal
@@ -438,17 +439,87 @@ label dia2_tribunal:
     jump escolhas_quem_acusar
 
 label dia2_depois_de_acusar:
-    stop sound
+    stop music
 
-    # XXX: muitas escolhas agressivas: votam no jogador
-    #      muitas escolhas passivas: ninguém acredita no jogador
-    #      passivo-agressivo: alguns votam no jogador, outros voltam a discutir
-    #      assertivo: acreditam no jogador e votam no acusado
+    $ is_aggressive = current_choices[CS_AGRESSIVO] >= 4
+    $ is_asshole = current_choices[CS_PASSIVO_AGRESSIVO] >= 4
 
-    # XXX: isso aqui é placeholder
-    show vince normal
-    vince "heheheeheehe vc morreu burro tonto"
-    return
+    call get_most_selected_choice
+
+    # XXX: Took some creative liberties here. May or may not be character accurate. (i didnt create em so idk)
+
+    if is_aggressive or is_asshole:
+        if accused_person == '[sofia]':
+            show clint normal
+            clint "Tudo bem, [minato]? Você parece meio desesperado."
+            hide clint normal
+        else:
+            show sofia irritada
+            sofia "Mas você adora ficar acusando todo mundo né?"
+            sofia "E esse tom irritante também!!"
+            hide sofia irritada
+
+        show thiago normal
+        thiago "Isso é meio suspeito, sim."
+        hide thiago normal
+
+        # even my boy felix gon be against you if you didn't trust him
+        if felix_alive and current_choices[CS_ASSERTIVO] < 2:
+            show felix normal
+            felix "Ele não parece muito convincente."
+            hide felix normal
+
+        show joana normal
+        joana "Pensando bem, ele tem agido de forma meio suspeita faz um tempo já."
+        hide joana normal
+
+        if current_choices[CS_ASSERTIVO] >= 2:
+            show aisha normal
+            aisha "Embora ele tenha feito alguns bons pontos."
+            hide aisha normal
+            show sofia irritada
+            sofia "Pura sorte, tenho certeza!"
+            hide sofia irritada
+        else:
+            show aisha normal
+            aisha "E seus argumentos são muito incoerentes."
+            hide aisha normal
+
+        play music "smooth criminal.mp3"
+        show mitchell normal
+        mitchell "Hahaha esse cara está louco"
+        hide mitchell normal
+        stop music
+
+        # just so they don't repeat the same things
+        if accused_person != '[sofia]':
+            show clint normal
+            clint "Ele está claramente desesperado."
+            hide clint normal
+        else:
+            show sofia irritada
+            sofia "Esse idiota fica acusando todo mundo!"
+            hide sofia irritada
+            if felix_alive:
+                show felix normal
+                felix "De fato." # idk he's just felix. silly felix.
+                hide felix normal
+
+
+        show vince normal
+        vince "Parece que ninguém acredita em você."
+        hide vince normal
+
+        # XXX: ts hella underwhelming but oh well
+        scene bg tudo_vermelho_lmao with dissolve
+        show vince emo_idk
+        show text "{b}Você perdeu.{/b}"
+        pause
+        return
+
+    jump escolhas_quem_acusar
+    # XXX: acreditam no jogador ao fazer muitas escolhas assertivas e votam no acusado (também perdendo o jogo)
+
 
 label dia2_final:
     show mitchell normal
@@ -527,7 +598,7 @@ label dia2_final:
 
     "Todos olham para ele em choque."
 
-    stop sound
+    stop music
 
     scene bg tribunal with dissolve
     show vince normal
@@ -556,6 +627,6 @@ label dia2_final:
     show vince normal
     "Não adianta ficar bravo, pois agora vocês já sabem de tudo, então eu vou deixá-los descansar por hoje."
 
-    me "ayaya vo a mimir"
+    # me "ayaya vo a mimir"
     # XXX: go back to ur room (may it has some more dialog or sum)
     jump dia3_start

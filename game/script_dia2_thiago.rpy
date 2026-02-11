@@ -18,10 +18,10 @@ label dia2_acusar_thiago:
         agressivo = 'Sabemos? Faça-me o favor! Você que mais sai em benefício.',
         assertivo = 'É que tudo é lógico, você sabe se comunicar melhor que todo mundo aqui.',
         passivo_agressivo = 'É claro que você é inocente, com essa atitude de cara bacana.'
-    ) from _call_escolhas_acusar_13
+    )
 
-    call get_most_selected_choice from _call_get_most_selected_choice_6
-    python:
+    call get_most_selected_choice
+    python: # btw i went off script here too
         is_being_a_bitch = True if most_often_choice == CS_AGRESSIVO else False
         if is_being_a_bitch:
             aggressive_text = 'Jamais? e consegue afirmar usando "jamais" como resposta.'
@@ -34,9 +34,7 @@ label dia2_acusar_thiago:
         agressivo = aggressive_text,
         assertivo = 'Isso soa ainda pior...',
         passivo_agressivo = 'Eu não te odeio, eu só quero expor quem você realmente é.',
-    ) from _call_escolhas_acusar_14
-
-    call get_most_selected_choice from _call_get_most_selected_choice_7
+    )
 
     hide thiago normal
     jump dia2_depois_de_acusar

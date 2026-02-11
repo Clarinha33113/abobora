@@ -86,7 +86,8 @@ label dia1_start:
     scene bg tudo_vermelho_lmao with dissolve
     show vince emo_idk
 
-    show text "{b}Um de vocês precisa se tornar o assassino perfeito.{/b}" with Pause(4)
+    show text "{b}Um de vocês precisa se tornar o assassino perfeito.{/b}"
+    pause
 
     hide vince emo_sla
     scene bg tribunal with dissolve
@@ -437,7 +438,7 @@ label dia1_joana:
     jump dia1_quadra
 
 label dia1_mitchell:
-    play sound "smooth criminal.mp3"
+    play music "smooth criminal.mp3"
 
     "[mitchell] está dançando passos bem familiares por algum motivo"
 
@@ -445,23 +446,24 @@ label dia1_mitchell:
 
     mitchell "O que você deseja colega"
 
-    me "Eu só queria saber sua opinião quanto ao [vince]?"
+    me "Eu só queria saber sua opinião quanto ao [vince]."
 
     mitchell "Aquele [vince] é peculiar, tem cara de pilantra que só quer ver um banho de sangue"
 
     me "E esse lugar?" 
 
-    mitchell "Esse lugarzinho sem graça, para uma torre sem vida, esse lugar tem cara de que pode se tornar interessante"
+    mitchell "Esse lugarzinho sem graça."
+    mitchell "Para uma torre sem vida, esse lugar tem cara de que pode se tornar interessante"
 
     me "Obrigado pela sua opinião"
 
-    mitchell "Claro só lembre de dançar mais para alegrar a vida"
+    mitchell "Claro, só lembre de dançar mais para alegrar a vida"
 
     hide mitchell normal
 
     "Esse cara é um tanto peculiar, é difícil saber se ele é confiável ou não."
 
-    stop sound
+    stop music
 
     jump dia1_quadra
 

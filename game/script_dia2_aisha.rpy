@@ -18,7 +18,7 @@ label dia2_acusar_aisha:
         agressivo = 'Besteira, você é claramente a culpada.',
         assertivo = 'Eu não estou tentando desviar a atenção, e eu tenho provas.',
         passivo_agressivo = 'É mesmo, falou o poço de inocência.'
-    ) from _call_escolhas_acusar
+    )
 
     call escolhas_acusar(
         personagem = 'aisha',
@@ -26,9 +26,7 @@ label dia2_acusar_aisha:
         agressivo = 'Além da sua atitude, você exala o cheiro da culpa!',
         assertivo = 'Você afirma estar ajudando na investigação, mas o que impede você de ter adulterado as provas.',
         passivo_agressivo = 'Engraçado como tudo soa conveniente demais.'
-    ) from _call_escolhas_acusar_1
-
-    call get_most_selected_choice from _call_get_most_selected_choice
+    )
 
     hide aisha normal
     jump dia2_depois_de_acusar
@@ -78,7 +76,7 @@ label dia2_acusar_aisha_assertivo2:
 
 label dia2_acusar_aisha_passivo_agressivo2:
     me "Mas é claro que a vossa inocente aqui, não tem nada a ver, mais estranho como suas palavras são falsas, você só queria testar o quão burros somos para tentar vencer fácil."
-    aisha "Você chega a ser desprezível com esse sarcasmo, Espectador acha mesmo que vai convencer alguém com essa falsidade?"
+    aisha "Você chega a ser desprezível com esse sarcasmo, Espectador. Acha mesmo que vai convencer alguém com essa falsidade?"
     "Todos me olham, alguns com pena em seu olhar, já outros deixam claro seu desprezo."
     return
 

@@ -28,8 +28,6 @@ label dia2_acusar_felix:
         extra = 'Ok, eu acredito em você.'
     )
 
-    call get_most_selected_choice
-
     hide felix pensativo
     if believe_him:
         # lil hack, fucking kill him

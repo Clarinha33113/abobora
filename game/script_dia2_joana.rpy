@@ -18,13 +18,13 @@ label dia2_acusar_joana:
         agressivo = 'Porque você está mentindo.',
         assertivo = 'Porque você pode estar fingindo, afinal você não é burra.',
         passivo_agressivo = 'Sei lá, talvez por você parecer falsa.'
-    ) from _call_escolhas_acusar_6
+    )
 
     joana "Olha [minato], está claro para todos que eu não sou a culpada, por favor pare pois eu garanto que o assassino quer justamente isso."
 
     hide joana normal
     $ joana_alive = False
-    jump escolhas_quem_acusar
+    jump dia2_depois_de_acusar
 
 
 label dia2_acusar_joana_passivo1:

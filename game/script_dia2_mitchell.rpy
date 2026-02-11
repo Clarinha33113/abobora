@@ -8,7 +8,7 @@ label dia2_acusar_mitchell:
     hide minato normal
     show mitchell normal
 
-    play sound "smooth criminal.mp3"
+    play music "smooth criminal.mp3"
 
     mitchell "Como é, eu sou culpado? Hahahahahaha, isso é sério?"
 
@@ -27,8 +27,6 @@ label dia2_acusar_mitchell:
         assertivo = 'Isso é só uma desculpa, vindo do culpado.',
         passivo_agressivo = 'Talvez, mas se todos forem espertos sabem a verdade.'
     )
-
-    call get_most_selected_choice
 
     hide mitchell normal
     if got_caught:

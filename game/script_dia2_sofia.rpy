@@ -17,7 +17,7 @@ label dia2_acusar_sofia:
         agressivo = 'Fale o que você quiser mas todos nós sabemos a verdade.',
         assertivo = 'É esse tipo de atitude que te torna suspeita.',
         passivo_agressivo = 'Eu não sei, talvez apontando para a coisa mais obvia.'
-    ) from _call_escolhas_acusar_11
+    )
 
     call escolhas_acusar(
         personagem = 'sofia',
@@ -25,9 +25,7 @@ label dia2_acusar_sofia:
         agressivo = 'É você? Está ao menos fazendo alguma coisa? Ao menos eu estou fazendo algo além de ficar parado!',
         assertivo = 'É justamente isso que te torna mais suspeita.',
         passivo_agressivo = 'É mesmo, ou você apenas está se esquivando?'
-    ) from _call_escolhas_acusar_12
-
-    call get_most_selected_choice from _call_get_most_selected_choice_5
+    )
 
     hide sofia decepcionada
     jump dia2_depois_de_acusar

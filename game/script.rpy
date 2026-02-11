@@ -50,16 +50,15 @@ define first_time_biblioteca = True
 define first_time_quadra = True
 
 label start:
-    python:
-        DEFAULT = 'Minato'
-        my_name = renpy.input('Qual seu nome?', default=DEFAULT, length=32).strip()
+    # python:
+    #     DEFAULT = 'Minato'
+    #     my_name = renpy.input('Qual seu nome?', default=DEFAULT, length=32).strip()
 
-        if not my_name:
-            my_name = DEFAULT
+    #     if not my_name:
+    #         my_name = DEFAULT
 
+    $ my_name = 'Minato'
     jump prologo_start
-    # $ dia = 2
-    # jump dia2_tribunal
 
 label escolhas_tribunal:
     scene bg tribunal with dissolve
@@ -133,16 +132,16 @@ label escolhas_acusar(personagem, passivo, agressivo, assertivo, passivo_agressi
     $ extra = kwargs['extra'] if 'extra' in kwargs else ''
     menu:
         "[passivo]":
-            call aumentar_ponto(CS_PASSIVO) from _call_aumentar_ponto
+            call aumentar_ponto(CS_PASSIVO)
             jump expression f"dia{dia}_acusar_{personagem}_passivo{dialog_count}"
         "[agressivo]":
-            call aumentar_ponto(CS_AGRESSIVO) from _call_aumentar_ponto_1
+            call aumentar_ponto(CS_AGRESSIVO)
             jump expression f"dia{dia}_acusar_{personagem}_agressivo{dialog_count}"
         "[assertivo]":
-            call aumentar_ponto(CS_ASSERTIVO) from _call_aumentar_ponto_2
+            call aumentar_ponto(CS_ASSERTIVO)
             jump expression f"dia{dia}_acusar_{personagem}_assertivo{dialog_count}"
         "[passivo_agressivo]":
-            call aumentar_ponto(CS_PASSIVO_AGRESSIVO) from _call_aumentar_ponto_3
+            call aumentar_ponto(CS_PASSIVO_AGRESSIVO)
             jump expression f"dia{dia}_acusar_{personagem}_passivo_agressivo{dialog_count}"
         "[extra]" if extra:
             call aumentar_ponto(CS_PASSIVO, 0)
