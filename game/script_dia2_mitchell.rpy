@@ -8,7 +8,7 @@ label dia2_acusar_mitchell:
     hide minato normal
     show mitchell normal
 
-    play music "smooth criminal.mp3"
+    play music mitchell_theme
 
     mitchell "Como é, eu sou culpado? Hahahahahaha, isso é sério?"
 

@@ -49,6 +49,8 @@ define first_time_cozinha = True
 define first_time_biblioteca = True
 define first_time_quadra = True
 
+define audio.mitchell_theme = 'smooth criminal.mp3'
+
 label start:
     # python:
     #     DEFAULT = 'Minato'
@@ -57,6 +59,7 @@ label start:
     #     if not my_name:
     #         my_name = DEFAULT
 
+    stop music
     $ my_name = 'Minato'
     jump prologo_start
 

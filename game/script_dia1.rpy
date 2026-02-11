@@ -121,7 +121,7 @@ label dia1_start:
 
     hide minato normal
     show mitchell normal
-    play music "smooth criminal.mp3"
+    play music mitchell_theme
     mitchell "Sou {b}O [mitchell]{/b}."
     stop music
 
@@ -440,7 +440,7 @@ label dia1_joana:
     jump dia1_quadra
 
 label dia1_mitchell:
-    play music "smooth criminal.mp3"
+    play music mitchell_theme
 
     "[mitchell] está dançando passos bem familiares por algum motivo"
 

@@ -220,7 +220,7 @@ label dia2_joana:
 
 label dia2_mitchell:
     show mitchell normal
-    play music "smooth criminal.mp3"
+    play music mitchell_theme
     mitchell "E ai [minato], tá investigando a garota morta?"
 
     hide mitchell normal
@@ -485,7 +485,7 @@ label dia2_depois_de_acusar:
             aisha "E seus argumentos são muito incoerentes."
             hide aisha normal
 
-        play music "smooth criminal.mp3"
+        play music mitchell_theme
         show mitchell normal
         mitchell "Hahaha esse cara está louco"
         hide mitchell normal
