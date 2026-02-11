@@ -23,14 +23,14 @@ define gui.show_name = True
 
 ## A versão do jogo.
 
-define config.version = "0.1"
+define config.version = "0.2"
 
 
 ## Texto que é colocado na tela "Sobre" do jogo. Coloque o texto entre aspas
 ## triplas e deixe uma linha em branco entre os parágrafos.
 
 define gui.about = _p("""
-Demo visual novel da SWTV.
+Demo visual novel da SWTV. {a=https://github.com/Clarinha33113/abobora}Link do github.{/a}
 """)
 
 
