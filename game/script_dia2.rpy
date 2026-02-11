@@ -625,7 +625,7 @@ label dia2_final:
 
     hide clint normal
     show vince normal
-    "Não adianta ficar bravo, pois agora vocês já sabem de tudo, então eu vou deixá-los descansar por hoje."
+    vince "Não adianta ficar bravo, pois agora vocês já sabem de tudo, então eu vou deixá-los descansar por hoje."
 
     # me "ayaya vo a mimir"
     # XXX: go back to ur room (may it has some more dialog or sum)

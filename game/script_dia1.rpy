@@ -121,7 +121,9 @@ label dia1_start:
 
     hide minato normal
     show mitchell normal
+    play music "smooth criminal.mp3"
     mitchell "Sou {b}O [mitchell]{/b}."
+    stop music
 
     hide mitchell normal
     show nina normal
