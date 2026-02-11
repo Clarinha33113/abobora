@@ -220,7 +220,7 @@ label dia2_joana:
 
 label dia2_mitchell:
     show mitchell normal
-    play music mitchell_theme
+    play music tema_mitchell
     mitchell "E ai [minato], tá investigando a garota morta?"
 
     hide mitchell normal
@@ -464,7 +464,7 @@ label dia2_depois_de_acusar:
         hide thiago normal
 
         # even my boy felix gon be against you if you didn't trust him
-        if felix_alive and current_choices[CS_ASSERTIVO] < 2:
+        if believe_felix and current_choices[CS_ASSERTIVO] < 2:
             show felix normal
             felix "Ele não parece muito convincente."
             hide felix normal
@@ -485,7 +485,7 @@ label dia2_depois_de_acusar:
             aisha "E seus argumentos são muito incoerentes."
             hide aisha normal
 
-        play music mitchell_theme
+        play music tema_mitchell
         show mitchell normal
         mitchell "Hahaha esse cara está louco"
         hide mitchell normal
@@ -500,7 +500,7 @@ label dia2_depois_de_acusar:
             show sofia irritada
             sofia "Esse idiota fica acusando todo mundo!"
             hide sofia irritada
-            if felix_alive:
+            if believe_felix:
                 show felix normal
                 felix "De fato." # idk he's just felix. silly felix.
                 hide felix normal

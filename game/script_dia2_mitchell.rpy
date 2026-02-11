@@ -8,7 +8,7 @@ label dia2_acusar_mitchell:
     hide minato normal
     show mitchell normal
 
-    play music mitchell_theme
+    play music tema_mitchell
 
     mitchell "Como é, eu sou culpado? Hahahahahaha, isso é sério?"
 

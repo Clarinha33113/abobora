@@ -2,7 +2,6 @@ label dia2_acusar_felix:
     show minato normal
     me "Pessoal, não percebem que essa discussão não está indo a lugar nenhum?"
     me "O verdadeiro culpado está tão claro como esse lugar, claramente foi o [felix]!"
-    define believe_him = False
 
     hide minato normal
     show felix pensativo
@@ -29,7 +28,7 @@ label dia2_acusar_felix:
     )
 
     hide felix pensativo
-    if believe_him:
+    if believe_felix:
         # lil hack, fucking kill him
         $ felix_alive = False
         jump escolhas_quem_acusar
@@ -89,7 +88,7 @@ label dia2_acusar_felix_passivo_agressivo2:
     return
 
 label dia2_acusar_felix_extra2:
-    $ believe_him = True
+    $ believe_felix = True
     felix "Muito bom, eu fico feliz que você entendeu a verdade, e pode ficar com o meu Ás de espada, como um presente da minha aposta."
     "O [felix] jogou o Ás de espada vermelho dele."
     "Na carta estava escrito: \'{i}O culpado é aquele com o chapéu e a indiferença gritante.{/i}\'"

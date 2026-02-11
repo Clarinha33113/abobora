@@ -21,6 +21,8 @@ define nina_alive     = True
 define felix_alive    = True
 define joana_alive    = True
 
+define believe_felix = False
+
 define text_centro   = "Centro"
 define text_direita  = "Direita"
 define text_esquerda = "Esquerda"
@@ -49,7 +51,12 @@ define first_time_cozinha = True
 define first_time_biblioteca = True
 define first_time_quadra = True
 
-define audio.mitchell_theme = 'smooth criminal.mp3'
+define audio.tema_mitchell   = 'mitchell.mp3'
+define audio.tema_biblioteca = 'biblioteca.mp3'
+define audio.tema_quadra     = 'quadra.mp3'
+define audio.tema_suspense   = 'suspense.mp3'
+define audio.tema_medonha    = 'medonha.mp3'
+define audio.tema_tribunal   = 'tribunal.mp3'
 
 label start:
     # python:
