@@ -17,7 +17,7 @@ label dia3_start:
 
     "Quem é aquele cara engraçado ali?"
 
-    # XXX: show goofy dude here
+    show letos normal
 
     noname "Como vai amigo, nesse dia maravilhoso."
 
@@ -35,18 +35,22 @@ label dia3_start:
 
     "Então nós dois fomos até o jardim, parece ser mais um lugar tranquilo, mas por algum motivo tem uma gosma preta saindo de algumas flores."
 
+    show letos normal
+
     me "[letos] tem um líquido estranho saindo daquelas flores."
 
     letos "Ah obrigado [my_name]."
 
     me "Como você sabe o meu nome?"
 
+    hide letos normal
     "O [letos] se vira e começa a arrumar as flores."
 
     letos "Hora que anfitrião seria eu, se não soubesse o nome do meu convidado."
 
     "Isso é bem esquisito, e ele logo se levantou e olhou para mim."
 
+    show letos normal
     letos "Eu peço perdão [my_name], parece que o jardim hoje está bem teimoso."
 
     me "Você se refere a esse líquido escuro?"
@@ -66,6 +70,8 @@ label dia3_start:
             me "A [diana] morreu, o mundo está destruido, e eles não estão mais aqui!"
             # XXX: (O cenário vai ficando cada vez mais apodrecido)
 
+            hide letos normal
+            show letos assustado
             letos "Não diga isso, não diga isso!!"
 
             me "Mas isso é a verdade, eu não posso mais fingir que está tudo bem."
