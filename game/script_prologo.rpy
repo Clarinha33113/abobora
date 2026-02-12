@@ -3,6 +3,8 @@ label prologo_start:
     show text "Prólogo\nUma manhã inexperada" with Pause(2)
     scene black with dissolve
 
+    # XXX: música pro prólogo também
+
     "Outra noite, com mais melancolia no ar."
 
     "Eu sinto o vento no meu rosto, o calor da cama, porém isso é tão facilmente esquecido..."
@@ -53,7 +55,7 @@ label prologo_start:
     "[my_name] encontrou uma carta peculiar, o símbolo era desconhecido para ele, apesar disso ele abre a carta e lê:"
 
     show carta1
-    ""
+    pause
     hide carta1
 
     # "{i}Prezado(a) [my_name]{/i}"
@@ -68,7 +70,5 @@ label prologo_start:
     "Ao olhar [my_name] percebe que a assinatura pede um título ao invés do nome, então ele pensa e escreve:"
 
     "{b}O Espectador{/b}"
-
-    "De repente ele é teletransportado para uma sala escura..."
 
     jump dia1_start

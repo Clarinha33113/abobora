@@ -4,23 +4,27 @@ label dia2_start:
     show text "Dia 2" with Pause(2)
     scene black with dissolve
 
+    play music tema_suspense loop if_changed
     me "Essa noite foi diferente. Não tive aquele sonho. Em vez disso, vi uma garota assustada"
 
     me "À sua frente, havia uma figura... parecia ter controle sobre ela, fazendo-a tirar a própria vida"
 
-    scene bg cozinha_sangue with dissolve
+    scene bg quarto with dissolve
 
     play sound "scream.mp3"
+    play music tema_medonha fadein 5.0 if_changed
     "[my_name] acorda com um grito, e logo ele segue outros até a cozinha."
 
-    # ao entrar uma música sinistra começa a tocar e vemos todos assustados
+    scene bg cozinha_sangue with dissolve
 
     me "A [diana], ela, ela tá morta com uma faca no peito, uma expressão de agonia em sua face"
     me "eu não sei o que dizer, tem tanto sangue que eu-"
 
+    play music tema_suspense loop fadein 5.0 if_changed
+    # XXX: barulho de *zwip*
+    scene black with dissolve
+    pause 2
     scene bg tribunal with dissolve
-
-    "Subitamente todos aparecem no tribunal e no meio [vince]"
 
     show vince normal
     vince "Bom dia a todos, por que as caras feias neste dia tão adorável?"
@@ -35,7 +39,7 @@ label dia2_start:
     vince "Para que tanta agressividade, [sofia]?"
     vince "vocês todos deveriam estar felizes, pois vocês escolheram o final bom!!"
 
-    # tocar musica de comemoração
+    # XXX: tocar musica de comemoração
 
     hide vince normal
     show nina enojada
@@ -77,6 +81,7 @@ label dia2_start:
 
 label dia2_cozinha:
     scene bg cozinha_sangue with dissolve
+    # XXX: música cozinha
     if first_time_cozinha:
         "[clint], [felix] e [aisha] estão na cozinha."
         $ first_time_cozinha = False
@@ -172,6 +177,7 @@ label dia2_aisha:
 
 label dia2_sala_recreacao:
     scene bg sala_recreacao with dissolve
+    # XXX: música sala de recreação
     if first_time_sala_recreacao:
         "[my_name] chega na sala de recreação onde aqui estão [joana], [nina] e [mitchell]"
         $ first_time_sala_recreacao = False
@@ -220,7 +226,7 @@ label dia2_joana:
 
 label dia2_mitchell:
     show mitchell normal
-    play music tema_mitchell
+    play music tema_mitchell if_changed
     mitchell "E ai [minato], tá investigando a garota morta?"
 
     hide mitchell normal
@@ -245,6 +251,7 @@ label dia2_mitchell:
 
 label dia2_biblioteca:
     scene bg biblioteca with dissolve
+    play music tema_biblioteca if_changed
     if first_time_biblioteca:
         "[sofia] e [thiago] estão na biblioteca."
         $ first_time_biblioteca = False
@@ -356,6 +363,7 @@ label dia2_quarto:
 
 label dia2_tribunal:
     scene black with dissolve
+    play music tema_tribunal loop if_changed
     show text "Tribunal" with Pause(2)
     scene black with dissolve
 
@@ -368,7 +376,7 @@ label dia2_tribunal:
     show vince normal
     vince "Senhoras e senhores! Sejam bem-vindos ao primeiro caso da 21° edição do tribunal do desejo, e eu serei o grande apresentador e juiz."
 
-    vince "Agora vocês todos deverão apresentar todas as provas coletas!"
+    vince "Agora vocês todos deverão apresentar todas as provas coletadas!"
     vince "Que tenha justiça neste tribunal!"
 
     hide vince normal
@@ -439,7 +447,7 @@ label dia2_tribunal:
     jump escolhas_quem_acusar
 
 label dia2_depois_de_acusar:
-    stop music
+    play music tema_tribunal fadein 5.0 loop if_changed
 
     $ is_aggressive = current_choices[CS_AGRESSIVO] >= 4
     $ is_asshole = current_choices[CS_PASSIVO_AGRESSIVO] >= 4
@@ -485,11 +493,11 @@ label dia2_depois_de_acusar:
             aisha "E seus argumentos são muito incoerentes."
             hide aisha normal
 
-        play music tema_mitchell
+        play music tema_mitchell if_changed
         show mitchell normal
         mitchell "Hahaha esse cara está louco"
         hide mitchell normal
-        stop music
+        play music tema_tribunal fadein 5.0 loop if_changed
 
         # just so they don't repeat the same things
         if accused_person != '[sofia]':
@@ -535,7 +543,7 @@ label dia2_final:
 
     hide mitchell normal
     show felix pensativo
-    felix "E o que séria tão importante, pra você tirar uma vida inocente?"
+    felix "E o que seria tão importante, pra você tirar uma vida inocente?"
 
     hide felix pensativo
     show mitchell seila
@@ -598,10 +606,12 @@ label dia2_final:
 
     "Todos olham para ele em choque."
 
-    stop music
+    stop music fadeout 5.0
 
     scene bg tribunal with dissolve
     show vince normal
+
+    play music tema_suspense loop if_changed
 
     vince "E assim termina o primeiro julgamento, eu admito que estou impressionado, vocês conseguiram descobrir o assassino."
 

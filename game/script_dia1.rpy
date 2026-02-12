@@ -5,6 +5,8 @@ label dia1_start:
     show text "Dia 1" with Pause(2)
     scene black with dissolve
 
+    play music tema_suspense loop if_changed
+
     "Hahahahahahaha"
 
     me "O que está acontecendo?"
@@ -55,7 +57,7 @@ label dia1_start:
     me "Parece que coisas foram adicionadas a carta, ou sempre estiveram lá?"
 
     show carta2
-    ""
+    pause
     hide carta2
 
     show minato pensativo
@@ -121,9 +123,9 @@ label dia1_start:
 
     hide minato normal
     show mitchell normal
-    play music tema_mitchell
+    play music tema_mitchell if_changed
     mitchell "Sou {b}O [mitchell]{/b}."
-    stop music
+    play music tema_suspense loop if_changed
 
     hide mitchell normal
     show nina normal
@@ -143,12 +145,13 @@ label dia1_start:
 
     hide diana normal
     show vince normal
-    vince "Bom, bom. Estão dispensados por agora." # pulled that outta my ass
+    vince "Bom. Estão dispensados por agora." # pulled that outta my ass
     jump escolhas_tribunal
 
 
 label dia1_sala_recreacao:
     scene bg sala_recreacao with dissolve
+    # XXX: música da sala de recreação
     if first_time_sala_recreacao:
         "[my_name] chega em uma sala de recreação onde estão [thiago], [sofia], [clint] e [diana]"
         $ first_time_sala_recreacao = False
@@ -276,6 +279,7 @@ label dia1_diana:
 
 label dia1_cozinha:
     scene bg cozinha with dissolve
+    # XXX: música cozinha
 
     if first_time_cozinha:
         "[aisha] e [nina] estão na cozinha."
@@ -355,6 +359,7 @@ label dia1_nina:
 
 label dia1_biblioteca:
     scene bg biblioteca with dissolve
+    play music tema_biblioteca if_changed
     menu:
         "[felix] está na biblioteca."
 
@@ -397,6 +402,7 @@ label dia1_felix:
 
 label dia1_quadra:
     scene bg quadra with dissolve
+    play music tema_quadra if_changed
     if first_time_quadra:
         "[joana] e [mitchell] estão na quadra."
         $ first_time_quadra = False
@@ -440,7 +446,7 @@ label dia1_joana:
     jump dia1_quadra
 
 label dia1_mitchell:
-    play music tema_mitchell
+    play music tema_mitchell if_changed
 
     "[mitchell] está dançando passos bem familiares por algum motivo"
 
@@ -472,6 +478,7 @@ label dia1_mitchell:
 
 label dia1_quarto:
     scene bg quarto with dissolve
+    # XXX: tema pro quarto também
     menu:
         "Dormir":
             pass

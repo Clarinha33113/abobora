@@ -72,6 +72,7 @@ label start:
 
 label escolhas_tribunal:
     scene bg tribunal with dissolve
+    play music tema_suspense if_changed
     menu:
         me "Para onde vou?"
 
@@ -90,6 +91,7 @@ label escolhas_tribunal:
 
 label escolhas_corredor:
     scene bg corredor with dissolve
+    play music tema_suspense if_changed
 
     menu:
         "Posso ir a biblioteca ou a quadra."
