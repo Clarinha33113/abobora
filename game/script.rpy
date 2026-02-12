@@ -11,6 +11,7 @@ define nina     = Character("Confeiteira")
 define felix    = Character("Apostador")
 define joana    = Character("Atleta")
 define diana    = Character("Desenhista")
+define letos    = Character("Letos")
 
 define clint_alive    = True
 define aisha_alive    = True

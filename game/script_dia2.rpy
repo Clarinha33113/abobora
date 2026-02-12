@@ -23,7 +23,6 @@ label dia2_start:
     play music tema_suspense loop fadein 5.0 if_changed
     # XXX: barulho de *zwip*
     scene black with dissolve
-    pause 2
     scene bg tribunal with dissolve
 
     show vince normal
@@ -637,6 +636,7 @@ label dia2_final:
     show vince normal
     vince "Não adianta ficar bravo, pois agora vocês já sabem de tudo, então eu vou deixá-los descansar por hoje."
 
-    # me "ayaya vo a mimir"
-    # XXX: go back to ur room (may it has some more dialog or sum)
+    # XXX: transição
+
+    me "ovo a mimir"
     jump dia3_start
