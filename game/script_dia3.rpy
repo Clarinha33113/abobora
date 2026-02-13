@@ -345,5 +345,7 @@ label dia3_dormir:
     pause
     show text "[credits]"
     pause
+    show text "{b}Obrigado a professora Elaine{/b}"
+    pause
     return
 

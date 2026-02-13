@@ -64,13 +64,14 @@ define audio.tema_suspense   = 'suspense.mp3'
 define audio.tema_suspense2  = 'suspense2.mp3'
 
 define credits = """
-Coordenador: Lucas Ribas
-Programação: {a=https://github.com/Clarinha33113}Maria Clara{/a}, {a=https://github.com/miublue}Miu{/a} (não quero usar meu nome real aquikakakak)
-Personagens: Laura Rodrigues, Vitória Mello
-Roteiro: Lucas Ribas
-Música: Clara Lopes, Kamilly
+Programação: {a=https://github.com/Clarinha33113}Maria{/a}, {a=https://github.com/miublue}Miu{/a}
+Coordenador: Lucas
+Personagens: Laura, Vitória
+Roteiro: Lucas
+Música: Clara, Kamilly
+Cenários: Kamilly, Laura, Vitória
 
-Professora Elaine, Módulo de Comunicação
+Jogo feito para o módulo de comunicação da SWTV.
 """
 
 label start:
