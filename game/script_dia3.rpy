@@ -98,7 +98,7 @@ label dia3_real_start:
 
 label dia3_sala_recreacao:
     scene bg sala_recreacao with dissolve
-    play music tema_sala_recreacao loop if_changed
+    play music tema_recreacao loop if_changed
     if first_time_sala_recreacao:
         "[thiago] e [sofia] estão na sala de recreação."
         $ first_time_sala_recreacao = False
