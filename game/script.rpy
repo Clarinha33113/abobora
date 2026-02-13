@@ -57,9 +57,11 @@ define audio.tema_recreacao  = 'recreacao.mp3'
 define audio.tema_biblioteca = 'biblioteca.mp3'
 define audio.tema_quadra     = 'quadra.mp3'
 define audio.tema_quarto     = 'quarto.mp3'
-define audio.tema_suspense   = 'suspense.mp3'
-define audio.tema_medonha    = 'medonha.mp3'
+define audio.tema_cozinha    = 'cozinha.mp3'
 define audio.tema_tribunal   = 'tribunal.mp3'
+define audio.tema_medonha    = 'medonha.mp3'
+define audio.tema_suspense   = 'suspense.mp3'
+define audio.tema_suspense2  = 'suspense2.mp3'
 
 define credits = """
 Programação: {a=https://github.com/Clarinha33113}Maria Clara{/a}, {a=https://github.com/miublue}Miu{/a} (não quero usar meu nome real aquikakakak)
@@ -76,7 +78,7 @@ label start:
     #     if not my_name:
     #         my_name = DEFAULT
 
-    stop music
+    # stop music
     $ my_name = 'Minato'
     jump prologo_start
 

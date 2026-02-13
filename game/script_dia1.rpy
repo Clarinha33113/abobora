@@ -275,7 +275,7 @@ label dia1_diana:
 
 label dia1_cozinha:
     scene bg cozinha with dissolve
-    # XXX: música cozinha
+    play music tema_cozinha loop if_changed
 
     if first_time_cozinha:
         "[aisha] e [nina] estão na cozinha."

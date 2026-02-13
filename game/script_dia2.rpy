@@ -16,7 +16,7 @@ label dia2_start:
     me "A [diana], ela, ela tá morta com uma faca no peito, uma expressão de agonia em sua face"
     me "eu não sei o que dizer, tem tanto sangue que eu-"
 
-    play music tema_suspense loop fadein 5.0 if_changed
+    play music tema_suspense2 loop fadein 5.0 if_changed
     # XXX: barulho de *zwip*
     scene black with dissolve
     scene bg tribunal with dissolve
@@ -70,13 +70,14 @@ label dia2_start:
     show vince normal
 
     vince "Agora vocês estão dispensados."
+    stop music fadeout 5.0
 
     jump escolhas_tribunal
 
 
 label dia2_cozinha:
     scene bg cozinha_sangue with dissolve
-    # XXX: música cozinha
+    play music tema_cozinha loop if_changed
     if first_time_cozinha:
         "[clint], [felix] e [aisha] estão na cozinha."
         $ first_time_cozinha = False
