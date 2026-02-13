@@ -1,10 +1,6 @@
 
 label dia1_start:
-    $ dia = 1
-    scene black with dissolve
-    show text "Dia 1" with Pause(2)
-    scene black with dissolve
-
+    call novo_dia
     play music tema_suspense loop if_changed
 
     "Hahahahahahaha"

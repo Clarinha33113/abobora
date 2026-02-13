@@ -1,12 +1,8 @@
 label dia2_start:
-    $ dia = 2
-    scene black with dissolve
-    show text "Dia 2" with Pause(2)
-    scene black with dissolve
-
+    call novo_dia
     play music tema_suspense loop if_changed
-    me "Essa noite foi diferente. Não tive aquele sonho. Em vez disso, vi uma garota assustada"
 
+    me "Essa noite foi diferente. Não tive aquele sonho. Em vez disso, vi uma garota assustada"
     me "À sua frente, havia uma figura... parecia ter controle sobre ela, fazendo-a tirar a própria vida"
 
     scene bg quarto with dissolve
@@ -361,10 +357,8 @@ label dia2_quarto:
 
 
 label dia2_tribunal:
-    scene black with dissolve
     play music tema_tribunal loop if_changed
-    show text "Tribunal" with Pause(2)
-    scene black with dissolve
+    call transition("Tribunal")
 
     scene bg tribunal with dissolve
 

@@ -1,7 +1,5 @@
 label prologo_start:
-    scene black with dissolve
-    show text "Prólogo\nUma manhã inexperada" with Pause(2)
-    scene black with dissolve
+    call transition("Prólogo\nUma manhã inexperada")
 
     # XXX: música pro prólogo também
 

@@ -27,7 +27,7 @@ define believe_felix = False
 define text_centro   = "Centro"
 define text_direita  = "Direita"
 define text_esquerda = "Esquerda"
-define dia           = 1
+define dia           = 0
 define dialog_count  = 0
 
 define CS_ASSERTIVO = 'Assertivo'
@@ -108,6 +108,23 @@ label resetar_escolhas:
     python:
         current_choices = { CS_PASSIVO: 0, CS_AGRESSIVO: 0, CS_ASSERTIVO: 0, CS_PASSIVO_AGRESSIVO: 0 }
         dialog_count = 0
+    return
+
+label transition(msg):
+    scene black with dissolve
+    show text msg with Pause(2)
+    scene black with dissolve
+    return
+
+label novo_dia:
+    call resetar_escolhas
+    python:
+        dia += 1
+        first_time_sala_recreacao = True
+        first_time_cozinha = True
+        first_time_biblioteca = True
+        first_time_quadra = True
+    call transition("Dia [dia]")
     return
 
 label escolhas_quem_acusar:
