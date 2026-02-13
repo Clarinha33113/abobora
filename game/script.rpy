@@ -53,14 +53,16 @@ define first_time_biblioteca = True
 define first_time_quadra = True
 
 define audio.tema_mitchell   = 'mitchell.mp3'
+define audio.tema_recreacao  = 'recreacao.mp3'
 define audio.tema_biblioteca = 'biblioteca.mp3'
 define audio.tema_quadra     = 'quadra.mp3'
+define audio.tema_quarto     = 'quarto.mp3'
 define audio.tema_suspense   = 'suspense.mp3'
 define audio.tema_medonha    = 'medonha.mp3'
 define audio.tema_tribunal   = 'tribunal.mp3'
 
 define credits = """
-Programação: Maria Clara, {a=https://github.com/miublue}Miu{/a} (não quero usar meu nome real aquikakakak)
+Programação: {a=https://github.com/Clarinha33113}Maria Clara{/a}, {a=https://github.com/miublue}Miu{/a} (não quero usar meu nome real aquikakakak)
 Personagens: Laura Rodrigues, Vitória Mello
 Roteiro: Lucas Ribas
 Música: Clara Lopes

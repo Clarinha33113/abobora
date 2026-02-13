@@ -5,7 +5,7 @@ label dia3_start:
         mitchell_alive = False # this one is dead fr tho
     call novo_dia
     # vai main menu mesmo fodase
-    play music "main menu.mp3" if_changed
+    play music "main menu.mp3" loop if_changed
 
     "Isso é um sonho? Ou é só mais um truque desse lugar? Eu só me lembro de ter ido dormir."
 
@@ -98,7 +98,7 @@ label dia3_real_start:
 
 label dia3_sala_recreacao:
     scene bg sala_recreacao with dissolve
-    # play music tema_sala_recreacao if_changed
+    play music tema_sala_recreacao loop if_changed
     if first_time_sala_recreacao:
         "[thiago] e [sofia] estão na sala de recreação."
         $ first_time_sala_recreacao = False
@@ -148,7 +148,7 @@ label dia3_jogar_sofia:
 
 label dia3_cozinha:
     scene bg cozinha with dissolve
-    # play music tema_cozinha if_changed
+    play music tema_cozinha loop if_changed
     menu:
         "[clint] está na cozinha."
         "Falar com ele":
@@ -192,7 +192,7 @@ label dia3_sanduba_clint:
 
 label dia3_biblioteca:
     scene bg biblioteca with dissolve
-    play music tema_biblioteca if_changed
+    play music tema_biblioteca loop if_changed
     if first_time_biblioteca:
         "[aisha], [nina] e [felix] estão na biblioteca."
         $ first_time_biblioteca = False
@@ -294,7 +294,7 @@ label dia3_felix:
 
 label dia3_quadra:
     scene bg quadra with dissolve
-    play music tema_quadra if_changed
+    play music tema_quadra loop if_changed
     menu:
         "[joana] está na quadra."
         "Falar com ela":
@@ -331,6 +331,7 @@ label dia3_treinar_joana:
     jump dia3_quadra
 
 label dia3_quarto:
+    play music tema_quarto loop if_changed
     scene bg quarto with dissolve
     menu:
         "Dormir":

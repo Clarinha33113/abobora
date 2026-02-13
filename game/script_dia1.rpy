@@ -119,7 +119,7 @@ label dia1_start:
 
     hide minato normal
     show mitchell normal
-    play music tema_mitchell if_changed
+    play music tema_mitchell loop if_changed
     mitchell "Sou {b}O [mitchell]{/b}."
     play music tema_suspense loop if_changed
 
@@ -147,7 +147,7 @@ label dia1_start:
 
 label dia1_sala_recreacao:
     scene bg sala_recreacao with dissolve
-    # XXX: música da sala de recreação
+    play music tema_recreacao loop if_changed
     if first_time_sala_recreacao:
         "[my_name] chega em uma sala de recreação onde estão [thiago], [sofia], [clint] e [diana]"
         $ first_time_sala_recreacao = False
@@ -355,7 +355,7 @@ label dia1_nina:
 
 label dia1_biblioteca:
     scene bg biblioteca with dissolve
-    play music tema_biblioteca if_changed
+    play music tema_biblioteca loop if_changed
     menu:
         "[felix] está na biblioteca."
 
@@ -398,7 +398,7 @@ label dia1_felix:
 
 label dia1_quadra:
     scene bg quadra with dissolve
-    play music tema_quadra if_changed
+    play music tema_quadra loop if_changed
     if first_time_quadra:
         "[joana] e [mitchell] estão na quadra."
         $ first_time_quadra = False
@@ -442,7 +442,7 @@ label dia1_joana:
     jump dia1_quadra
 
 label dia1_mitchell:
-    play music tema_mitchell if_changed
+    play music tema_mitchell loop if_changed
 
     "[mitchell] está dançando passos bem familiares por algum motivo"
 
@@ -474,7 +474,7 @@ label dia1_mitchell:
 
 label dia1_quarto:
     scene bg quarto with dissolve
-    # XXX: tema pro quarto também
+    play music tema_quarto loop if_changed
     menu:
         "Dormir":
             pass

@@ -8,7 +8,7 @@ label dia2_start:
     scene bg quarto with dissolve
 
     play sound "scream.mp3"
-    play music tema_medonha fadein 5.0 if_changed
+    play music tema_medonha fadein 5.0 loop if_changed
     "[my_name] acorda com um grito, e logo ele segue outros até a cozinha."
 
     scene bg cozinha_sangue with dissolve
@@ -221,7 +221,7 @@ label dia2_joana:
 
 label dia2_mitchell:
     show mitchell normal
-    play music tema_mitchell if_changed
+    play music tema_mitchell loop if_changed
     mitchell "E ai [minato], tá investigando a garota morta?"
 
     hide mitchell normal
@@ -246,7 +246,7 @@ label dia2_mitchell:
 
 label dia2_biblioteca:
     scene bg biblioteca with dissolve
-    play music tema_biblioteca if_changed
+    play music tema_biblioteca loop if_changed
     if first_time_biblioteca:
         "[sofia] e [thiago] estão na biblioteca."
         $ first_time_biblioteca = False
@@ -348,6 +348,7 @@ label dia2_quadra:
 
 
 label dia2_quarto:
+    play music tema_quarto loop if_changed
     scene bg quarto with dissolve
     menu:
         "Dormir":
@@ -488,7 +489,7 @@ label dia2_depois_de_acusar:
             aisha "E seus argumentos são muito incoerentes."
             hide aisha normal
 
-        play music tema_mitchell if_changed
+        play music tema_mitchell loop if_changed
         show mitchell normal
         mitchell "Hahaha esse cara está louco"
         hide mitchell normal

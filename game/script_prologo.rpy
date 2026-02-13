@@ -1,7 +1,8 @@
 label prologo_start:
     call transition("Prólogo\nUma manhã inexperada")
 
-    # XXX: música pro prólogo também
+    # main menu pra tudo fodase
+    play music "main menu.mp3" loop if_changed
 
     "Outra noite, com mais melancolia no ar."
 
@@ -38,7 +39,7 @@ label prologo_start:
 
     "Essa luz na pele é tão boa, é como um abraço. Essa estrada me lembra do velho mundo, tantas ruinas que um dia foram o local de trabalho de tantos, ou a casa de alguém, especialmente aquele lugar."
 
-    # Ele em frente a um predio em ruinas
+    # XXX: Ele em frente a um predio em ruinas
 
     "Difícil imaginar as coisas voltarem a ser como eram antes, eu queria poder estar aqui para ver antes."
 
@@ -55,13 +56,6 @@ label prologo_start:
     show carta1
     pause
     hide carta1
-
-    # "{i}Prezado(a) [my_name]{/i}"
-
-    # "[my_name] vê três passagens para um belo campo florido com um rio, um lugar que lembrava tranquilidade para ele."
-    # Talvez mostrar uma imagem com as passagens na tela também?
-
-    # "{i}Gostaríamos de parabenizá-lo por ter sido selecionado para uma viajem com tudo pago para um lugar especial, para você e sua família descansarem, basta apenas assinar essa carta e poderá usar essas passagens.{/i}"
 
     me "Isso é estranho, as passagens são verdadeiras, e as férias de verão estão logo ai, o vovô e a vovó vão gostar, e isso deve ser daquele sorteio nacional."
 
