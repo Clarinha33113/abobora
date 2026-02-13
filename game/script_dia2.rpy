@@ -349,11 +349,13 @@ label dia2_quadra:
 
 label dia2_quarto:
     scene bg quarto with dissolve
-
-    me "É melhor eu descansar por enquanto, pois logo terei que garantir que o real culpado seja descoberto, ou eu e todos vamos morrer..."
-    me "Pelo menos eu sei que o culpado é capaz de intimidar alguém, manipular ou controlar."
-
-    jump dia2_tribunal
+    menu:
+        "Dormir":
+            me "É melhor eu descansar por enquanto, pois logo terei que garantir que o real culpado seja descoberto, ou eu e todos vamos morrer..."
+            me "Pelo menos eu sei que o culpado é capaz de intimidar alguém, manipular ou controlar."
+            jump dia2_tribunal
+        "Voltar":
+            jump escolhas_tribunal
 
 
 label dia2_tribunal:

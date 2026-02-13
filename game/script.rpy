@@ -59,6 +59,13 @@ define audio.tema_suspense   = 'suspense.mp3'
 define audio.tema_medonha    = 'medonha.mp3'
 define audio.tema_tribunal   = 'tribunal.mp3'
 
+define credits = """
+Programação: Maria Clara, {a=https://github.com/miublue}Miu{/a} (não quero usar meu nome real aquikakakak)
+Personagens: Laura Rodrigues, Vitória Mello
+Roteiro: Lucas Ribas
+Música: Clara Lopes
+"""
+
 label start:
     # python:
     #     DEFAULT = 'Minato'
