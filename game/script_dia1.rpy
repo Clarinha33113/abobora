@@ -7,7 +7,7 @@ label dia1_start:
 
     me "O que está acontecendo?"
 
-    me "O lugar é frio, o ar apesar disso é leve. E essa risada, de quem será eu não sei, porém tenho certeza que devo ter cautela..."
+    me "{i}O lugar é frio. O ar, apesar disso, é leve. E essa risada... de quem será, eu não sei, porém tenho certeza de que devo ter cautela...{/i}"
 
     scene bg sala_branca with dissolve
 
