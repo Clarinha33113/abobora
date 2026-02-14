@@ -1,5 +1,5 @@
 label prologo_start:
-    call transition("Prólogo\nUma manhã inexperada")
+    call transition("Prólogo\nUma manhã inesperada")
 
     # main menu pra tudo fodase
     play music "main menu.mp3" loop if_changed
