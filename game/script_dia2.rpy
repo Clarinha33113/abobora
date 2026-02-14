@@ -2,18 +2,18 @@ label dia2_start:
     call novo_dia
     play music tema_suspense loop if_changed
 
-    me "Essa noite foi diferente. Não tive aquele sonho. Em vez disso, vi uma garota assustada"
-    me "À sua frente, havia uma figura... parecia ter controle sobre ela, fazendo-a tirar a própria vida"
+    me "{i}Esta noite foi diferente. Não tive aquele sonho. Em vez disso, vi uma garota assustada.{/i}"
+    me "À sua frente, havia uma figura... parecia ter controle sobre ela, fazendo-a tirar a própria vida."
 
     scene bg quarto with dissolve
 
     play sound "scream.mp3"
     play music tema_medonha fadein 5.0 loop if_changed
-    "[my_name] acorda com um grito, e logo ele segue outros até a cozinha."
+    "[my_name] acorda com um grito e logo ele segue os outros até a cozinha."
 
     scene bg cozinha_sangue with dissolve
 
-    me "A [diana], ela, ela tá morta com uma faca no peito, uma expressão de agonia em sua face"
+    me "A [diana], ela, ela tá morta com uma faca no peito, havia uma expressão de agonia em sua face"
     me "eu não sei o que dizer, tem tanto sangue que eu-"
 
     play music tema_suspense2 loop fadein 5.0 if_changed
@@ -26,13 +26,13 @@ label dia2_start:
 
     hide vince normal
     show sofia decepcionada
-    sofia "É porque tem um corpo morto aqui seu gato estúpido."
+    sofia "É porque tem um corpo morto aqui, seu gato estúpido!"
 
     hide sofia decepcionada
     show vince normal
 
     vince "Para que tanta agressividade, [sofia]?"
-    vince "vocês todos deveriam estar felizes, pois vocês escolheram o final bom!!"
+    vince "Vocês todos deveriam estar felizes, pois vocês escolheram o final bom!!"
 
     # XXX: tocar musica de comemoração
 
@@ -53,15 +53,15 @@ label dia2_start:
     show vince normal
 
     vince "Regras são regras."
-    vince "Agora vocês têm a manhã para descobrir quem é o assassino, e se conseguirem vocês avançam para o próximo nível."
+    vince "Agora vocês têm a manhã para descobrir quem é o assassino e, se conseguirem, vocês avançam para o próximo nível."
 
-    vince "Mas se falharem escolhendo a pessoa errada..."
+    vince "Mas, se falharem escolhendo a pessoa errada..."
 
     hide vince normal
     scene bg tudo_vermelho_lmao with dissolve
     show vince emo_idk
 
-    show text "{b}Vocês todos morrem e o assassino vence.{/b}"
+    show text "{b}Vocês todos morrem, e o assassino vence.{/b}"
     pause
 
     hide vince emo_idk
@@ -97,7 +97,7 @@ label dia2_cozinha:
 label dia2_felix:
     show felix pensativo
     felix "Pobrezinha, ela provavelmente não aguentou a pressão"
-    felix "mas por que ela faria isso, porque ela não esperou?"
+    felix "Mas por que ela faria isso? Por que ela não esperou?"
 
     hide felix pensativo
     show minato normal
@@ -105,8 +105,8 @@ label dia2_felix:
 
     hide minato normal
     show felix pensativo
-    felix "Isso mudaria o cenário drasticamente, mas faria sentido considerando o que o Vince disse"
-    felix "é que só de olhar soa que ela se matou"
+    felix "Isso mudaria o cenário drasticamente, mas faria sentido, considerando o que o Vince disse."
+    felix "É que, só de olhar, soa que ela se matou."
 
     hide felix pensativo
     show minato normal
@@ -114,8 +114,8 @@ label dia2_felix:
 
     hide minato normal
     show felix pensativo
-    felix "Sinceramente sim, eu falei com todo mundo e aquele [thiago] soa o mais suspeito"
-    felix "ele foi muito indiferente a morte dela"
+    felix "Sinceramente, sim. Eu falei com todo mundo, e aquele [thiago] soa o mais suspeito."
+    felix "Ele foi muito indiferente à morte dela."
 
     hide felix pensativo
     jump dia2_cozinha
