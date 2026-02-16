@@ -57,18 +57,19 @@ define audio.tema_recreacao  = 'recreacao.mp3'
 define audio.tema_biblioteca = 'biblioteca.mp3'
 define audio.tema_quadra     = 'quadra.mp3'
 define audio.tema_quarto     = 'quarto.mp3'
-define audio.tema_cozinha    = 'cozinha.mp3' # XXX: preguiça de encontrar outra música
+define audio.tema_cozinha    = 'cozinha.mp3'
 define audio.tema_tribunal   = 'tribunal.mp3'
 define audio.tema_medonha    = 'medonha.mp3'
 define audio.tema_suspense   = 'suspense.mp3'
 define audio.tema_suspense2  = 'suspense2.mp3'
 
 define credits = """
-Programação: {a=https://github.com/Clarinha33113}Maria{/a}, {a=https://github.com/miublue}Miu{/a}
 Coordenador: Lucas
+
+Programação: {a=https://github.com/Clarinha33113}Maria{/a}, {a=https://github.com/emilydickinson-creator}Clara{/a}, {a=https://github.com/miublue}Miu{/a}
 Personagens: Laura, Vitória
 Roteiro: Lucas
-Música: Clara, Kamilly
+Músicas: Clara, Kamilly
 Cenários: Kamilly, Laura, Vitória
 
 Jogo feito para o módulo de comunicação da SWTV.
