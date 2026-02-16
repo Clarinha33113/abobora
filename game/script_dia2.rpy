@@ -9,12 +9,12 @@ label dia2_start:
 
     play sound "scream.mp3"
     play music tema_medonha fadein 5.0 loop if_changed
-    "[my_name] acorda com um grito e logo ele segue os outros até a cozinha."
+    "[my_name] acorda com um grito, e logo ele segue os outros até a cozinha."
 
     scene bg cozinha_sangue with dissolve
 
-    me "A [diana], ela, ela tá morta com uma faca no peito, havia uma expressão de agonia em sua face"
-    me "eu não sei o que dizer, tem tanto sangue que eu-"
+    me "A [diana], ela... ela tá morta com uma faca no peito. Havia uma expressão de agonia em sua face."
+    me "Eu não sei o que dizer... tem tanto sangue que eu-"
 
     play music tema_suspense2 loop fadein 5.0 if_changed
     # XXX: barulho de *zwip*
@@ -42,7 +42,7 @@ label dia2_start:
 
     hide nina enojada
     show vince normal
-    vince "É simples, quando alguém morre isso significa que vocês escolheram ficar!!"
+    vince "É simples: quando alguém morre, isso significa que vocês escolheram ficar!!"
 
     hide vince normal
     show clint irritado
@@ -96,7 +96,7 @@ label dia2_cozinha:
 
 label dia2_felix:
     show felix pensativo
-    felix "Pobrezinha, ela provavelmente não aguentou a pressão"
+    felix "Pobrezinha, ela provavelmente não aguentou a pressão."
     felix "Mas por que ela faria isso? Por que ela não esperou?"
 
     hide felix pensativo
@@ -122,7 +122,7 @@ label dia2_felix:
 
 label dia2_clint:
     show clint feliz
-    clint "Olá [minato], eu estava analisando o cadáver dela, e percebi um detalhe relevante"
+    clint "Olá, [minato]. Eu estava analisando o cadáver dela e percebi um detalhe relevante."
 
     hide clint feliz
     show minato assustado
@@ -130,28 +130,28 @@ label dia2_clint:
 
     hide minato assustado
     show clint normal
-    clint "Ela foi perfurada 17 vezes, mas todos de um modo totalmente desesperado e amador"
-    clint "O que indica que ou o assassino é muito desleixado ou ela se matou"
+    clint "Ela foi perfurada 17 vezes, mas tudo de um modo totalmente desesperado e amador,"
+    clint "o que indica que ou o assassino é muito desleixado, ou ela se matou."
 
     hide clint normal
     show minato normal
-    me "Pelo que o [vince] disse é mais provável que ela tenha sido assassinada"
+    me "Pelo que o [vince] disse, é mais provável que ela tenha sido assassinada."
 
     hide minato normal
     show clint normal
-    clint "Definitivamente. É justamente por isso que eu acredito que ela foi coagida a fazer isso ou só ameaçada mesmo"
+    clint "Definitivamente. É justamente por isso que eu acredito que ela foi coagida a fazer isso, ou só ameaçada mesmo."
 
     hide clint normal
     jump dia2_cozinha
 
 label dia2_aisha:
     show aisha pensativa
-    aisha "Uma pena que as coisas chegaram a esse ponto, ela foi indiscutivelmente assassinada"
-    aisha "Mas a morte dela me indicou algumas pontas soltas"    
+    aisha "Uma pena que as coisas tenham chegado a esse ponto. Ela foi indiscutivelmente assassinada."
+    aisha "Mas a morte dela me indicou algumas pontas soltas."
 
-    aisha "Primeiro que ela provavelmente foi forçada a fazer esse ato"
-    aisha "E considerando as pequenas manchas no chão tinha mais alguém"
-    aisha "Um detalhe pequeno que o [clint] falhou em notar"
+    aisha "Primeiro, que ela provavelmente foi forçada a fazer esse ato."
+    aisha "E, considerando as pequenas manchas no chão, tinha mais alguém."
+    aisha "Um detalhe pequeno que o [clint] falhou em notar."
 
     hide aisha pensativa
     show minato normal
@@ -159,7 +159,7 @@ label dia2_aisha:
 
     hide minato normal
     show aisha normal
-    aisha "Sim, quem fez isso usa sapatos"
+    aisha "Sim. Quem fez isso usa sapatos."
 
     hide aisha normal
     show minato normal
@@ -167,7 +167,7 @@ label dia2_aisha:
 
     hide minato normal
     show aisha normal
-    aisha "É simples, diferente de qualquer um aqui eu notei o formato da sola"
+    aisha "É simples: diferente de qualquer um aqui, eu notei o formato da sola."
     jump dia2_cozinha
 
 
@@ -175,7 +175,7 @@ label dia2_sala_recreacao:
     scene bg sala_recreacao with dissolve
     # XXX: música sala de recreação
     if first_time_sala_recreacao:
-        "[my_name] chega na sala de recreação onde aqui estão [joana], [nina] e [mitchell]"
+        "[my_name] chega na sala de recreação, onde estão [joana], [nina] e [mitchell]."
         $ first_time_sala_recreacao = False
 
     menu:
@@ -191,31 +191,31 @@ label dia2_sala_recreacao:
             jump escolhas_tribunal
 
 label dia2_nina:
-    "[nina] tá bem abalada, e a [joana] felizmente está consolando ela"
+    "[nina] tá bem abalada, e a [joana], felizmente, está consolando ela."
     jump dia2_sala_recreacao
 
 label dia2_joana:
     show joana normal
-    joana "Olá [minato], veio ver a [nina]?"
+    joana "Olá, [minato]. Veio ver a [nina]?"
 
     hide joana normal
     show minato normal
-    me "Sim, como ela está, você acha que ela vai se recuperar?"
+    me "Sim. Como ela está? Você acha que ela vai se recuperar?"
 
     hide minato normal
     show joana normal
-    joana "Creio que sim, eu só me pergunto que tipo monstro faria aquilo"
-    joana "A [diana] não machucaria ninguém"
-    joana "Agora o assassino tentou fazer parecer que ela tirou a própria vida"
+    joana "Creio que sim. Eu só me pergunto que tipo de monstro faria aquilo."
+    joana "A [diana] não machucaria ninguém."
+    joana "Agora, o assassino tentou fazer parecer que ela tirou a própria vida."
 
     hide joana normal
     show minato normal
-    me "Conhecendo a humanidade eu não duvido de nada"
-    me "Eu tô feliz que você esteja ajudando a Confeiteira, se depender de mim eu vou achar o culpado"
+    me "Conhecendo a humanidade, eu não duvido de nada."
+    me "Eu tô feliz que você esteja ajudando a Confeiteira. Se depender de mim, eu vou achar o culpado."
 
     hide minato normal
     show joana normal
-    joana "Por favor faça isso"
+    joana "Por favor, faça isso."
 
     hide joana normal
     jump dia2_sala_recreacao
@@ -223,23 +223,23 @@ label dia2_joana:
 label dia2_mitchell:
     show mitchell normal
     play music tema_mitchell loop if_changed
-    mitchell "E ai [minato], tá investigando a garota morta?"
+    mitchell "E aí, [minato], tá investigando a garota morta?"
 
     hide mitchell normal
     show minato normal
-    me "Sim, você não parece muito preocupado"
+    me "Sim. Você não parece muito preocupado."
 
     hide minato normal
     show mitchell normal
-    mitchell "É que diferente de vocês eu não tenho medo desse assassino"
- 
+    mitchell "É que, diferente de vocês, eu não tenho medo desse assassino."
+
     hide mitchell normal
     show minato normal
-    me "Você é bem confiante"
+    me "Você é bem confiante."
 
     hide minato normal
     show mitchell normal
-    mitchell "Mas é claro, se o assassino vir atrás de mim eu vou arrebentar a cara dele com os meus passos"
+    mitchell "Mas é claro. Se o assassino vier atrás de mim, eu vou arrebentar a cara dele com os meus passos."
 
     stop music
     jump dia2_sala_recreacao
@@ -264,25 +264,25 @@ label dia2_biblioteca:
 
 label dia2_sofia:
     show sofia irritada
-    sofia "Livros estúpidos, livros inúteis"
+    sofia "Livros estúpidos, livros inúteis!"
 
-    me "A [sofia] está lendo e jogando vários livros no chão ao ponto de formar uma pilha, consigo ver que são vários livros de investigação ou detetives"
+    me "A [sofia] está lendo e jogando vários livros no chão, a ponto de formar uma pilha. Consigo ver que são vários livros de investigação ou de detetive."
 
     hide sofia irritada
     show minato normal
-    me "[sofia], você não descobriu nada pelo que posso ver"
+    me "[sofia], você não descobriu nada, pelo que posso ver."
 
     hide minato normal
     show sofia irritada
-    sofia "E o que isso deveria significar!"
+    sofia "E o que isso deveria significar?!"
 
     hide sofia irritada
     show minato normal
-    me "É que você tá jogando vários livros no chão"
+    me "É que você tá jogando vários livros no chão."
 
     hide minato normal
     show sofia decepcionada
-    sofia "Ah sim, é que esses livros são todos inúteis"
+    sofia "Ah, sim. É que esses livros são todos inúteis."
 
     hide sofia decepcionada
     show minato normal
@@ -290,9 +290,9 @@ label dia2_sofia:
 
     hide minato normal
     show sofia decepcionada
-    sofia "Porque são todos livros infantis e romances policiais tão exagerados que é óbvio que nada disso funciona na realidade"
+    sofia "Porque são todos livros infantis e romances policiais tão exagerados que é óbvio que nada disso funciona na realidade."
 
-    sofia "O que não serve de nada em um lugar onde temos que investigar assassinos"
+    sofia "O que não serve de nada em um lugar onde temos que investigar assassinos."
 
     hide sofia decepcionada
     show minato normal
@@ -300,24 +300,24 @@ label dia2_sofia:
 
     hide minato normal
     show sofia decepcionada
-    sofia "Mas é claro, esse assassino é tão ignorante ao acreditar que eu não saberia o quão óbvio é o crime dele"
+    sofia "Mas é claro. Esse assassino é tão ignorante a ponto de acreditar que eu não saberia o quão óbvio é o crime dele."
 
-    sofia "O assassino claramente forçou ela a se matar a colocando contra a parede onde ela não tinha escolha"
+    sofia "O assassino claramente forçou ela a se matar, colocando-a contra a parede, onde ela não tinha escolha."
 
     hide sofia decepcionada
     show minato normal
-    me "Você definitivamente está bem determinada a encontrar ele, mais que todo mundo"
+    me "Você definitivamente está bem determinada a encontrar ele, mais que todo mundo."
 
     hide minato normal
     show sofia normal
-    sofia "Pode apostar que eu estou, nenhum assassino estúpido vai me enganar"
+    sofia "Pode apostar que eu estou. Nenhum assassino estúpido vai me enganar."
 
     hide sofia normal
     jump dia2_biblioteca
 
 label dia2_thiago:
     show thiago normal
-    thiago "Como vai meu caro companheiro [minato]!"
+    thiago "Como vai, meu caro companheiro [minato]?"
 
     hide thiago normal
     show minato normal
@@ -325,7 +325,7 @@ label dia2_thiago:
 
     hide minato normal
     show thiago normal
-    thiago "Mas é claro que não"
+    thiago "Mas é claro que não."
     thiago "Eu estava procurando alguma boa leitura que auxilie todos nós nesta investigação."
 
     hide thiago normal
@@ -334,11 +334,11 @@ label dia2_thiago:
 
     hide minato normal
     show thiago normal
-    thiago "Infelizmente não, mas eu vou continuar, não se preocupe meu amigo."
+    thiago "Infelizmente não, mas eu vou continuar. Não se preocupe, meu amigo."
 
     hide thiago normal
 
-    me "Isso foi estranho"
+    me "Isso foi estranho."
     jump dia2_biblioteca
 
 
@@ -371,10 +371,10 @@ label dia2_tribunal:
     me "Eu acho que nunca vou me acostumar com essa droga de teletransporte."
 
     show vince normal
-    vince "Senhoras e senhores! Sejam bem-vindos ao primeiro caso da 21° edição do tribunal do desejo, e eu serei o grande apresentador e juiz."
+    vince "Senhoras e senhores! Sejam bem-vindos ao primeiro caso da 21ª edição do Tribunal do Desejo, e eu serei o grande apresentador e juiz."
 
     vince "Agora vocês todos deverão apresentar todas as provas coletadas!"
-    vince "Que tenha justiça neste tribunal!"
+    vince "Que haja justiça neste tribunal!"
 
     hide vince normal
 
@@ -384,62 +384,62 @@ label dia2_tribunal:
 
     clint "Eu tenho algumas."
 
-    clint "Eu estive analisando os cortes, e posso confirmar pela minha experiência, que ela de fato se matou."
+    clint "Eu estive analisando os cortes e posso confirmar, pela minha experiência, que ela de fato se matou."
 
-    clint "Dá pra saber disso pelos cortes totalmente amadores e desesperados, eu também descobri pela expressão dela e alguns outros detalhes, como ela morreu."
+    clint "Dá pra saber disso pelos cortes totalmente amadores e desesperados. Eu também descobri, pela expressão dela e alguns outros detalhes, como ela morreu."
 
-    clint "Ela estava vendo ou ouvindo algo tão horrível que a forçou a cometer esse ato, deu pra saber disso pelas pegadas dela."
+    clint "Ela estava vendo ou ouvindo algo tão horrível que a forçou a cometer esse ato. Deu pra saber disso pelas pegadas dela."
 
     hide clint normal
     show aisha normal
 
-    aisha "Eu descobri pegadas do assassino, pequenas mas ainda sim foi simples saber, que ele usava sapatos, além disso eu falei com todos aqui."
+    aisha "Eu descobri pegadas do assassino, pequenas, mas ainda assim foi simples saber que ele usava sapatos. Além disso, eu falei com todos aqui."
 
-    aisha "E mais um detalhe importante, a [joana] me disse que ouviu barulhos estranhos à noite."
+    aisha "E mais um detalhe importante: a [joana] me disse que ouviu barulhos estranhos à noite."
 
     hide aisha normal
     show joana normal
 
-    joana "Sim eu ouvi sons estranhos, eu estava acordada para tomar um pouco de água, eu ia entrar na cozinha, mas voltei quando eu vi uma figura robusta, fazendo movimentos estranhos para uma figura magra."
+    joana "Sim, eu ouvi sons estranhos. Eu estava acordada para tomar um pouco de água. Eu ia entrar na cozinha, mas voltei quando vi uma figura robusta fazendo movimentos estranhos com uma figura magra."
 
     joana "Provavelmente a [diana]."
 
     hide joana normal
     show thiago normal
 
-    thiago "Isso é meio vago, alguém descobriu mais alguma coisa?"
+    thiago "Isso é meio vago. Alguém descobriu mais alguma coisa?"
 
     hide thiago normal
 
     "Todos aqueles que não falaram fizeram gestos que indicam que eles não tem mais informações."
 
     show sofia normal
-    sofia "Eu posso não ter descoberto mais nada, mas com minhas habilidades de dedução, posso dizer que o culpado é..."
-    sofia "{b}O [thiago]!!{/b}"
+    sofia "Eu posso não ter descoberto mais nada, mas, com minhas habilidades de dedução, posso dizer que o culpado é..."
+    sofia "{b}O [thiago]!{/b}"
 
     hide sofia normal
     show thiago assustado
-    thiago "Que coisa mais absurda minha dama, você por acaso possui alguma evidência do que afirma?"
+    thiago "Que coisa mais absurda, minha dama. Você por acaso possui alguma evidência do que afirma?"
 
     hide thiago assustado
     show sofia normal
-    sofia "Mas é claro, você usa sapatos, e tem cara de quem faria isso, eu sinto isso."
+    sofia "Mas é claro. Você usa sapatos e tem cara de quem faria isso. Eu sinto isso."
 
     hide sofia normal
     show thiago normal
     thiago "Isso facilmente pode se aplicar a qualquer um, pois mais da metade usa sapatos."
-    thiago "Além do mais qualquer um poderia ter pego um casaco para se ocultar."
+    thiago "Além do mais, qualquer um poderia ter pego um casaco para se ocultar."
 
     hide thiago normal
     show clint normal
-    clint "Infelizmente ele tem um ponto, qualquer um poderia ter feito isso."
+    clint "Infelizmente, ele tem um ponto. Qualquer um poderia ter feito isso."
 
     hide clint normal
     show felix normal
     felix "De fato."
     hide felix normal
 
-    me "As discussões estão aumentando, se continuar assim todos vamos morrer, é melhor eu fazer algo... Quem poderia ser?"
+    me "As discussões estão aumentando. Se continuar assim, todos vamos morrer. É melhor eu fazer algo... Quem poderia ser?"
     call resetar_escolhas
     jump escolhas_quem_acusar
 
@@ -460,8 +460,8 @@ label dia2_depois_de_acusar:
             hide clint normal
         else:
             show sofia irritada
-            sofia "Mas você adora ficar acusando todo mundo né?"
-            sofia "E esse tom irritante também!!"
+            sofia "Mas você adora ficar acusando todo mundo, né?"
+            sofia "E esse tom é irritante!"
             hide sofia irritada
 
         show thiago normal
@@ -492,7 +492,7 @@ label dia2_depois_de_acusar:
 
         play music tema_mitchell loop if_changed
         show mitchell normal
-        mitchell "Hahaha esse cara está louco"
+        mitchell "Hahaha, esse cara está louco."
         hide mitchell normal
         play music tema_tribunal fadein 5.0 loop if_changed
 
@@ -528,35 +528,35 @@ label dia2_depois_de_acusar:
 
 label dia2_final:
     show mitchell normal
-    mitchell "Hahahahahaha, é parece que não tem outro jeito, eu matei ela."
+    mitchell "Hahahahahaha... é, parece que não tem outro jeito. Eu a matei."
 
     hide mitchell normal
     show clint normal
-    clint "Por que? Só pelo desejo?!"
+    clint "Por quê? Só pelo desejo?!"
 
     hide clint normal
     show mitchell normal
-    mitchell "Sim foi pelo desejo, mas esse era o único meio para eu recuperar o que é meu."
+    mitchell "Sim, foi pelo desejo, mas esse era o único meio para eu recuperar o que é meu."
 
     hide mitchell normal
     show felix pensativo
-    felix "E o que seria tão importante, pra você tirar uma vida inocente?"
+    felix "E o que seria tão importante pra você tirar uma vida inocente?"
 
     hide felix pensativo
     show mitchell seila
-    mitchell "Foi pra recuperar a minha carreira, a minha chance, mas como vocês iriam entender não foram vocês, que iam perder tudo pra um pilantra que se acha bom o bastante."
+    mitchell "Foi para recuperar a minha carreira, a minha chance. Mas como vocês iriam entender? Não são vocês que estão prestes a perder tudo para um pilantra que se acha bom o bastante."
 
     hide mitchell seila
     show sofia decepcionada
-    sofia "Então no fim só foi por inveja, você é patético mesmo."
+    sofia "Então, no fim, só foi por inveja. Você é patético mesmo."
 
     hide sofia decepcionada
     show mitchell irritado
-    mitchell "Fácil para você falar, não era você quem perderia seu sonho, não foi você quem lutou tanto, por tantos anos por esse sonho, vamos lá o que você faria no meu lugar?"
+    mitchell "Fácil pra você falar. Não era você quem perderia seu sonho, não foi você quem lutou tanto, por tantos anos, por esse sonho... Vamos lá, o que você faria no meu lugar?"
 
     hide mitchell irritado
     show sofia decepcionada
-    sofia "Eu tentaria ser melhor que o meu rival, mas você só escolheu o caminho mais fácil, e ainda se considera um [mitchell]."
+    sofia "Eu tentaria ser melhor que o meu rival, mas você só escolheu o caminho mais fácil e ainda se considera um [mitchell]."
 
     hide sofia decepcionada
     show mitchell irritado
@@ -569,7 +569,7 @@ label dia2_final:
 
     hide minato normal
     show mitchell normal
-    mitchell "Isso é fácil, eu só usei os meus poderes, a minha dança pode forçar as pessoas fazerem o que eu quero."
+    mitchell "Isso é fácil. Eu só usei os meus poderes. A minha dança pode forçar as pessoas a fazerem o que eu quero."
 
     hide mitchell normal
     show clint normal
@@ -578,15 +578,15 @@ label dia2_final:
 
     hide clint normal
     show mitchell normal
-    mitchell "Sim, o que vocês não sabiam, todos ganhamos poderes quando fomos teletransportados até aqui."
+    mitchell "Sim. O que vocês não sabiam é que todos ganhamos poderes quando fomos teletransportados até aqui."
 
     "Todos estão olhando uns para os outros."
-    "Logo o [mitchell] se aproveitando da distração, breve para fazer uma dança."
+    "Logo, o [mitchell] se aproveita da distração, breve para fazer uma dança."
 
     # XXX: dançarino é enforcado por uma corda (mostrar uma imagem dos pésinhos dele sla)
     hide mitchell normal
     show vince normal
-    vince "Nada de trapacear, você já perdeu."
+    vince "Nada de trapacear. Você já perdeu."
 
     "O Vince pega um controle e aperta um botão vermelho."
 
@@ -597,9 +597,9 @@ label dia2_final:
 
     scene bg tudo_vermelho_lmao with dissolve
 
-    "O [mitchell] começou a dançar, e parece que o chão está ficando vermelho cada vez mais, e com a cor o calor aumenta, e logo ele começa a dançar cada vez mais rápido."
+    "O [mitchell] começou a dançar, e parece que o chão está ficando vermelho cada vez mais; e, com a cor, o calor aumenta, e logo ele começa a dançar cada vez mais rápido."
 
-    "Logo o teto abriu e um raio caiu no [mitchell], o transformando em uma estátua de cristal."
+    "Logo, o teto abriu e um raio caiu no [mitchell], transformando-o em uma estátua de cristal."
 
     "Todos olham para ele em choque."
 
@@ -610,7 +610,7 @@ label dia2_final:
 
     play music tema_suspense loop if_changed
 
-    vince "E assim termina o primeiro julgamento, eu admito que estou impressionado, vocês conseguiram descobrir o assassino."
+    vince "E assim termina o primeiro julgamento. Eu admito que estou impressionado: vocês conseguiram descobrir o assassino."
 
     hide vince normal
     show thiago normal
@@ -618,21 +618,21 @@ label dia2_final:
 
     hide thiago normal
     show aisha normal
-    aisha "É, não acha que era algo importante de mencionar?"
+    aisha "É... não acha que era algo importante de mencionar?"
 
     hide aisha normal
     show vince normal
     vince "Pode até ser, mas nenhum de vocês perguntou, então eu apenas não disse."
 
-    "Rapidamente o [clint] apontou para o [vince]."
+    "Rapidamente, o [clint] apontou para o [vince]."
 
     hide vince normal
     show clint normal
-    clint "Deixa de falar besteira, você deveria ter contado isso logo de cara, tendo a gente perguntado ou não!"
+    clint "Deixa de falar besteira. Você deveria ter contado isso logo de cara, tendo a gente perguntado ou não!"
 
     hide clint normal
     show vince normal
-    vince "Não adianta ficar bravo, pois agora vocês já sabem de tudo, então eu vou deixá-los descansar por hoje."
+    vince "Não adianta ficar bravo, pois agora vocês já sabem de tudo. Então eu vou deixá-los descansar por hoje."
 
     # XXX: transição
 

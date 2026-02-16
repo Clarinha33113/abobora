@@ -1,30 +1,30 @@
 label dia2_acusar_felix:
     show minato normal
     me "Pessoal, não percebem que essa discussão não está indo a lugar nenhum?"
-    me "O verdadeiro culpado está tão claro como esse lugar, claramente foi o [felix]!"
+    me "O verdadeiro culpado está tão claro quanto este lugar. Claramente, foi o [felix]!"
 
     hide minato normal
     show felix pensativo
 
-    felix "Não, eu garanto que eu não fiz nada, eu posso não contribuir tanto com a investigação, mas isso não significa que eu sou o culpado."
+    felix "Não. Eu garanto que não fiz nada. Eu posso não contribuir tanto com a investigação, mas isso não significa que eu sou o culpado."
 
     call escolhas_acusar(
         personagem = 'felix',
-        passivo = 'Talvez, mas eu tenho uma sensação de que você não é confiável.',
-        agressivo = ' A é, isso por acaso de torna inocente!',
-        assertivo = 'De fato, mas isso não impede você de ser o culpado.',
-        passivo_agressivo = ' É claro que você é inocente, e nada suspeito.'
+        passivo = 'Talvez... mas eu tenho a sensação de que você não é tão confiável quanto parece.',
+        agressivo = 'Ah, é? E isso por acaso te torna inocente?!',
+        assertivo = 'Pode ser, mas isso não impede você de ser o culpado.',
+        passivo_agressivo = 'Claro... você é completamente inocente. Nada suspeito em você.'
     )
 
-    felix "Por favor [minato], reconsidere. Você sabe que o assassino vai sair impune, porque não desiste e pense com mais calma? Pois eu aposto meu ♤ vermelho que eu sou inocente."
+    felix "Por favor, [minato], reconsidere. Você sabe que o assassino vai sair impune. Por que não desiste e pensa com mais calma? Eu aposto meu ♤ vermelho que sou inocente."
 
     call escolhas_acusar(
         personagem = 'felix',
-        passivo = 'Eu não sei, poderia sim ser associado a qualquer um.',
-        agressivo = 'Nem tanta fugir, que se dane a sua aposta!',
-        assertivo = 'É mesmo um aliado, ou um aliado que se torna um traidor.',
-        passivo_agressivo = 'Aposta tentadora, mas eu recuso.',
-        extra = 'Ok, eu acredito em você.'
+        passivo = 'Eu não sei... qualquer um aqui poderia estar envolvido.',
+        agressivo = 'Nem tente fugir! Que se dane a sua aposta!',
+        assertivo = 'Você pode parecer um aliado... ou um aliado que virou traidor.',
+        passivo_agressivo = 'Uma aposta tentadora... mas eu recuso.',
+        extra = 'Ok. Eu acredito em você.'
     )
 
     hide felix pensativo
@@ -37,60 +37,60 @@ label dia2_acusar_felix:
 
 
 label dia2_acusar_felix_passivo1:
-    me "E que você pode estar fingindo ser inocente, afinal é suspeito alguém já ter uma frase pronta."
-    felix "Poderia ser, mas isso facilmente pode ser falado para qualquer um, até mesmo você."
+    me "É que você pode estar fingindo ser inocente. Afinal, é suspeito alguém já ter uma resposta pronta."
+    felix "Pode ser. Mas isso poderia ser dito sobre qualquer um aqui, inclusive você."
     "Todos parecem considerar o que ele está dizendo."
     return
 
 label dia2_acusar_felix_agressivo1:
-    me "Você facilmente poderia ser um lobo em pele de cordeiro, apenas esperando a chance de atacar."
-    felix "Qualquer um poderia, eu sou sincero sobre as minhas intenções."
-    felix "Além do mais, me diga, eu por acaso aborreci você, [minato], pra você levantar a voz assim?"
+    me "Você poderia ser um lobo em pele de cordeiro, apenas esperando a chance de atacar."
+    felix "Qualquer um poderia. Eu, pelo menos, sou sincero sobre minhas intenções."
+    felix "Além do mais, me diga... eu por acaso te ofendi, [minato], para você levantar a voz assim?"
     "As pessoas me olham com desconfiança e medo."
     return
 
 label dia2_acusar_felix_assertivo1:
-    me "Pois você pode estar fingindo ser inocente, agindo agora como um cara legal o suficiente para parecer inocente, além que a sua honestidade pode apesar ser um meio para se manter oculto."
-    felix "Sábias palavras, é uma pena você desperdiçar essa sabedoria na pessoa errada pois nós dois sabemos a verdade, eu não sou o culpado mas sim um aliado."
-    "Todos olham para o [felix], alguns com desconfiança outros parecem acreditar nele."
+    me "Você pode estar fingindo ser inocente, agindo como alguém simpático o suficiente para parecer confiável. Sua honestidade pode, inclusive, ser um meio de se manter oculto."
+    felix "Sábias palavras. É uma pena você desperdiçar essa sabedoria na pessoa errada. Nós dois sabemos a verdade: eu não sou o culpado, sou um aliado."
+    "Todos olham para o [felix]; alguns com desconfiança, outros parecem acreditar nele."
     return
 
 label dia2_acusar_felix_passivo_agressivo1:
-    me "Ou será que não, e você é só um mentiroso esperto, que está tentando usar artimanhas para se safar do que provavelmente fez."
-    felix "Você tem uma língua afiada, mas mal direcionada, você está tentando se convencer que eu sou o assassino, mas no fundo nós dois sabemos que eu sou realmente inocente."
-    "Os outros não parecem considerar o que eu estou falando, agora parecem desconfiar de mim."
+    me "Ou talvez não... talvez você seja apenas um mentiroso esperto, tentando usar artimanhas para se safar do que provavelmente fez."
+    felix "Você tem uma língua afiada, mas mal direcionada. Está tentando se convencer de que eu sou o assassino, mas no fundo nós dois sabemos que sou inocente."
+    "Os outros não parecem considerar o que estou dizendo. Agora parecem desconfiar de mim."
     return
 
 label dia2_acusar_felix_passivo2:
-    me "Mas tem algo sobre você que não parece certo, existem conveniências para você tanto não ser como ser."
-    felix "Muito interessante, porém você fala de um modo que soa que nem você acredita nisso, você ainda acredita que eu sou o assassino."
-    "Ele pode estar certo, mas meus instintos me dizem o contrário, e ninguém parece acreditar em mim."
+    me "Há algo em você que não parece certo. Existem conveniências tanto para você ser quanto para não ser o culpado."
+    felix "Interessante. Mas você fala de um jeito que nem parece acreditar nisso. No fundo, você ainda acha que eu sou o assassino."
+    "Ele pode estar certo... mas meus instintos dizem o contrário, e ninguém parece acreditar em mim."
     return
 
 label dia2_acusar_felix_agressivo2:
-    me "Você cheira a culpa, e ao mesmo tempo alguém que não é o que parece, você tem esse ar sombrio ao seu redor."
-    felix "É mesmo, porém se isso é verdade, por que você está perdendo o controle? Eu te pergunto se você acha mesmo isso, você prefere acreditar em instintos ou na verdade diante da sua cara."
-    "Ele conseguiu fazer ninguém acreditar em mim, agora os olhas se intensificam para mim."
+    me "Você cheira a culpa. E, ao mesmo tempo, parece alguém que não é o que demonstra ser. Há algo sombrio em você."
+    felix "É mesmo? Então me diga: se isso é verdade, por que você está perdendo o controle? Você prefere acreditar nos seus instintos ou na verdade diante dos seus olhos?"
+    "Ele conseguiu virar todos contra mim. Agora os olhares se intensificam sobre mim."
     return
 
 label dia2_acusar_felix_assertivo2:
     hide felix pensativo
     show felix enojado
-    me "Você parece estar fugindo da acusação com palavras e argumentos bonitos, que no fim não responde nada, você está disposto a fazer qualquer coisa para que ninguém te veja como culpado, não é."
-    felix "Sim, eu vou, pois é só isso que eu tenho para que você acredite em mim."
-    "O [felix] parece assustado e nervoso, agora todos parecem convictos que ele é o assassino."
+    me "Você está fugindo da acusação com palavras bonitas que, no fim, não respondem nada. Está disposto a fazer qualquer coisa para que ninguém te veja como culpado, não está?"
+    felix "Sim, estou. Porque é tudo o que tenho para fazer você acreditar em mim."
+    "O [felix] parece assustado e nervoso. Agora todos parecem convictos de que ele é o assassino."
     return
 
 label dia2_acusar_felix_passivo_agressivo2:
-    me "Você acha mesmo que eu vou confiar em você, não adianta usar uma aposta, você só queria soar inocente, mas eu sei a verdade e é por isso que eu acredito na sua culpa."
-    felix "Você realmente ficou cego pela sua convicção, ao ponto de não ver a verdade, é uma pena você tinha o potencial de ser a peça chave da nossa sobrevivência, mas você escolheu o caminho errado, eu acredito que você não é o culpado."
-    "Ninguém acredita em mim, mas ao mesmo não parecem suspeitar de mim, graças ao [felix]."
+    me "Você acha mesmo que eu vou confiar em você? Não adianta usar uma aposta. Você só queria soar inocente. Eu sei a verdade, e é por isso que acredito na sua culpa."
+    felix "Você ficou cego pela sua própria convicção, a ponto de não enxergar a verdade. É uma pena. Você tinha o potencial de ser a peça-chave da nossa sobrevivência, mas escolheu o caminho errado. E, ironicamente, eu acredito que você não é o culpado."
+    "Ninguém acredita em mim, mas também não parecem suspeitar de mim, graças ao [felix]."
     return
 
 label dia2_acusar_felix_extra2:
     $ believe_felix = True
-    felix "Muito bom, eu fico feliz que você entendeu a verdade, e pode ficar com o meu Ás de espada, como um presente da minha aposta."
-    "O [felix] jogou o Ás de espada vermelho dele."
+    felix "Muito bem. Fico feliz que você tenha entendido a verdade. Pode ficar com o meu Ás de Espadas como prova da minha aposta."
+    "O [felix] joga o Ás de Espadas vermelho dele."
     "Na carta estava escrito: \'{i}O culpado é aquele com o chapéu e a indiferença gritante.{/i}\'"
     return
 

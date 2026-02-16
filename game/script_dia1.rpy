@@ -3,7 +3,7 @@ label dia1_start:
     call novo_dia
     play music tema_suspense loop if_changed
 
-    "Hahahahahahaha"
+    "HA HA HA HA HA!"
 
     me "O que está acontecendo?"
 
@@ -15,21 +15,21 @@ label dia1_start:
 
     me "Mas o quê?! Por que esse lugar é tão claro?"
 
-    me "Essa sala... Ela é tão estranha, é difícil descrever a sensação de ver que não tem vida ao seu redor, tudo é tão angustiante, e parece ter apenas um caminho."
+    me "Essa sala... ela é tão estranha. É difícil descrever a sensação de ver que não há vida ao seu redor. Tudo é tão angustiante e parece haver apenas um caminho."
 
     hide minato assustado
 
-    "Assim [my_name] avança abrindo a porta. Ele segue um corredor branco, e logo chega em uma sala que lembra um tribunal."
+    "Assim, [my_name] avança, abrindo a porta. Ele segue por um corredor branco e logo chega a uma sala que lembra um tribunal."
 
     scene bg tribunal with dissolve
 
-    me "Um tribunal, eu realmente estou vendo isso. Claramente eu não fui o único a ser sequestrado, só espero que possamos sair sem nenhum jogo doentio."
+    me "Um tribunal... eu realmente estou vendo isso. Claramente, eu não fui o único a ser sequestrado. Só espero que possamos sair sem nenhum jogo doentio."
 
     show vince normal
 
-    "Logo ao centro um ser semelhante a um gato de pelúcia estranho aparece."
+    "Logo ao centro, um ser semelhante a um gato de pelúcia estranho aparece."
 
-    vince "Nossos convidados de honra, sejam bem vindos a torre branca dos desejos, meu nome é Vince e serei o apresentador deste tribunal."
+    vince "Nossos convidados de honra! Sejam bem-vindos à Torre Branca dos Desejos. Meu nome é Vince, e serei o apresentador deste tribunal."
 
     hide vince normal
     show clint normal
@@ -38,19 +38,19 @@ label dia1_start:
 
     hide clint normal
     show vince normal
-    vince "Uma boa pergunta, vocês estão pensando que foram sequestrados, mas isso estaria totalmente incorreto. Todos vocês foram formalmente convidados a participar desse tribunal."
+    vince "Uma boa pergunta. Vocês estão pensando que foram sequestrados, mas isso está totalmente incorreto. Todos vocês foram formalmente convidados a participar deste tribunal."
 
     hide vince normal
     show aisha normal
-    noname "É mesmo, pois isso soa uma ladainha, eu li muito bem a carta, e não tinha nenhum aviso sobre aparecermos nesse tribunal."
+    noname "É mesmo, pois isso soa como uma ladainha. Eu li muito bem a carta, e não havia nenhum aviso sobre aparecermos neste tribunal."
 
     vince "Tem certeza, minha jovem? Olhe direito."
 
     hide aisha normal
 
-    "Assim todos pegam as cartas e começam a ler."
+    "Assim, todos pegam as cartas e começam a ler."
 
-    me "Parece que coisas foram adicionadas a carta, ou sempre estiveram lá?"
+    me "Parece que coisas foram adicionadas à carta, ou sempre estiveram lá?"
 
     show carta2
     pause
@@ -63,13 +63,13 @@ label dia1_start:
     show aisha assustada at left
     show vince normal at right
 
-    noname "Da para ver que você mudou o conteúdo da carta!"
+    noname "Dá para ver que você mudou o conteúdo da carta!"
 
-    vince "Você tem como provar esse acusação?"
+    vince "Você tem como provar essa acusação?"
 
     noname "Não, mas que história é essa de desejo?"
 
-    vince "Que bom que perguntou. Todos aqui querem ir embora, eu entendo, mas se um de vocês chegar até o final poderão fazer um desejo ao Obelisco."
+    vince "Que bom que perguntou. Todos aqui querem ir embora, eu entendo, mas, se um de vocês chegar até o final, poderá fazer um desejo ao Obelisco."
 
     hide aisha assustada
     show thiago normal at left
@@ -91,19 +91,19 @@ label dia1_start:
     scene bg tribunal with dissolve
 
     show vince normal
-    vince "Ou podem desistir e irem para casa agora, mas para isso devem decidir isso amanhã de manhã. Por que não aproveitam a oportunidade para se apresentarem?"
+    vince "Ou podem desistir e ir para casa agora, mas, para isso, devem decidir amanhã de manhã. Por que não aproveitam a oportunidade para se apresentarem?"
 
     hide vince normal
     show aisha normal
-    aisha "Olá a todos eu sou {b}A [aisha]{/b}."
+    aisha "Olá a todos, eu sou {b}A [aisha]{/b}."
 
-    me "Ela falou esse título com uma pausa, soa que não era isso que ela ia falar."
+    me "Ela falou esse título com uma pausa. Soa que não era isso que ela ia falar."
 
     hide aisha normal
     show sofia normal
     sofia "E eu sou {b}A [sofia]{/b}."
 
-    me "Essa garota fez a mesma pausa, será que somos incapazes de falar nossos nomes?"
+    me "Essa garota fez a mesma pausa. Será que somos incapazes de falar nossos nomes?"
 
     hide sofia normal
     show clint normal
@@ -141,7 +141,7 @@ label dia1_start:
 
     hide diana normal
     show vince normal
-    vince "Bom. Estão dispensados por agora." # pulled that outta my ass
+    vince "Bom, estão dispensados por agora." # pulled that outta my ass
     jump escolhas_tribunal
 
 
@@ -168,31 +168,31 @@ label dia1_sala_recreacao:
 
 label dia1_thiago:
     show thiago normal
-    thiago "Ola meu caro [minato]"
+    thiago "Olá, meu caro [minato]"
 
-    me "Oi, o que esta fazendo?"
+    me "Oi, o que está fazendo?"
 
-    thiago "Ao observar este belo quadro, vejo algo único, intrigante e sofisticado"
+    thiago "Ao observar este belo quadro, vejo algo único, intrigante e sofisticado."
 
-    me "Sim ele é, me diga o que achou do tal [vince]?"
+    me "Sim, ele é. Me diga o que achou do tal [vince]?"
 
-    thiago "Sinceramente, ele é meio bizarro… e peculiar demais"
+    thiago "Sinceramente, ele é meio bizarro… e peculiar demais."
 
-    thiago "Mas, para um anfitrião, até tem um bom jeito de apresentar as coisas"
+    thiago "Mas, para um anfitrião, até tem um bom jeito de apresentar as coisas."
 
-    thiago "Ainda assim, eu não confiaria a minha vida a ele"
+    thiago "Ainda assim, eu não confiaria a minha vida a ele."
 
     me "E o que acha desse lugar?"
 
-    thiago "Com certeza, é muito desconfortável"
+    thiago "Com certeza é muito desconfortável."
 
-    thiago "Todo esse branco ao redor dá dor de cabeça"
+    thiago "Todo esse branco ao redor dá dor de cabeça."
 
     thiago "Os móveis até são bons, charmosos ao seu próprio modo... Mas, se dependesse de mim, eu não ficaria nesse lugar."
 
     me "Obrigado por compartilhar sua opinião."
 
-    thiago "Ah não a de que, fique atento [minato]."
+    thiago "Ah, não há de quê. Fique atento [minato]."
     hide thiago normal
 
     "Ele parece um cara legal, mas eu tô com uma sensação estranha relacionada a ele."
@@ -201,63 +201,63 @@ label dia1_thiago:
 
 label dia1_sofia:
     show sofia irritada
-    sofia "O que tá olhando?"
+    sofia "O que tá olhando?!"
 
-    me "Nada, eu só queria perguntar sua opinião sobre o [vince]"
+    me "Nada, eu só queria perguntar sua opinião sobre o [vince]..."
 
     sofia "Aquele gato estúpido…"
 
-    sofia "é insolente e pretensioso"
+    sofia "É insolente e pretensioso."
 
-    sofia "Acha mesmo que vai ficar barato nos sequestrar"
+    sofia "Acha mesmo que vai ficar barato nos sequestrar?"
 
     sofia "Além do mais, matar para ganhar um desejo não me atrai nem um pouco."
     
-    me "E quanto a esse lugar"
+    me "E quanto a esse lugar?"
 
-    sofia "Esse lugar é horrível… e deprimente"
+    sofia "Esse lugar é horrível… e deprimente."
 
-    sofia "Só alguém com mau gosto gostaria dessa espelunca"
+    sofia "Só alguém com mau gosto gostaria dessa espelunca."
 
     sofia "Não há cores. Tudo é tão artificial."
     
-    me "Obrigado por compartilhar sua opinião"
+    me "Obrigado por compartilhar sua opinião."
 
-    sofia "Tanto faz só saia da minha frente se não for pedir muito."
+    sofia "Tanto faz, só saia da minha frente, se não for pedir muito."
 
     hide sofia irritada
 
-    "Já vejo que ela será bem desagradável e difícil de lidar, tomara que eu não tenha que enfrentar ela."
+    "Já vejo que ela será bem desagradável e difícil de lidar. Tomara que eu não tenha que enfrentá-la."
 
     jump dia1_sala_recreacao
 
 label dia1_clint:
     show clint normal
-    clint "Como vai amigo?"
+    clint "Como vai, amigo?"
 
-    me "Bem, eu queria te perguntar se não é muito incômodo Sr. [clint], o que acha daquele [vince]?"
+    me "Bem, eu queria te perguntar, se não for muito incômodo, Sr. [clint], o que acha daquele [vince]?"
 
-    clint "Um sujeito estranhamente assustador para um gato de pelúcia, o maldito roubou o meu revólver"
+    clint "Um sujeito estranhamente assustador para um gato de pelúcia. O maldito roubou o meu revólver."
 
-    me "Talvez para você não ter vantagem sobre os outros"
+    me "Talvez para você não ter vantagem sobre os outros."
 
-    clint "É bem provável. Cá entre nós, esse gato vai provavelmente tentar matar todos nós, igual alguns aqui"
+    clint "É bem provável. Cá entre nós, esse gato provavelmente vai tentar matar todos nós, igual a alguns aqui."
 
     me "Tem certeza?"
 
-    clint "No total, é só olhar para todo mundo"
+    clint "No fim das contas, é só olhar para todo mundo."
 
-    clint "Alguns aqui já estão cogitando esse desejo"
+    clint "Alguns aqui já estão cogitando esse desejo."
 
     clint "Eu não confiaria tão facilmente em qualquer um."
 
     me "E o que acha desse lugar?"
     
-    clint "Lugarzinho desconfortante, mas creio que posso tentar me acostumar de um certo modo"
+    clint "Lugarzinho desconfortante, mas creio que posso tentar me acostumar de certo modo."
 
-    me "Obrigado por compartilhar sua opinião"
+    me "Obrigado por compartilhar sua opinião."
 
-    clint "Não a de que."
+    clint "Não há de quê."
     hide clint normal
 
     "Esse [clint], parece ser um cara legal, e ele tem um ponto válido."
@@ -266,7 +266,7 @@ label dia1_clint:
 
 label dia1_diana:
     show diana assustada
-    "Quando tentei me aproximar da [diana], ela se encolheu no canto"
+    "Quando tentei me aproximar da [diana], ela se encolheu no canto."
 
     "Coitada… deve estar em choque, mais do que qualquer um aqui."
 
@@ -293,33 +293,33 @@ label dia1_cozinha:
 
 label dia1_aisha:
     show aisha normal
-    "[aisha] não fala nada e olha julgando."
+    "[aisha] não fala nada e olha, julgando."
 
-    me "Me desculpa por encomodar [aisha], eu queria te perguntar o que você acha do [vince]?"
+    me "Me desculpa por incomodar, [aisha], eu queria te perguntar o que você acha do [vince]?"
 
-    aisha "Aquele gato desprezível e arrogante... Teve a coragem de falar isso na nossa cara"
+    aisha "Aquele gato desprezível e arrogante... teve a coragem de falar isso na nossa cara."
     
-    aisha "Disse que aqueles termos sempre estiveram lá"
+    aisha "Disse que aqueles termos sempre estiveram lá."
     
-    aisha "e ainda trouxe essa ideia repugnante de 'assassino perfeito'"
+    aisha "E ainda trouxe essa ideia repugnante de 'assassino perfeito'."
     
     aisha "Isso é horrível. Se depender de mim, todos aqui saem."
 
     me "E o que você acha desse lugar?" 
 
-    aisha "Desagradável"
+    aisha "Desagradável."
 
-    aisha "Todo esse branco e essa luz me incomodam"
+    aisha "Todo esse branco e essa luz me incomodam."
 
     aisha "Mas poderia ser pior, não vou reclamar tanto." 
 
-    me "Muito obrigado por compartilhar sua opinião" 
+    me "Muito obrigado por compartilhar sua opinião." 
 
-    aisha "Claro"
+    aisha "Claro."
 
     hide aisha normal
 
-    "Ela é bem intimidadora, eu nem sei se devo confiar nela ou não"
+    "Ela é bem intimidadora. Eu nem sei se devo confiar nela ou não."
 
     jump dia1_cozinha
 
@@ -328,27 +328,27 @@ label dia1_nina:
 
     nina "Olá, posso te ajudar com algo?" 
 
-    me "Ah sim, eu queria saber o que você acha daquele [vince]?" 
+    me "Ah, sim, eu queria saber o que você acha daquele [vince]?" 
 
-    nina "Ele é assustador, eu não quero participar desse jogo de assassinato" 
+    nina "Ele é assustador. Eu não quero participar desse jogo de assassinato." 
 
-    me "Eu também não quero" 
+    me "Eu também não quero." 
 
-    nina "Tomara que as pessoas sejam sensatas pelo menos" 
+    nina "Tomara que as pessoas sejam sensatas, pelo menos." 
 
-    me "Confeiteira o que você acha desse lugar?" 
+    me "Confeiteira, o que você acha desse lugar?" 
 
-    nina "Poderia ser pior. Pelo menos temos uma cozinha"
+    nina "Poderia ser pior. Pelo menos temos uma cozinha."
     
     nina "Talvez eu possa fazer algo depois para todo mundo." 
 
-    me "Isso seria bom, de todo modo obrigado por compartilhar sua opinião"  
+    me "Isso seria bom. De todo modo obrigado por compartilhar sua opinião."  
 
-    nina "Me procure se precisar de ajuda"
+    nina "Me procure se precisar de ajuda."
 
     hide nina normal
 
-    "Ela é uma pessoa amável, só espero que esse lugar não a maltrate"
+    "Ela é uma pessoa amável. Só espero que esse lugar não a maltrate."
 
     jump dia1_cozinha
 
@@ -371,27 +371,27 @@ label dia1_felix:
 
     me "Não exatamente, eu queria perguntar sua opinião sobre o [vince]?"
 
-    felix "Aquele gato é estranho"
+    felix "Aquele gato é estranho."
 
-    felix "Bizarro demais"
+    felix "Bizarro demais."
 
-    felix "Ele não vai nos deixar ir se houver saída"
+    felix "Ele não vai nos deixar ir, se houver saída."
 
     me "E quanto a esse lugar?"  
 
-    felix "Eu acho esse lugar um tanto assustador, uma pena não ter nenhum piano" 
+    felix "Eu acho esse lugar um tanto assustador. Uma pena não ter nenhum piano." 
 
     me "Um piano?" 
 
-    felix "Sim ai eu poderia tentar aliviar o clima todo" 
+    felix "Sim, aí eu poderia tentar aliviar o clima todo." 
 
-    me "Obrigado por compartilhar a sua opinião" 
+    me "Obrigado por compartilhar a sua opinião." 
 
-    felix "Não a de que, sempre que precisar de ajuda é só pedir"
+    felix "Não há de quê. Sempre que precisar de ajuda, é só pedir."
 
     hide felix normal
 
-    "Ele parece ser legal, apesar disso espero que aquele gato bizarro nos deixe sair"
+    "Ele parece ser legal. Apesar disso, espero que aquele gato bizarro nos deixe sair."
 
     jump escolhas_corredor
 
@@ -415,57 +415,57 @@ label dia1_quadra:
 
 label dia1_joana:
     show joana normal
-    joana "Como vai [minato], quer treinar comigo?" 
+    joana "Como vai, [minato]? Quer treinar comigo?" 
 
-    me "Eu tô bem e não obrigado, eu queria te perguntar o que você acha do [vince]?" 
+    me "Eu tô bem e, não, obrigado. Eu queria te perguntar o que você acha do [vince]?" 
 
-    joana "Ele é estranho e assustador"
+    joana "Ele é estranho e assustador."
 
-    joana "Foi ele quem nos trouxe até aqui"
+    joana "Foi ele quem nos trouxe até aqui."
 
-    joana "Não vai nos deixar ir facilmente"
+    joana "Não vai nos deixar ir facilmente."
 
-    joana "Talvez exista outra saída"
+    joana "Talvez exista outra saída."
 
     me "O que você achou desse lugar?"
 
-    joana "Interessante e único, admito que estou curiosa quanto a esse lugar"
+    joana "Interessante e único. Admito que estou curiosa quanto a esse lugar."
 
-    me "Obrigado por compartilhar sua opinião"
+    me "Obrigado por compartilhar sua opinião."
 
-    joana "De nada"
+    joana "Por nada."
 
     hide joana normal
 
-    "Ela é bem diferente dos outros, parece ser a única que permaneceu calma, e quem sabe as razões dela..."
+    "Ela é bem diferente dos outros. Parece ser a única que permaneceu calma, e quem sabe as razões dela..."
 
     jump dia1_quadra
 
 label dia1_mitchell:
     play music tema_mitchell loop if_changed
 
-    "[mitchell] está dançando passos bem familiares por algum motivo"
+    "[mitchell] está dançando passos bem familiares por algum motivo."
 
     show mitchell normal
 
-    mitchell "O que você deseja colega"
+    mitchell "O que você deseja, colega?"
 
     me "Eu só queria saber sua opinião quanto ao [vince]."
 
-    mitchell "Aquele [vince] é peculiar, tem cara de pilantra que só quer ver um banho de sangue"
+    mitchell "Aquele [vince] é peculiar. Tem cara de pilantra que só quer ver um banho de sangue."
 
     me "E esse lugar?" 
 
     mitchell "Esse lugarzinho sem graça."
-    mitchell "Para uma torre sem vida, esse lugar tem cara de que pode se tornar interessante"
+    mitchell "Para uma torre sem vida, esse lugar tem cara de que pode se tornar interessante."
 
-    me "Obrigado pela sua opinião"
+    me "Obrigado pela sua opinião."
 
-    mitchell "Claro, só lembre de dançar mais para alegrar a vida"
+    mitchell "Claro, só lembre-se de dançar mais para alegrar a vida."
 
     hide mitchell normal
 
-    "Esse cara é um tanto peculiar, é difícil saber se ele é confiável ou não."
+    "Esse cara é um tanto peculiar. É difícil saber se ele é confiável ou não."
 
     stop music
 
@@ -481,21 +481,21 @@ label dia1_quarto:
         "Voltar":
             jump escolhas_tribunal
 
-    me "Meu pior momento chegou"
+    me "Meu pior momento chegou..."
 
-    "Quando fecho as pálpebras, vejo diferente"
+    "Quando fecho as pálpebras, vejo diferente."
 
-    "Este lugar é artificial em essência"
+    "Este lugar é artificial em essência."
 
-    "Outros passaram por aqui antes de mim"
+    "Outros passaram por aqui antes de mim."
 
-    "Alguns não voltaram"
+    "Alguns não voltaram."
 
     "Será que parte da história do mundo foi moldada através deste lugar?"
 
-    "Talvez"
+    "Talvez."
 
-    "Mas eu já não tenho mais energia para pensar nisso"
+    "Mas eu já não tenho mais energia para pensar nisso."
 
     jump dia2_start
 
