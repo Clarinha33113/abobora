@@ -8,7 +8,7 @@ label prologo_start:
 
     "Eu sinto o vento no meu rosto, o calor da cama, porém isso é tão facilmente esquecido..."
 
-    "Quando aquele sonho começa, o mesmo que me lembra por que estou aqui, por que as coisas são o que são..."
+    "Quando aquele sonho começa, o mesmo que me lembra porque estou aqui, porque as coisas são o que são..."
 
     scene bg quarto_escuro with dissolve
     show minato quando_acorda

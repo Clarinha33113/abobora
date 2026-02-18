@@ -3,6 +3,7 @@ label dia1_start:
     call novo_dia
     play music tema_suspense loop if_changed
 
+    play sound "risada.mp3"
     "HA HA HA HA HA!"
 
     me "O que está acontecendo?"
