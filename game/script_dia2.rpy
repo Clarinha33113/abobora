@@ -446,8 +446,9 @@ label dia2_tribunal:
 label dia2_depois_de_acusar:
     play music tema_tribunal fadein 5.0 loop if_changed
 
-    $ is_aggressive = current_choices[CS_AGRESSIVO] >= 4
-    $ is_asshole = current_choices[CS_PASSIVO_AGRESSIVO] >= 4
+    $ is_aggressive = current_choices[CS_AGRESSIVO] >= 3
+    $ is_asshole = current_choices[CS_PASSIVO_AGRESSIVO] >= 3
+    $ is_convincing = current_choices[CS_ASSERTIVO] >= 2
 
     call get_most_selected_choice
 
@@ -469,7 +470,7 @@ label dia2_depois_de_acusar:
         hide thiago normal
 
         # even my boy felix gon be against you if you didn't trust him
-        if believe_felix and current_choices[CS_ASSERTIVO] < 2:
+        if believe_felix and not is_convincing:
             show felix normal
             felix "Ele não parece muito convincente."
             hide felix normal
@@ -478,7 +479,7 @@ label dia2_depois_de_acusar:
         joana "Pensando bem, ele tem agido de forma meio suspeita faz um tempo já."
         hide joana normal
 
-        if current_choices[CS_ASSERTIVO] >= 2:
+        if is_convincing:
             show aisha normal
             aisha "Embora ele tenha feito alguns bons pontos."
             hide aisha normal
@@ -505,11 +506,10 @@ label dia2_depois_de_acusar:
             show sofia irritada
             sofia "Esse idiota fica acusando todo mundo!"
             hide sofia irritada
-            if believe_felix:
+            if not believe_felix:
                 show felix normal
                 felix "De fato." # idk he's just felix. silly felix.
                 hide felix normal
-
 
         show vince normal
         vince "Parece que ninguém acredita em você."

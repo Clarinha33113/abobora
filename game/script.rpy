@@ -63,33 +63,35 @@ define audio.tema_medonha    = 'medonha.mp3'
 define audio.tema_suspense   = 'suspense.mp3'
 define audio.tema_suspense2  = 'suspense2.mp3'
 
-define credits = """
-Coordenador: Lucas
+# fucking hate switching languages in my code why tf do i do ts to myself
 
+define credits = """
+Jogo feito para o módulo de comunicação da SWTV.
+
+Coordeção: Lucas
+Roteiro: Lucas
 Programação: {a=https://github.com/Clarinha33113}Maria{/a}, {a=https://github.com/emilydickinson-creator}Clara{/a}, {a=https://github.com/miublue}Miu{/a}
 Personagens: Laura, Vitória
-Roteiro: Lucas
 Músicas: Clara, Kamilly
 Cenários: Kamilly, Laura, Vitória
 
-Jogo feito para o módulo de comunicação da SWTV.
+{b}Muito obrigado a professora Elaine.{/b}
 """
 
 label start:
     # python:
     #     DEFAULT = 'Minato'
     #     my_name = renpy.input('Qual seu nome?', default=DEFAULT, length=32).strip()
-
     #     if not my_name:
     #         my_name = DEFAULT
-
     # stop music
+
     $ my_name = 'Minato'
     jump prologo_start
 
 label escolhas_tribunal:
     scene bg tribunal with dissolve
-    play music tema_suspense if_changed
+    play music tema_suspense loop if_changed
     menu:
         me "Para onde vou?"
 
@@ -108,7 +110,7 @@ label escolhas_tribunal:
 
 label escolhas_corredor:
     scene bg corredor with dissolve
-    play music tema_suspense if_changed
+    play music tema_suspense loop if_changed
 
     menu:
         "Posso ir a biblioteca ou a quadra."

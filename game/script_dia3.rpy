@@ -4,7 +4,6 @@ label dia3_start:
         felix_alive = nina_alive = joana_alive = True
         mitchell_alive = False # this one is dead fr tho
     call novo_dia
-    # vai main menu mesmo fodase
     play music "lethos.mp3" loop if_changed
 
     "Isso é um sonho? Ou é só mais um truque desse lugar? Eu só me lembro de ter ido dormir."
@@ -89,7 +88,7 @@ label dia3_start:
 label dia3_real_start:
     scene black with dissolve
     scene bg quarto with dissolve
-    play music tema_suspense loop if_changed
+    play music tema_quarto loop if_changed
 
     "O que foi aquilo? Deve ter sido só um sonho, mas esse foi o primeiro que pareceu tão vívido..."
     "Bem, de todo modo, eu devo descobrir algo sobre os meus poderes."
@@ -344,8 +343,6 @@ label dia3_dormir:
     show text "{b}Fim da demo.\nObrigado por jogar.{/b}"
     pause
     show text "[credits]"
-    pause
-    show text "{b}Obrigado a professora Elaine.{/b}"
     pause
     return
 
