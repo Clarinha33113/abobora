@@ -173,7 +173,7 @@ label dia2_aisha:
 
 label dia2_sala_recreacao:
     scene bg sala_recreacao with dissolve
-    # XXX: música sala de recreação
+    play music tema_recreacao loop if_changed
     if first_time_sala_recreacao:
         "[my_name] chega na sala de recreação, onde estão [joana], [nina] e [mitchell]."
         $ first_time_sala_recreacao = False
