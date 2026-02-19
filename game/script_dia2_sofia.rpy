@@ -22,7 +22,7 @@ label dia2_acusar_sofia:
     call escolhas_acusar(
         personagem = 'sofia',
         passivo = 'Estou tentando encontrar alguma lógica. Mesmo que seja conveniente, ainda é melhor do que não ter teoria nenhuma.',
-        agressivo = 'E você? Está ao menos fazendo alguma coisa? Pelo menos eu estou fazendo algo além de ficar parada!',
+        agressivo = 'E você? Está ao menos fazendo alguma coisa? Pelo menos eu estou fazendo algo além de ficar parado!',
         assertivo = 'É justamente isso que te torna ainda mais suspeita.',
         passivo_agressivo = 'É mesmo? Ou você só está tentando se esquivar?'
     )
@@ -71,7 +71,8 @@ label dia2_acusar_sofia_agressivo2:
     return
 
 label dia2_acusar_sofia_assertivo2:
-    me "Com base nas informações que temos, levo a crer que você facilmente teria acesso às roupas do assassino. Além disso, pela forma como fala e lida com o público, poderia muito bem convencer alguém, de maneira sutil ou manipuladora, a tirar a própria vida."
+    me "Com base nas informações que temos, levo a crer que você facilmente teria acesso às roupas do assassino. Além disso, pela forma como fala e lida com o público."
+    me "Poderia muito bem convencer alguém, de maneira sutil ou manipuladora, a tirar a própria vida."
 
     sofia "Como?! Ainda assim isso não prova nada. Eu não tenho motivos para fazer isso. Seria mais fácil deixar outra pessoa fazer."
 
@@ -79,7 +80,8 @@ label dia2_acusar_sofia_assertivo2:
     return
 
 label dia2_acusar_sofia_passivo_agressivo2:
-    me "Seja sincera. É difícil admitir que a matou? Dá para ver o quão conveniente isso seria para você. A Desenhista era, de longe, a mais vulnerável aqui. Perfeita para testar seu plano... e você achou que sairia impune."
+    me "Seja sincera. É difícil admitir que a matou? Dá para ver o quão conveniente isso seria para você."
+    me "A Desenhista era, de longe, a mais vulnerável aqui. Perfeita para testar seu plano... e você achou que sairia impune."
 
     sofia "Sua teoria é ridícula. Não faz sentido algum. Mas tenho que admitir que é conveniente... especialmente para quem está me acusando."
     return

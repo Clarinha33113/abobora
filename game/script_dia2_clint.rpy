@@ -13,7 +13,7 @@ label dia2_acusar_clint:
     call escolhas_acusar(
         personagem = 'clint',
         passivo = 'Eu não tenho certeza, mas há detalhes estranhos sobre você, especialmente o seu título. Isso levanta dúvidas.',
-        agressivo = 'Sim, e você sabe exatamente por quê.',
+        agressivo = 'Sim, e você sabe exatamente porquê.',
         assertivo = 'Sim. Existem pistas que levam até você, e eu não posso ignorá-las.',
         passivo_agressivo = 'Eu não sei... mas é curioso um cara chamado Pistoleiro não ter ameaçado ninguém com, sei lá, a própria pistola.',
     )
