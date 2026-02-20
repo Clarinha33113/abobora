@@ -462,7 +462,7 @@ label dia2_depois_de_acusar:
         else:
             show sofia irritada
             sofia "Mas você adora ficar acusando todo mundo, né?"
-            if is_aggressive or is_asshole:
+            if is_aggressive or is_asshole or is_pushover:
                 sofia "E esse tom é irritante!"
             hide sofia irritada
 
@@ -490,6 +490,8 @@ label dia2_depois_de_acusar:
         else:
             show aisha normal
             aisha "E seus argumentos são muito incoerentes."
+            if is_pushover:
+                aisha "Cheios de \"eu acho\", e \"talvez\"..."
             hide aisha normal
 
         play music tema_mitchell loop if_changed
@@ -516,7 +518,7 @@ label dia2_depois_de_acusar:
         vince "Parece que ninguém acredita em você."
         hide vince normal
 
-        # XXX: ts hella underwhelming but oh well
+        # good enough ig (im tired boss)
         scene bg tudo_vermelho_lmao with dissolve
         show vince emo_idk
         show text "{b}Você perdeu.{/b}"
