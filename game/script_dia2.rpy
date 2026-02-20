@@ -466,6 +466,10 @@ label dia2_depois_de_acusar:
                 sofia "E esse tom é irritante!"
             hide sofia irritada
 
+        show joana normal
+        joana "Pensando bem, ele tem agido de forma suspeita por um tempo."
+        hide joana normal
+
         show thiago normal
         thiago "Isso é meio suspeito, sim."
         hide thiago normal
@@ -475,10 +479,6 @@ label dia2_depois_de_acusar:
             show felix normal
             felix "Ele não parece muito convincente."
             hide felix normal
-
-        show joana normal
-        joana "Pensando bem, ele tem agido de forma meio suspeita faz um tempo já."
-        hide joana normal
 
         if is_convincing:
             show aisha normal
