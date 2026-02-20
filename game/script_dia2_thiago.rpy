@@ -20,9 +20,8 @@ label dia2_acusar_thiago:
         passivo_agressivo = 'É claro que você é inocente... com essa atitude de cara bacana.'
     )
 
-    call get_most_selected_choice
     python: # btw i went off script here too
-        is_being_a_bitch = True if most_often_choice == CS_AGRESSIVO else False
+        is_being_a_bitch = True if last_picked_choice == CS_AGRESSIVO else False
         if is_being_a_bitch:
             aggressive_text = 'Jamais? E ainda consegue afirmar usando "jamais" como resposta.'
         else:

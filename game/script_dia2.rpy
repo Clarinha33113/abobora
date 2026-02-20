@@ -449,12 +449,10 @@ label dia2_depois_de_acusar:
     call get_sum_all_choices
 
     python:
-        is_pushover   = current_choices[CS_PASSIVO] >= 3
-        is_aggressive = current_choices[CS_AGRESSIVO] >= 3
-        is_asshole    = current_choices[CS_PASSIVO_AGRESSIVO] >= 3
-        is_convincing = current_choices[CS_ASSERTIVO] >= 3
-
-    # XXX: Took some creative liberties here. May or may not be character accurate. (i didnt create em so idk)
+        is_pushover   = current_choices[CS_PASSIVO] >= 2
+        is_aggressive = current_choices[CS_AGRESSIVO] >= 2
+        is_asshole    = current_choices[CS_PASSIVO_AGRESSIVO] >= 2
+        is_convincing = current_choices[CS_ASSERTIVO] >= 2
 
     if sum_all_choices >= 5:
         if accused_person == '[sofia]':
@@ -464,7 +462,8 @@ label dia2_depois_de_acusar:
         else:
             show sofia irritada
             sofia "Mas você adora ficar acusando todo mundo, né?"
-            sofia "E esse tom é irritante!"
+            if is_aggressive or is_asshole:
+                sofia "E esse tom é irritante!"
             hide sofia irritada
 
         show thiago normal
@@ -525,7 +524,6 @@ label dia2_depois_de_acusar:
         return
 
     jump escolhas_quem_acusar
-    # XXX: acreditam no jogador ao fazer muitas escolhas assertivas e votam no acusado (também perdendo o jogo)
 
 
 label dia2_final:
