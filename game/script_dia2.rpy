@@ -446,15 +446,17 @@ label dia2_tribunal:
 label dia2_depois_de_acusar:
     play music tema_tribunal fadein 5.0 loop if_changed
 
-    $ is_aggressive = current_choices[CS_AGRESSIVO] >= 3
-    $ is_asshole = current_choices[CS_PASSIVO_AGRESSIVO] >= 3
-    $ is_convincing = current_choices[CS_ASSERTIVO] >= 2
+    call get_sum_all_choices
 
-    call get_most_selected_choice
+    python:
+        is_pushover   = current_choices[CS_PASSIVO] >= 3
+        is_aggressive = current_choices[CS_AGRESSIVO] >= 3
+        is_asshole    = current_choices[CS_PASSIVO_AGRESSIVO] >= 3
+        is_convincing = current_choices[CS_ASSERTIVO] >= 3
 
     # XXX: Took some creative liberties here. May or may not be character accurate. (i didnt create em so idk)
 
-    if is_aggressive or is_asshole:
+    if sum_all_choices >= 5:
         if accused_person == '[sofia]':
             show clint normal
             clint "Tudo bem, [minato]? Você parece meio desesperado."
@@ -470,7 +472,7 @@ label dia2_depois_de_acusar:
         hide thiago normal
 
         # even my boy felix gon be against you if you didn't trust him
-        if believe_felix and not is_convincing:
+        if not believe_felix and not is_convincing:
             show felix normal
             felix "Ele não parece muito convincente."
             hide felix normal

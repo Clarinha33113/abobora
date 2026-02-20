@@ -46,6 +46,7 @@ define accused_person = ''
 define current_choices = {}
 define last_picked_choice = ''
 define most_often_choice = ''
+define sum_all_choices = 0
 
 define first_time_sala_recreacao = True
 define first_time_cozinha = True
@@ -150,6 +151,12 @@ label escolhas_quem_acusar:
     menu:
         "Quem deseja acusar?"
 
+        "[felix]" if felix_alive:
+            $ accused_person = '[felix]'
+            jump expression f"dia{dia}_acusar_felix"
+        "[mitchell]" if mitchell_alive:
+            $ accused_person = '[mitchell]'
+            jump expression f"dia{dia}_acusar_mitchell"
         "[clint]" if clint_alive:
             $ accused_person = '[clint]'
             jump expression f"dia{dia}_acusar_clint"
@@ -162,22 +169,15 @@ label escolhas_quem_acusar:
         "[thiago]" if thiago_alive:
             $ accused_person = '[thiago]'
             jump expression f"dia{dia}_acusar_thiago"
-        "[mitchell]" if mitchell_alive:
-            $ accused_person = '[mitchell]'
-            jump expression f"dia{dia}_acusar_mitchell"
-        "[nina]" if nina_alive:
-            $ accused_person = '[nina]'
-            jump expression f"dia{dia}_acusar_nina"
-        "[felix]" if felix_alive:
-            $ accused_person = '[felix]'
-            jump expression f"dia{dia}_acusar_felix"
         "[joana]" if joana_alive:
             $ accused_person = '[joana]'
             jump expression f"dia{dia}_acusar_joana"
+        "[nina]" if nina_alive:
+            $ accused_person = '[nina]'
+            jump expression f"dia{dia}_acusar_nina"
 
 
-label escolhas_acusar(personagem, passivo, agressivo, assertivo, passivo_agressivo, **kwargs):
-    $ extra = kwargs['extra'] if 'extra' in kwargs else ''
+label escolhas_acusar(personagem, passivo, agressivo, assertivo, passivo_agressivo, extra = ''):
     menu:
         "[passivo]":
             call aumentar_ponto(CS_PASSIVO)
@@ -213,5 +213,12 @@ label get_most_selected_choice:
             else:
                 most_often_choice = last_picked_choice
                 break
+    return
+
+label get_sum_all_choices:
+    python:
+        sum_all_choices = 0
+        for _, val in current_choices.items():
+            sum_all_choices += val
     return
 
