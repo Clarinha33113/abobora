@@ -7,7 +7,7 @@ label dia2_start:
 
     scene bg quarto with dissolve
 
-    play sound "scream.mp3"
+    play sound "grito.mp3"
     play music tema_medonha fadein 5.0 loop if_changed
     "[my_name] acorda com um grito, e logo ele segue os outros até a cozinha."
 
