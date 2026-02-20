@@ -61,7 +61,7 @@ label dia2_start:
     scene bg tudo_vermelho_lmao with dissolve
     show vince emo_idk
 
-    show text "{b}Vocês todos morrem, e o assassino vence.{/b}"
+    show text "{b}{size=+10}Vocês todos morrem, e o assassino vence.{/size}{/b}"
     pause
 
     hide vince emo_idk
@@ -149,11 +149,13 @@ label dia2_aisha:
     aisha "Uma pena que as coisas tenham chegado a esse ponto. Ela foi indiscutivelmente assassinada."
     aisha "Mas a morte dela me indicou algumas pontas soltas."
 
+    hide aisha pensativa
+    show aisha normal
     aisha "Primeiro, que ela provavelmente foi forçada a fazer esse ato."
     aisha "E, considerando as pequenas manchas no chão, tinha mais alguém."
     aisha "Um detalhe pequeno que o [clint] falhou em notar."
 
-    hide aisha pensativa
+    hide aisha normal
     show minato normal
     me "E você conseguiu identificar alguma outra informação?"
 
@@ -266,7 +268,7 @@ label dia2_sofia:
     show sofia irritada
     sofia "Livros estúpidos, livros inúteis!"
 
-    me "A [sofia] está lendo e jogando vários livros no chão, a ponto de formar uma pilha. Consigo ver que são vários livros de investigação ou de detetive."
+    "A [sofia] está lendo e jogando vários livros no chão, a ponto de formar uma pilha. Consigo ver que são vários livros de investigação ou de detetive."
 
     hide sofia irritada
     show minato normal
@@ -400,7 +402,8 @@ label dia2_tribunal:
     hide aisha normal
     show joana normal
 
-    joana "Sim, eu ouvi sons estranhos. Eu estava acordada para tomar um pouco de água. Eu ia entrar na cozinha, mas voltei quando vi uma figura robusta fazendo movimentos estranhos com uma figura magra."
+    joana "Sim, eu ouvi sons estranhos. Eu estava acordada para tomar um pouco de água."
+    joana "Eu ia entrar na cozinha, mas voltei quando vi uma figura robusta fazendo movimentos estranhos para uma figura magra."
 
     joana "Provavelmente a [diana]."
 
@@ -521,7 +524,7 @@ label dia2_depois_de_acusar:
         # good enough ig (im tired boss)
         scene bg tudo_vermelho_lmao with dissolve
         show vince emo_idk
-        show text "{b}Você perdeu.{/b}"
+        show text "{b}{size=+10}Você perdeu.{/size}{/b}"
         pause
         return
 
