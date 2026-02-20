@@ -23,7 +23,7 @@ define gui.show_name = False
 
 ## A versão do jogo.
 
-define config.version = "0.4"
+define config.version = "0.5"
 
 
 ## Texto que é colocado na tela "Sobre" do jogo. Coloque o texto entre aspas
